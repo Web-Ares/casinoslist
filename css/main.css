@@ -18,13 +18,25 @@
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
+    font-size: 15px;
     color: #fff;
 }
 :-moz-placeholder {
+    font-size: 15px;
     color: #fff;
 }
 .placeholder {
+    font-size: 15px;
     color: #fff;
+}
+.site__aside ::-webkit-input-placeholder {
+    color: #325669;
+}
+.site__aside :-moz-placeholder {
+    color: #325669;
+}
+.site__aside .placeholder {
+    color: #325669;
 }
 /* --------------- /placeholder --------------- */
 
@@ -63,7 +75,7 @@
     display: block;
     clear: both;
     width: 100%;
-    height: 100px;
+    height: 431px;
 }
 .site__content {
     position: relative;
@@ -88,12 +100,35 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100px;
+    height: 431px;
+    background: #00699c;
+    padding-top: 4px;
 }
 .site__footer-layout {
+    position: relative;
     width: 100%;
-    height: 100px;
+    height: 423px;
     background: #007ab5;
+    text-align: center;
+    padding-top: 45px;
+}
+.site__footer-logo{
+    display: none;
+}
+.site__footer-menu li{
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+.site__footer-menu li a{
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+.site__footer-menu li a:hover{
+    opacity: .7;
+    text-decoration: underline;
 }
 .site__aside {
     position: relative;
@@ -134,7 +169,7 @@
     position: fixed;
     bottom: 64px;
     right: 27px;
-    background: #fff url("../img/btn-up.png") no-repeat;
+    background:url("../img/btn-up.png") no-repeat;
     background-size: contain;
     width: 50px;
     height: 55px;
@@ -410,6 +445,16 @@ a.show-all{
     font: italic 14px 'roboto', sans-serif;
     color: #fff;
 }
+.site__aside .search {
+    float: none;
+    width: 100%;
+}
+.site__aside .search__frame input{
+    border-bottom: 1px solid #8397a2;
+}
+.site__aside .search__frame button{
+    background: url("../img/icons-search-btn1.png") no-repeat 0 11px/16px 17px;
+}
 .search__frame button{
     position: absolute;
     top: 16px;
@@ -423,8 +468,75 @@ a.show-all{
 }
 /* --------------- /search --------------- */
 
+/* --------------- social --------------- */
+.social{
+    position: relative;
+    width: 100%;
+    margin: 45px auto 0;
+}
+.social a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+    height: 55px;
+    margin-right: 12px;
+    transition: opacity .3s ease;
+}
+.social a:last-child{
+    margin-right: 0;
+}
+a.social-f{
+    background: url("../img/social-f.png") no-repeat center;
+    background-size: contain;
+}
+a.social-p{
+    background: url("../img/social-p.png") no-repeat center;
+    background-size: contain;
+}
+a.social-g{
+    background: url("../img/social-g.png") no-repeat center;
+    background-size: contain;
+}
+a.social-in{
+    background: url("../img/social-in.png") no-repeat center;
+    background-size: contain;
+}
+.social a:hover{
+    -webkit-animation: swing 0.6s forwards;
+    animation: swing 0.6s forwards;
+    opacity: 0.7;
+}
+
+@-webkit-keyframes swing {
+    25% {
+        -webkit-transform: rotate3d(0, 0, 1, 12deg);
+        transform: rotate3d(0, 0, 1, 12deg);
+    }
+
+    50% {
+        -webkit-transform: rotate3d(0, 0, 1, -8deg);
+        transform: rotate3d(0, 0, 1, -8deg);
+    }
+
+    75% {
+        -webkit-transform: rotate3d(0, 0, 1, 4deg);
+        transform: rotate3d(0, 0, 1, 4deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 2, 0deg);
+        transform: rotate3d(0, 0, 2, 0deg);
+    }
+}
+/* --------------- /social --------------- */
 
 @media (min-width: 768px){
+
+    /* --------------- site --------------- */
+    .site__footer-layout {
+        padding-top: 50px;
+    }
+    /* --------------- /site --------------- */
 
     /* --------------- menu --------------- */
     .menu__btn:before,
@@ -470,8 +582,15 @@ a.show-all{
         background-position: 3px 10px;
     }
     /* --------------- /search --------------- */
+
+    /* --------------- social --------------- */
+    .social a {
+        margin-right: 19px;
+    }
+    /* --------------- /social --------------- */
 }
 @media (min-width: 1024px){
+    /* --------------- site --------------- */
     .site__content {
         width: 1000px;
     }
@@ -488,8 +607,11 @@ a.show-all{
         margin-bottom: 84px;
         padding-top: 42px;
     }
-    .site__aside div{
+    .site__aside>div{
         margin-bottom: 44px;
+    }
+    .site__aside div.search{
+        margin-bottom: 20px;
     }
     .site__aside h2{
          margin-bottom: 20px;
@@ -500,6 +622,42 @@ a.show-all{
     .site__aside .site__aside-online ul li{
         font-family: "helvetica-bold", sans-serif;
     }
+    .site__footer {
+        height: 234px;
+    }
+    .site:after {
+        height: 234px;
+    }
+    .site__footer-wrap{
+        background: #007ab5;
+        height: 227px;
+    }
+    .site__footer-layout {
+        max-width: 1000px;
+        height: 214px;
+        margin: 0 auto;
+        padding-left: 345px;
+        text-align: left;
+    }
+    .site__footer-logo{
+        display: block;
+        position: absolute;
+        top: -21px;
+        left: 0;
+        width: 301px;
+        height: 247px;
+    }
+    .site__footer-menu{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 68px;
+        text-align: left;
+    }
+    .site__footer-menu li {
+        margin-bottom: 26px;
+        letter-spacing: .6px;
+    }
+    /* --------------- /site --------------- */
 
     /* --------------- menu --------------- */
     .menu{
@@ -535,4 +693,23 @@ a.show-all{
         display: none;
     }
     /* --------------- /menu --------------- */
+
+    /* --------------- social --------------- */
+    .social {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        width: 152px;
+        margin: -7px 0 0 41px;
+    }
+    .social a{
+        width: 64px;
+        height: 64px;
+        margin: 0 0 19px;
+    }
+    .social a:nth-child(even){
+        margin-left: 16px;
+    }
+    /* --------------- /social --------------- */
+
 }
