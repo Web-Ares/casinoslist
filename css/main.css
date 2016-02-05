@@ -88,6 +88,9 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+.site__content__layout{
+    padding-top: 18px;
+}
 .site__footer {
     z-index: 2;
     position: absolute;
@@ -164,7 +167,7 @@
     position: relative;
     color: #007ab5;
     font-size: 14px;
-    margin: 0 4px 27px;
+    margin: 0 9px 27px;
 }
 
 .breadcrums a{
@@ -219,7 +222,20 @@
     margin-right: 34px;
 }
 .review__game{
-    margin-left: 2px;
+    margin-left: 7px;
+    margin-bottom: 19px;
+}
+.review__game>div{
+    position: relative;
+}
+.review__game>div:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    background: #d7e4ed;
+    bottom: -19px;
+    left: 10px;
+    right: 10px;
 }
 .review__country{
     display: inline-block;
@@ -242,7 +258,33 @@
     color: #81919a;
 }
 .review__play{
-    padding: 0 5px;
+    padding: 0 9px 0 5px;
+    margin-bottom: 37px;
+}
+.review__rating{
+    margin-left: 4px;
+}
+.review__rating span{
+    font-size: 14px;
+    color: #566e7b;
+    margin-right: 24px;
+}
+.review__rating-stars {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    top: -1px;
+    width: 147px;
+    height: 17px;
+    margin: 0 auto;
+    background: url("../img/rating-star.png") repeat-x top left;
+    background-size: 29px 18px;
+}
+.review__rating-stars>div {
+    background: url("../img/rating-star-color.png") repeat-x top left;
+    height: 18px;
+    width: 18px;
+    background-size: 29px 18px;
 }
 /* --------------- /review__game --------------- */
 
@@ -432,6 +474,58 @@ a.show-all{
 
 @media (min-width: 768px){
 
+    /* --------------- site --------------- */
+    .site__content__layout {
+        padding-top: 30px;
+    }
+    /* --------------- /site --------------- */
+
+    /* --------------- breadcrums --------------- */
+    .breadcrums{
+        margin-left: 21px;
+        font-size: 15px;
+        margin-bottom: 29px;
+    }
+    .breadcrums a:after {
+        right: -22px;
+    }
+    /* --------------- /breadcrums --------------- */
+
+    /* --------------- review__game --------------- */
+    .review__game-logo{
+        width: 184px;
+        height: 97px;
+        margin-right: 97px;
+    }
+    .review__game {
+        margin-left: 17px;
+        margin-bottom: 19px;
+    }
+    .review__country img {
+        width: 55px;
+        height: 55px;
+        top: 2px;
+        margin-right: 22px;
+    }
+    .review__country {
+        margin-right: 67px;
+    }
+    .review__country span {
+        max-width: 119px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .review__play {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+        margin-bottom: 0;
+        width: 174px;
+        top: 4px;
+    }
+    /* --------------- /review__game --------------- */
+
+
     /* --------------- menu --------------- */
     .menu__btn:before,
     .menu__btn:after {
@@ -475,6 +569,9 @@ a.show-all{
         background-size: 17px 17px;
         background-position: 3px 10px;
     }
+    /* --------------- /search --------------- */
+
+    /* --------------- /search --------------- */
     /* --------------- /search --------------- */
 }
 @media (min-width: 1024px){
