@@ -98,6 +98,9 @@
     width: 100%;
     text-align: left;
 }
+.site__content-layout{
+    padding-top: 18px;
+}
 /* --------------- /site --------------- */
 
 /* --------------- logo --------------- */
@@ -107,6 +110,94 @@
     left: 0;
 }
 /* --------------- /logo --------------- */
+
+/* --------------- breadcrums --------------- */
+.breadcrums{
+    display: block;
+    position: relative;
+    color: #007ab5;
+    font-size: 14px;
+    margin: 0 4px 27px;
+}
+
+.breadcrums a{
+    display: inline-block;
+    position: relative;
+    color: #a7b7c5;
+    margin-right: 31px;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+}
+.breadcrums a:hover{
+    color: #007ab5;
+}
+.breadcrums a:after{
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: -25px;
+    background-image: url("../img/arrow_bread.png");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 23px;
+    background-size: 8px;
+}
+/* --------------- /breadcrums --------------- */
+
+/* --------------- btn --------------- */
+.btn{
+    display: block;
+    position: relative;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007ab5;
+    border-radius: 4px;
+    width: 100%;
+    padding: 14px 0 14px;
+    text-align: center;
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+}
+.btn:hover{
+    background-color: #24aaeb;
+}
+/* --------------- /btn --------------- */
+
+/* --------------- review__game --------------- */
+.review__game-logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 116px;
+    height: 61px;
+    margin-right: 34px;
+}
+.review__game{
+    margin-left: 2px;
+}
+.review__country{
+    display: inline-block;
+    margin-bottom: 27px;
+}
+.review__country img{
+    display: inline-block;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 40px;
+    vertical-align: middle;
+    top: -2px;
+    margin-right: 1px;
+}
+.review__country span{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 104px;
+    color: #81919a;
+}
+.review__play{
+    padding: 0 5px;
+}
+/* --------------- /review__game --------------- */
 
 @media (min-width: 768px){
 
