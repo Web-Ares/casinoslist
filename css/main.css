@@ -592,6 +592,180 @@ a.social-in{
 }
 /* --------------- /social --------------- */
 
+/* ------------ content ------------ */
+.content {
+    padding-top: 8px;
+    font-size: 14px;
+    color: #566e7b;
+    font-family: "helvetica-light", sans-serif;
+    line-height: 1.25;
+}
+.content h1 {
+    margin-bottom: 32px;
+    padding-bottom: 17px;
+    color: #007ab5;
+    border-bottom: 2px solid #dfe9f1;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: 'helvetica-bold', sans-serif;
+}
+.content h2 {
+    margin-bottom: 4px;
+    color: #007ab5;
+    text-transform: uppercase;
+    font-size: 115%;
+    font-weight: normal;
+    font-family: 'helvetica-medium', sans-serif;
+}
+.content h3 {
+    margin-bottom: 12px;
+    color: #007ab5;
+    font-size: 130%;
+    font-weight: normal;
+    font-family: 'helvetica-medium', sans-serif;
+}
+.content h4 {
+    margin-bottom: 10px;
+    color: #007ab5;
+    font-size: 120%;
+    font-weight: normal;
+    font-family: 'helvetica-medium', sans-serif;
+}
+.content h5 {
+    margin-bottom: 10px;
+    color: #007ab5;
+    font-size: 110%;
+    font-weight: normal;
+    font-family: 'helvetica-medium', sans-serif;
+}
+.content h6 {
+    margin-bottom: 10px;
+    color: #007ab5;
+    font-size: 100%;
+    font-weight: normal;
+    font-family: 'helvetica-medium', sans-serif;
+}
+.content p {
+    margin-bottom: 17px;
+}
+.content ul {
+    list-style: none;
+    padding: 0 0 0 35px;
+    margin-bottom: 17px;
+}
+.content ul ul {
+    margin: 10px 0 10px 25px;
+}
+.content ol {
+    list-style: decimal;
+    margin: 0 15px 10px 20px;
+}
+.content ol ol {
+    margin: 10px 0 10px 25px;
+}
+.content li {
+    position: relative;
+    margin-bottom: -1px;
+}
+.content li:before {
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    width: 5px;
+    height: 5px;
+    background: #007ab5;
+    border-radius: 50%;
+    content:'';
+}
+.content__table {
+    margin-bottom: 31px;
+    padding: 11px 0 11px;
+    border-top: 2px solid #eff4f8;
+    border-bottom: 2px solid #eff4f8;
+}
+.content table {
+    width: 100%;
+    font-size: 100%;
+    color: #007ab5;
+}
+.content th,
+.content td {
+    padding: 2px 0 3px;
+    text-align: left;
+}
+.content td:first-child {
+    width: 203px;
+    color: #566e7b;
+}
+.content td + td {
+    border-left: 2px solid #e5eef3;
+    padding-left: 9px;
+}
+.content th {
+    font-weight: bold;
+    text-align: center;
+}
+.content a:visited,
+.content a:active,
+.content a {
+    display: inline;
+    color: #0091d7;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.3s ease;
+    transition: border-bottom 0.3s ease;
+}
+.content a:hover {
+    border-bottom: 1px solid #0091d7;
+}
+.content img[align=left] {
+    margin: 0 10px 10px 0;
+    float: left;
+}
+.content img[align=right] {
+    margin: 0 0 10px 10px;
+    float: right;
+}
+.content dl {
+    margin: 0 0 15px 0;
+}
+.content dt {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.content dd {
+    margin-bottom: 5px;
+}
+.content hr {
+    height: 1px;
+    border: none;
+    color: #aaa;
+    background: #aaa;
+    margin: 10px 0;
+    clear: both;
+}
+.content blockquote {
+    position: relative;
+    margin: 0 0 12px;
+    padding: 7px 0 0 71px;
+}
+.content blockquote:before {
+    position: absolute;
+    top: 11px;
+    left: 17px;
+    width: 38px;
+    height: 33px;
+    background: url("../img/blockqoute.png") no-repeat;
+    background-size: contain;
+    content:'';
+}
+.content blockquote b {
+    color: #007ab5;
+    font-family: 'helvetica-medium', sans-serif;
+    font-weight: normal;
+}
+/* ------------ /content ------------ */
+
 @media (min-width: 768px){
 
     /* --------------- site --------------- */
@@ -734,7 +908,30 @@ a.social-in{
         margin-right: 19px;
     }
     /* --------------- /social --------------- */
+
+    /* ------------ content ------------ */
+    .content h1 {
+        margin-bottom: 31px;
+        padding-bottom: 13px;
+        font-size: 220%;
+    }
+    .content li:before {
+        left: -8px;
+    }
+    .content__table {
+        margin-bottom: 15px;
+    }
+    .content blockquote {
+        margin-bottom: 32px;
+        padding: 12px 0 0 77px;
+    }
+    .content blockquote:before {
+        left: 27px;
+    }
+    /* ------------ /content ------------ */
+
 }
+
 @media (min-width: 1024px){
     /* --------------- site --------------- */
     .site__content {
@@ -897,5 +1094,11 @@ a.social-in{
         margin-left: 16px;
     }
     /* --------------- /social --------------- */
+
+    /* ------------ content ------------ */
+    .content td:first-child {
+        width: 206px;
+    }
+    /* ------------ /content ------------ */
 
 }
