@@ -100,10 +100,6 @@
     max-width: 1000px;
     margin: 0 auto;
 }
-.site__content__layout{
-    padding-top: 18px;
-    max-width: 750px;
-}
 .site__footer {
     z-index: 2;
     position: absolute;
@@ -146,7 +142,8 @@
     text-align: left;
 }
 .site__content-layout{
-    padding: 18px 10px 0;
+    padding: 18px 10px 12px;
+    max-width: 750px;
 }
 .site__aside div{
     margin-bottom: 10px;
@@ -598,8 +595,8 @@ a.social-in{
 @media (min-width: 768px){
 
     /* --------------- site --------------- */
-    .site__content__layout {
-        padding-top: 30px;
+    .site__content-layout {
+        padding: 30px 20px 13px;
     }
     /* --------------- /site --------------- */
 

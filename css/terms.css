@@ -10,6 +10,7 @@
 
 /* ------------ content ------------ */
 .content {
+    padding-top: 8px;
     font-size: 14px;
     color: #566e7b;
     font-family: "helvetica-light", sans-serif;
@@ -65,8 +66,9 @@
     margin-bottom: 17px;
 }
 .content ul {
-    list-style: disc;
-    margin: 0 15px 10px 15px;
+    list-style: none;
+    padding: 0 0 0 35px;
+    margin-bottom: 17px;
 }
 .content ul ul {
     margin: 10px 0 10px 25px;
@@ -79,19 +81,42 @@
     margin: 10px 0 10px 25px;
 }
 .content li {
-    margin-bottom: 5px;
+    position: relative;
+    margin-bottom: -1px;
+}
+.content li:before {
+    position: absolute;
+    top: 5px;
+    left: -14px;
+    width: 5px;
+    height: 5px;
+    background: #007ab5;
+    border-radius: 50%;
+    content:'';
+}
+.content__table {
+    margin-bottom: 31px;
+    padding: 11px 0 11px;
+    border-top: 2px solid #eff4f8;
+    border-bottom: 2px solid #eff4f8;
 }
 .content table {
-    margin-bottom: 15px;
+    width: 100%;
     font-size: 100%;
-    width: auto;
-    border: 1px solid #000;
+    color: #007ab5;
 }
 .content th,
 .content td {
-    border: 1px solid #000;
-    padding: 4px;
+    padding: 2px 0 3px;
     text-align: left;
+}
+.content td:first-child {
+    width: 203px;
+    color: #566e7b;
+}
+.content td + td {
+    border-left: 2px solid #e5eef3;
+    padding-left: 9px;
 }
 .content th {
     font-weight: bold;
@@ -135,4 +160,59 @@
     margin: 10px 0;
     clear: both;
 }
+.content blockquote {
+    position: relative;
+    margin: 0 0 12px;
+    padding: 7px 0 0 71px;
+}
+.content blockquote:before {
+    position: absolute;
+    top: 11px;
+    left: 17px;
+    width: 38px;
+    height: 33px;
+    background: url("../img/blockqoute.png") no-repeat;
+    background-size: contain;
+    content:'';
+}
+.content blockquote b {
+    color: #007ab5;
+    font-family: 'helvetica-medium', sans-serif;
+    font-weight: normal;
+}
 /* ------------ /content ------------ */
+
+@media (min-width: 768px) {
+
+    /* ------------ content ------------ */
+    .content h1 {
+        margin-bottom: 31px;
+        padding-bottom: 13px;
+        font-size: 220%;
+    }
+    .content li:before {
+        left: -8px;
+    }
+    .content__table {
+        margin-bottom: 15px;
+    }
+    .content blockquote {
+        margin-bottom: 32px;
+        padding: 12px 0 0 77px;
+    }
+    .content blockquote:before {
+        left: 27px;
+    }
+    /* ------------ /content ------------ */
+
+}
+
+@media (min-width: 1024px) {
+
+    /* ------------ content ------------ */
+    .content td:first-child {
+        width: 206px;
+    }
+    /* ------------ /content ------------ */
+
+}
