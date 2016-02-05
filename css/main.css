@@ -254,10 +254,9 @@
     vertical-align: middle;
     width: 116px;
     height: 61px;
-    margin-right: 34px;
+    margin-right: 26px;
 }
 .review__game{
-    margin-left: 7px;
     margin-bottom: 19px;
     font-family: "helvetica-light", sans-serif;
 }
@@ -311,7 +310,7 @@
     vertical-align: middle;
     top: -1px;
     width: 147px;
-    height: 17px;
+    height: 18px;
     margin: 0 auto;
     background: url("../img/rating-star.png") repeat-x top left;
     background-size: 29px 18px;
@@ -334,6 +333,25 @@
     height: 34px;
     top: -11px;
     left: -23px;
+}
+.review-slider{
+
+}
+.review-slider__wrap{
+
+}
+.review-slider .swiper-slide{
+    display: inline-block;
+    width: auto !important;
+}
+.review-slider .slider__layout{
+
+}
+.review-slider .slider__item{
+    display: inline-block;
+    color: #738590;
+    font-size: 14px;
+    padding: 14px;
 }
 /* --------------- /review__game --------------- */
 
@@ -796,7 +814,6 @@ a.social-in{
         margin-right: 97px;
     }
     .review__game {
-        margin-left: 17px;
         margin-bottom: 19px;
     }
     .review__country img {
@@ -820,7 +837,7 @@ a.social-in{
         margin-bottom: 0;
         width: 174px;
         top: 29px;
-        right: 5px;
+        right: -21px;
     }
     .review__game>div{
         margin-bottom: 28px;
@@ -835,6 +852,7 @@ a.social-in{
     .review__rating-stars {
         top: -2px;
         margin-right: 34px;
+        height: 18px;
     }
     .review__game>div:after {
         bottom: -9px;
@@ -943,6 +961,7 @@ a.social-in{
         vertical-align: top;
         padding-left: 10px;
         padding-right: 10px;
+        padding-top: 39px;
     }
     .site__aside {
         width: 244px;
@@ -1054,7 +1073,7 @@ a.social-in{
     .review__play {
         width: 174px;
         top: 29px;
-        right: -1px;
+        right: -21px;
         letter-spacing: .4px;
     }
     .review__rating span {
