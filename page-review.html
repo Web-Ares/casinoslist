@@ -9,6 +9,31 @@
 
     <title>Title</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', ''],
+                ['5 stars',     75],
+                ['4 stars',      15],
+                ['3 stars',  1],
+                ['2 stars', 2],
+                ['1 stars',    7]
+            ]);
+
+            var options = {
+                title: 'Rating Distribution'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
 
 </head>
 <body>
@@ -33,7 +58,7 @@
 
 
         <!-- site__content-layout -->
-        <div class="site__content__layout">
+        <div class="site__content-layout">
 
             <!-- breadcrums -->
             <div class="breadcrums">
@@ -90,7 +115,97 @@
             </div>
             <!--/review__game-->
 
+            <!-- review-slider -->
+            <div class="review-slider">
 
+                <div class="swiper-container review-slider__wrap">
+
+                    <!-- swiper-wrapper -->
+                    <div class="swiper-wrapper">
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item item_active" href="#">Casino Information</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item item_active" href="#">Software</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item item_active" href="#">Games</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item item_active" href="#">Casino Player Reviews</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item item_active" href="#">Casino Bonus & Promotion</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+
+                    </div>
+                    <!-- /swiper-wrapper -->
+
+                    <!-- swiper-button-prev -->
+                    <div class="swiper-button-prev button_prev"></div>
+                    <!-- /swiper-button-prev -->
+
+                    <!-- swiper-button-next -->
+                    <div class="swiper-button-next button_next"></div>
+                    <!-- /swiper-button-next -->
+
+                </div>
+            </div>
+            <!-- /review-slider -->
+
+
+            <div id="piechart" style="width: 900px; height: 500px;"></div>
 
         </div>
         <!-- /site__content-layout -->
