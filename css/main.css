@@ -744,6 +744,8 @@ a.social-in{
         width: 734px;
         display: inline-block;
         vertical-align: top;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .site__aside {
         width: 244px;
