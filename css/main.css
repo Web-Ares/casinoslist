@@ -766,6 +766,63 @@ a.social-in{
 }
 /* ------------ /content ------------ */
 
+/* ------------ single-game ------------ */
+.single-game__warning {
+    padding: 12px 10px 7px;
+    margin-bottom: 11px;
+    border: 2px dashed #b50000;
+    background: #f3cccc;
+    color: #bd0031;
+    font-size: 13px;
+    font-family: "helvetica-regular", sans-serif;
+    line-height: 1.24;
+    text-align: center;
+}
+.single-game__warning span {
+    font-family: "helvetica-medium", sans-serif;
+    text-transform: uppercase;
+}
+.single-game__description {
+    margin-bottom: 17px;
+    color: #566e7b;
+    font-size: 14px;
+    line-height: 1.23;
+    font-family: "helvetica-regular", sans-serif;
+}
+.single-game__description-pic {
+    position: relative;
+    padding-bottom: 26%;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: top center;
+}
+.single-game__description-pic:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-image: -moz-linear-gradient( 90deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%);
+    content:'';
+}
+.single-game__title {
+    margin-bottom: 21px;
+    color: #007ab5;
+    font-size: 20px;
+    font-family: "helvetica-bold", sans-serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+.single-game__wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* ------------ /single-game ------------ */
+
 @media (min-width: 768px){
 
     /* --------------- site --------------- */
