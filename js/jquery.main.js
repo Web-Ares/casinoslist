@@ -28,8 +28,11 @@ $(function(){
 
             if (curElem.hasClass('active')) {
                 curElem.removeClass('active');
+                $('menu__btn').removeClass('active_btn');
+
             } else {
                 curElem.addClass('active');
+                $('menu__btn').addClass('active_btn');
             }
 
         }
