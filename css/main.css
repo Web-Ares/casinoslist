@@ -31,18 +31,18 @@ input[type="search"]::-webkit-search-cancel-button {
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
     font-size: 15px;
-    color: #fff;
+    color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
 }
 :-moz-placeholder {
     font-size: 15px;
-    color: #fff;
+    color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
 }
 .placeholder {
     font-size: 15px;
-    color: #fff;
+    color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
 }
@@ -190,6 +190,14 @@ input[type="search"]::-webkit-search-cancel-button {
     display: block;
     margin-bottom: 10px;
 }
+.site__title{
+    font-size: 20px;
+    color: #007ab5;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-family: "helvetica-bold", sans-serif;
+}
 /* --------------- /site --------------- */
 
 /* --------------- btn-up --------------- */
@@ -272,6 +280,31 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 8px 43px 9px;
     font: 15px 'helvetica-light', sans-serif;
 }
+.btn__feedback{
+    display: inline-block;
+    background: #bdc7d3;
+    padding: 7px;
+    width: 144px;
+    font: 14px 'helvetica-light', sans-serif;
+    margin-bottom: 10px;
+    transition: background .3s ease;
+    -webkit-transition: background .3s ease;
+}
+.btn__feedback:hover{
+    background-color: #ffb401;
+}
+.btn__feedback+.active{
+    background-color: #ffb401;
+}
+.btn_submit{
+    position: absolute;
+    width: 166px;
+    right: 1px;
+    bottom: 6px;
+    font-size: 15px;
+    padding-top: 11px;
+    padding-bottom: 9px;
+}
 /* --------------- /btn --------------- */
 
 /* --------------- review__game --------------- */
@@ -280,10 +313,10 @@ input[type="search"]::-webkit-search-cancel-button {
     vertical-align: middle;
     width: 116px;
     height: 61px;
-    margin-right: 26px;
+    margin-right: 25px;
 }
 .review__game{
-    margin-bottom: 19px;
+    margin-bottom: 44px;
     font-family: "helvetica-light", sans-serif;
 }
 .review__game>div{
@@ -361,10 +394,11 @@ input[type="search"]::-webkit-search-cancel-button {
     left: -23px;
 }
 .review-slider{
-
+    position: relative;
+    margin-bottom: 60px;
 }
 .review-slider__wrap{
-
+    padding: 0 22px;
 }
 .review-slider .swiper-slide{
     display: inline-block;
@@ -377,7 +411,115 @@ input[type="search"]::-webkit-search-cancel-button {
     display: inline-block;
     color: #738590;
     font-size: 14px;
-    padding: 14px;
+    padding: 14px 14px 16px 14px;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+}
+.review-slider .slider__item:hover{
+    color: #007ab5;
+}
+.button_prev, .button_next{
+    position: absolute;
+    width: 19px;
+    height: 100%;
+    top: 21px;
+    background-image: url("../img/slider_pagination.png");
+    background-size: 32px 22px;
+    background-color: #fff;
+}
+.button_next{
+    background-position: -13px 11px;
+    right: 0;
+}
+.button_prev{
+    background-position: 0px 11px;
+    left: 0;
+}
+.review-slider .swiper-slide-active .slider__item{
+    color: #007ab5;
+}
+.review-slider .swiper-slide-active{
+    border-bottom: 3px solid #007ab5;
+}
+.review-slider:after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #d6e5ec;
+}
+.review-feedback .site__title{
+    margin-bottom: 11px;
+    border-bottom: 2px solid #d7e4ed;
+    padding-bottom: 16px;
+}
+.review-feedback__logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 197px;
+    height: 57px;
+    margin-right: 25px;
+    margin-bottom: 8px;
+}
+.review-feedback__title{
+    color: #566e7b;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "helvetica-medium", sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 17px;
+    margin-bottom: 21px;
+}
+.review-feedback__descr{
+    color: #657a86;
+    font-size: 15px;
+    font-family: "helvetica-light", sans-serif;
+    letter-spacing: 0.4px;
+    line-height: 17px;
+    margin-bottom: 24px;
+}
+.review-feedback .review__rating-stars{
+    width: 197px;
+    background-size: 40px 26px;
+    margin-left: -4px;
+    height: 30px;
+    margin-bottom: 16px;
+}
+.review-feedback .review__rating-stars>div{
+    height: 32px;
+    background-size: 40px 26px;
+}
+.review-feedback .btn__feedback{
+    margin-right: 7px;
+}
+.review-feedback__btn {
+    margin-bottom: 10px;
+}
+.review-feedback .btn__feedback:nth-child(even){
+    margin-right: 0;
+}
+.review-feedback__form{
+    position: relative;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.review-feedback__form input, .review-feedback__form textarea{
+    display: block;
+    border: 2px solid #007ab5;
+    width: 100%;
+    font-size: 15px;
+    padding: 0 9px;
+}
+.review-feedback__form input{
+    height: 31px;
+    margin-bottom: 21px;
+}
+.review-feedback__form textarea{
+    height: 199px;
+    padding: 3px 9px 3px;
+    margin-bottom: 20px;
 }
 /* --------------- /review__game --------------- */
 
@@ -870,7 +1012,7 @@ a.social-in{
         margin-right: 97px;
     }
     .review__game {
-        margin-bottom: 19px;
+        margin-bottom: 55px;
     }
     .review__country img {
         width: 55px;
@@ -922,6 +1064,33 @@ a.social-in{
         display: inline-block;
         position: relative;
         letter-spacing: 0.3px;
+    }
+    .review-feedback .site__title{
+        font-size: 24px;
+        padding-bottom: 25px;
+        margin-bottom: 21px;
+    }
+    .review-feedback__logo {
+        width: 265px;
+        height: 78px;
+        margin-bottom: 17px;
+    }
+    .review-feedback__title {
+        margin-bottom: 19px;
+    }
+    .review-feedback__descr {
+        margin-bottom: 35px;
+    }
+    .review-feedback .review__rating-stars {
+        margin-left: -8px;
+        margin-bottom: 25px;
+    }
+    .review-feedback .btn__feedback, .review-feedback .btn__feedback:nth-child(even){
+        margin-right: 4px;
+        width: 142px;
+    }
+    .review-feedback__btn{
+        margin-bottom: 30px;
     }
     /* --------------- /review__game --------------- */
 
@@ -1162,6 +1331,30 @@ a.social-in{
     }
     .review__game>div:last-child:after {
         bottom: -17px;
+    }
+    .review-slider .slider__item{
+        font-size: 15px;
+    }
+    .review__game {
+        margin-bottom: 52px;
+    }
+    .review-feedback .site__title {
+        padding-bottom: 27px;
+        border-bottom: 1px solid #d7e4ed;
+    }
+    .review-feedback__descr {
+        margin-bottom: 35px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        word-spacing: -0.2px;
+    }
+    .review-feedback .btn__feedback {
+        margin-right: 7px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+    }
+    .review-feedback .btn__feedback:last-child{
+        margin-right: 0;
     }
     /* --------------- /review --------------- */
 
