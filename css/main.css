@@ -483,14 +483,14 @@ input[type="search"]::-webkit-search-cancel-button {
     line-height: 17px;
     margin-bottom: 24px;
 }
-.review-feedback .review__rating-stars{
+.review-feedback .rating{
     width: 197px;
     background-size: 40px 26px;
     margin-left: -4px;
     height: 30px;
     margin-bottom: 16px;
 }
-.review-feedback .review__rating-stars>div{
+.review-feedback .rating>div{
     height: 32px;
     background-size: 40px 26px;
 }
@@ -1144,7 +1144,7 @@ a.social-in{
     .review-feedback__descr {
         margin-bottom: 35px;
     }
-    .review-feedback .review__rating-stars {
+    .review-feedback .rating {
         margin-left: -8px;
         margin-bottom: 25px;
     }
