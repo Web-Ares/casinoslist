@@ -274,6 +274,26 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 /* --------------- /btn --------------- */
 
+/* ------------ rating ------------ */
+.rating {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    top: -1px;
+    width: 147px;
+    height: 18px;
+    margin: 0 auto;
+    background: url("../img/rating-star.png") repeat-x top left;
+    background-size: 29px 18px;
+}
+.rating > div {
+    background: url("../img/rating-star-color.png") repeat-x top left;
+    height: 100%;
+    width: 18px;
+    background-size: 29px 18px;
+}
+/* ------------ /rating ------------ */
+
 /* --------------- review__game --------------- */
 .review__game-logo{
     display: inline-block;
@@ -329,23 +349,6 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 14px;
     color: #566e7b;
     margin-right: 24px;
-}
-.review__rating-stars {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    top: -1px;
-    width: 147px;
-    height: 18px;
-    margin: 0 auto;
-    background: url("../img/rating-star.png") repeat-x top left;
-    background-size: 29px 18px;
-}
-.review__rating-stars>div {
-    background: url("../img/rating-star-color.png") repeat-x top left;
-    height: 18px;
-    width: 18px;
-    background-size: 29px 18px;
 }
 .review__views{
     display: none;
@@ -920,6 +923,14 @@ a.social-in{
     }
     /* --------------- /breadcrums --------------- */
 
+    /* ------------ rating ------------ */
+    .rating {
+        top: -2px;
+        margin-right: 34px;
+        height: 18px;
+    }
+    /* ------------ /rating ------------ */
+
     /* --------------- review__game --------------- */
     .review__game-logo{
         width: 184px;
@@ -961,11 +972,6 @@ a.social-in{
     .review__rating span {
         font-size: 15px;
         margin-right: 16px;
-    }
-    .review__rating-stars {
-        top: -2px;
-        margin-right: 34px;
-        height: 18px;
     }
     .review__game>div:after {
         bottom: -9px;
@@ -1083,6 +1089,15 @@ a.social-in{
 }
 
 @media (min-width: 1024px){
+
+    /* ------------ rating ------------ */
+    .rating {
+        top: -3px;
+        margin-right: 34px;
+        height: 18px;
+    }
+    /* ------------ /rating ------------ */
+
     /* --------------- site --------------- */
     .site__content {
         width: 1000px;
@@ -1211,11 +1226,6 @@ a.social-in{
     .review__rating span {
         margin-right: 13px;
         letter-spacing: .4px;
-    }
-    .review__rating-stars {
-        top: -3px;
-        margin-right: 34px;
-        height: 18px;
     }
     .review__game>div:last-child:after {
         bottom: -17px;
