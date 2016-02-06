@@ -1042,6 +1042,47 @@ a.social-in{
 }
 /* ------------ /single-game ------------ */
 
+/* --------------- packages --------------- */
+.packages{
+    color: #566e7b;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: "helvetica-light", sans-serif;
+    padding: 0 22px;
+}
+.packages__head{
+    display: none;
+    color: #a7b7c5;
+}
+.packages__content .packages__head{
+
+}
+.packages__content-deposit{
+    color: #007ab5;
+}
+.packages__content-code{
+    font-family: "helvetica-bold", sans-serif;
+    color: #b50000;
+}
+.packages__content-items{
+    padding: 8px 0;
+    border-bottom: 1px solid #d7e4ed;
+}
+.packages__content-items>div{
+    padding: 8px 0;
+}
+.packages__content-items>div>div{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+}
+.packages__content-items>div>div:first-child{
+    width: 36.6%;
+    padding: 0 10px 0 0;
+}
+/* --------------- /packages --------------- */
+
+
 @media (min-width: 768px){
 
     /* --------------- site --------------- */
@@ -1208,6 +1249,55 @@ a.social-in{
         background-position: 3px 10px;
     }
     /* --------------- /search --------------- */
+
+    /* --------------- packages --------------- */
+    .packages__head{
+        display: block;
+    }
+    .packages__content .packages__head{
+        display: none;
+    }
+    .packages__content-items{
+        padding: 37px 0 31px;
+    }
+    .packages__head>div,
+    .packages__content-items>div{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .packages__head>div:nth-child(1),
+    .packages__content-items>div:nth-child(1){
+        width: 15%;
+    }
+    .packages__head>div:nth-child(2),
+    .packages__content-items>div:nth-child(2){
+        width: 11%;
+    }
+    .packages__head>div:nth-child(3),
+    .packages__content-items>div:nth-child(3){
+        width: 13%;
+    }
+    .packages__head>div:nth-child(4),
+    .packages__content-items>div:nth-child(4){
+        width: 25%;
+    }
+    .packages__head>div:nth-child(5),
+    .packages__content-items>div:nth-child(5){
+        width: 12.5%;
+    }
+    .packages__head>div:nth-child(6),
+    .packages__content-items>div:nth-child(6){
+        width: 20%;
+    }
+    .packages__content-items>div{
+        padding: 0;
+    }
+    .packages__content-items>div>div{
+        display: block;
+        width: 100%;
+    }
+
+    /* --------------- /packages --------------- */
 
     /* --------------- social --------------- */
     .social a {
