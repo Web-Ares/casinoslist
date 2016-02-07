@@ -17,7 +17,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /*
     main styles
-    version: 15.01.2013
+    version: 07.02.2016
 
     placeholder
 
@@ -56,6 +56,8 @@ input[type="search"]::-webkit-search-cancel-button {
     score
 
     casino-info
+
+    software
 
 */
 
@@ -1560,6 +1562,30 @@ a.social-in{
 }
 /* ------------ /casino-info ------------ */
 
+/* ------------ software ------------ */
+.software .site__title {
+    margin-bottom: 5px;
+}
+.software__wrap {
+    color: #566e7b;
+    font-size: 14px;
+    font-family: "helvetica-light", sans-serif;
+    line-height: 1.25;
+}
+.software__inner > * {
+    margin-bottom: 17px;
+}
+.software__logo {
+    display: inline-block;
+    margin-bottom: 13px;
+}
+.software__logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* ------------ /software ------------ */
+
 
 @media (min-width: 768px){
 
@@ -1997,6 +2023,31 @@ a.social-in{
     }
     /* ------------ /casino-info ------------ */
 
+    /* ------------ software ------------ */
+    .software .site__title {
+        margin-bottom: 15px;
+    }
+    .software__wrap {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .software__wrap:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+    }
+    .software__logo {
+        vertical-align: top;
+        width: 233px;
+        margin: 25px 0 0;
+    }
+    .software__inner {
+        display: inline-block;
+        vertical-align: top;
+        width: calc( 100% - 261px );
+    }
+    /* ------------ /software ------------ */
+
 }
 
 @media (min-width: 1024px){
@@ -2328,5 +2379,15 @@ a.social-in{
         margin-bottom: 20px;
     }
     /* ------------ /casino-info ------------ */
+
+    /* ------------ software ------------ */
+    .software__wrap {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .software__inner > * {
+        margin-bottom: 20px;
+    }
+    /* ------------ /software ------------ */
 
 }
