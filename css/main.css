@@ -2040,6 +2040,11 @@ a.social-in{
         vertical-align: top;
         width: 233px;
         margin: 25px 0 0;
+        -webkit-transition: opacity 0.3s ease;
+        transition: opacity 0.3s ease;
+    }
+    a.software__logo:hover {
+        opacity: 0.8;
     }
     .software__inner {
         display: inline-block;
