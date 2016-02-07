@@ -217,10 +217,10 @@ input[type="search"]::-webkit-search-cancel-button {
     transition: background .3s ease;
 }
 .site__title{
-    padding: 0 0px 23px;
-    margin-bottom: 37px;
+    padding: 0 0px 19px;
+    margin-bottom: 11px;
     border-bottom: 1px solid #dce8ef;
-    font-size: 30px;
+    font-size: 20px;
     color: #007ab5;
     line-height: 23px;
     letter-spacing: 0.6px;
@@ -1259,15 +1259,14 @@ a.social-in{
 
 }
 .contact-us__links {
-    padding: 17px 0px 0;
+    padding: 17px 0 0;
     margin-bottom: 26px;
 }
 .contact-us__links li {
     vertical-align: top;
-    display: inline-block;
-    padding: 0 0 0 82px;
-    margin-right: 98px;
-    margin-bottom: 30px;
+    display: block;
+    padding: 0 0 0 79px;
+    margin-bottom: 46px;
 }
 .contact-us__links a {
     display: inline-block;
@@ -1305,16 +1304,14 @@ a.social-in{
 }
 .contact-us__links a.contact-us__links-mail:before {
     top: -18px;
-    left: -89px;
+    left: -78px;
     width: 49px;
     height: 48px;
     background-position: 100% 0;
 }
 .contact-us__social {
-    display: inline-block;
-    width: 362px;
-    padding: 55px 0 0;
-    border-top: 1px solid #a7b7c5;
+    display: block;
+    margin: -3px 0 20px;
     text-align: justify;
 }
 .contact-us__social:after {
@@ -1332,7 +1329,13 @@ a.social-in{
     width: 50px;
     height: 50px;
     border: 1px solid #a7b7c5;
+    border-radius: 0;
     text-indent: -10000px;
+    -webkit-transition: border-radius .3s ease-in-out;
+    transition: border-radius .3s ease-in-out;
+}
+.contact-us__social a:hover{
+    border-radius: 50%;
 }
 .contact-us__social a:after {
     position: absolute;
@@ -1346,8 +1349,6 @@ a.social-in{
     content: '';
 }
 .contact-us__social a.contact-us__social-google:after {
-    width: 29px;
-    height: 25px;
     width: 30px;
     height: 29px;
     top: 53%;
@@ -1372,11 +1373,9 @@ a.social-in{
     background-position: -131px 0;
 }
 .contact-us__form {
-    vertical-align: top;
-    display: inline-block;
     position: relative;
-    margin: 0 0 0 16px;
-    width: 330px;
+    margin: 0 0 87px;
+    padding: 0 0 552px;
 }
 .contact-us__form input,
 .contact-us__form textarea {
@@ -1396,14 +1395,35 @@ a.social-in{
 }
 .contact-us__form .btn {
     position: relative;
-    left: 6px;
+    left: 5px;
     width: 165px;
     height: 35px;
     padding: 0;
     margin: 0 auto;
     border: none;
 }
+.contact-us__form:after {
+    position: absolute;
+    width: 107px;
+    height: 107px;
+    bottom: 397px;
+    left: 96px;
+    background: url(../img/contact_pic.png) no-repeat;
+    background-size: contain;
+    content: '';
+}
+.contact-us__form:before {
+    position: absolute;
+    width: 397px;
+    height: 344px;
+    bottom: 0;
+    left: 37px;
+    background: url(../img/mail-box.png) no-repeat;
+    background-size: contain;
+    content: '';
+}
 /*----------------/contact-us--------------------*/
+
 /* ------------ score ------------ */
 .score {
     display: inline-block;
@@ -1481,6 +1501,11 @@ a.social-in{
     }
     .site__header-wrap {
         height: 61px;
+    }
+    .site__title{
+        padding: 0 0 23px;
+        margin-bottom: 37px;
+        font-size: 30px;
     }
     /* --------------- /site --------------- */
 
@@ -1827,6 +1852,47 @@ a.social-in{
     }
     /* ------------ /single-game ------------ */
 
+    /*----------------contact-us--------------------*/
+    .contact-us__links {
+        padding: 17px 0 0 26px;
+        margin-bottom: 27px;
+    }
+    .contact-us__links li {
+        vertical-align: top;
+        display: inline-block;
+        padding: 0 0 0 82px;
+        margin-right: 65px;
+        margin-bottom: 30px;
+    }
+    .contact-us__links a.contact-us__links-mail:before {
+        left: -79px;
+    }
+    .contact-us__social {
+        display: inline-block;
+        width: 332px;
+        padding: 55px 0 0;
+        margin: 0 0 0 30px;
+        border-top: 1px solid #a7b7c5;
+    }
+    .contact-us__form {
+        vertical-align: top;
+        display: inline-block;
+        margin: 0 0 268px 28px;
+        padding: 0 0 100px;
+        width: 44%;
+    }
+    .contact-us__form:after {
+        bottom: 212px;
+        left: -168px;
+    }
+    .contact-us__form:before {
+        width: 397px;
+        height: 344px;
+        bottom: -179px;
+        left: -348px;
+    }
+    /*----------------/contact-us--------------------*/
+
 }
 
 @media (min-width: 1024px){
@@ -2117,5 +2183,36 @@ a.social-in{
         top: 23px;
     }
     /* ------------ /single-game ------------ */
+
+    /*----------------contact-us--------------------*/
+    .contact-us__links {
+        padding: 17px 0 0;
+        margin-bottom: 26px;
+    }
+    .contact-us__links li {
+        margin-right: 98px;
+    }
+    .contact-us__links a.contact-us__links-mail:before {
+        left: -89px;
+    }
+    .contact-us__social {
+        width: 362px;
+        margin: 0;
+    }
+    .contact-us__form {
+        margin: 0 0 0 33px;
+        padding: 0 0 280px;
+        width: 330px;
+    }
+    .contact-us__form:after {
+        bottom: 392px;
+        left: -177px;
+    }
+    .contact-us__form:before {
+        width: 430px;
+        bottom: 3px;
+        left: -395px;
+    }
+    /*----------------/contact-us--------------------*/
 
 }
