@@ -367,6 +367,10 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-top: 11px;
     padding-bottom: 9px;
 }
+.btn_player{
+    background: #bdc7d3;
+    margin-left: 4%;
+}
 /* --------------- /btn --------------- */
 
 /* ------------ rating ------------ */
@@ -1208,6 +1212,110 @@ a.social-in{
 }
 /* --------------- /packages --------------- */
 
+/* --------------- /packages --------------- */
+.recomended{
+    font-family: "helvetica-light" , sans-serif;
+}
+.recomended ul{
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 1px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #d7e4ed;
+}
+.recomended ul li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 18px;
+}
+.recomended ul li.recomended__name{
+    width: 50%;
+}
+.recomended ul li.recomended__item{
+    margin-bottom: 15px;
+}
+.recomended ul li.recomended__number{
+    width: 3%;
+    margin-right: 4%;
+    font-family: "helvetica-bold" , sans-serif;
+    color: #566e7b;
+    font-size: 18px;
+
+}
+.recomended__flag{
+    width: 25%;
+    margin-right: 17px;
+}
+.recomended__flag span:first-child{
+    display: inline-block;
+    vertical-align: middle;
+    width:33px;
+    height:33px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.recomended__flag span:last-child{
+    display: inline-block;
+    vertical-align: middle;
+    font-size:15px;
+    color:#a0b1c1;
+    text-transform: uppercase;
+}
+.recomended__name span:first-child{
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 14px;
+    font-size:16px;
+    color: #007ab5;
+    letter-spacing: 0.9px;
+}
+.recomended__name .rating{
+    display: block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    width: 103px;
+    height: 14px;
+    margin: 0 0 0 -4px;
+    background-size: 21px 14px;
+}
+.recomended__name .rating > div {
+    height: 100%;
+    width: 14px;
+    background-size: 21px 14px;
+}
+.recomended ul li.recomended__item,
+.recomended ul li.recomended__play{
+    display: block;
+}
+.recomended ul li.recomended__play {
+    margin-top: 17px;
+}
+.recomended__play a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 47%;
+    padding: 10px 4px 10px 0;
+}
+.recomended__item span:first-child{
+    display: inline-block;
+    vertical-align: middle;
+    width: 36%;
+    margin-left: 6px;
+    color: #a7b7c5;
+}
+.recomended__item span:last-child{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    color: #566e7b;
+    font-size: 15px;
+}
+/* --------------- /packages --------------- */
 
 @media (min-width: 768px){
 
@@ -1485,6 +1593,40 @@ a.social-in{
         margin-bottom: 41px;
     }
     /* ------------ /page-404 ------------ */
+
+    /* ------------ recomended ------------ */
+    .recomended ul {
+        max-width: 733px;
+    }
+    .recomended ul li.recomended__item, .recomended ul li.recomended__play {
+        display: inline-block;
+    }
+    .recomended__item span:first-child {
+        display: none;
+    }
+    .recomended__flag {
+        width: 11%;
+    }
+    .recomended ul li.recomended__name {
+        width: 22%;
+    }
+    .recomended ul li.recomended__item {
+        width: 22%;
+    }
+    .recomended__item span:last-child {
+        width: 100%;
+    }
+    .recomended__play a {
+        width: 100%;
+        margin: 0;
+    }
+    .recomended__play a:first-child{
+        margin-bottom: 3px;
+    }
+
+
+
+    /* ------------ /recomended ------------ */
 
     /* ------------ logo ------------ */
     .logo {
