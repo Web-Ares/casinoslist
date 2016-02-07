@@ -596,6 +596,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .review-rate{
     position: relative;
+    margin-bottom: 30px;
 }
 .review-rate .site__title{
     font-size: 20px;
@@ -609,13 +610,24 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* --------------- review-posts --------------- */
 .review-posts__public{
-
+    color: #bbc3c7;
 }
 .review-posts__public-item{
 
 }
+.review-posts__public-item p{
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
 .review-posts__public-item .rating{
-
+    margin-left: 9px;
+    background-size: 22px 14px;
+    width: 114px;
+}
+.review-posts__public-item .rating div{
+    background-size: 22px 14px;
 }
 .post__title {
     display: block;
@@ -633,6 +645,8 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #566e7b;
     transition: color .3s ease;
     -webkit-transition: color .3s ease;
+    margin-bottom: 31px;
+
 }
 .post__link:hover{
     color: #007ab5;
@@ -650,11 +664,41 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .post__date{
     display: block;
+    font-family: "helvetica-light", sans-serif;
+    font-size: 13px;
+    margin-bottom: 16px;
 }
 .post__avtor{
-
+    font-family: "helvetica-light", sans-serif;
+    letter-spacing: -0.3px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dce8ef;
 }
 .post__read{
+    display: block;
+    position: relative;
+    color: #5899c5;
+    font-size: 15px;
+    font-family: "helvetica-light", sans-serif;
+    border-bottom: 2px solid #dce8ef;
+    padding-bottom: 18px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+.post__avtor strong{
+    font-family: "helvetica-bold", sans-serif;
+}
+.post__read:after{
+    content: '';
+    position: absolute;
+    background-image: url("../img/arrow_read_more.png");
+    width: 23px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    top: 7px;
+    margin-left: 14px;
 
 }
 /* --------------- /review-posts --------------- */
