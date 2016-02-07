@@ -404,6 +404,10 @@ input[type="search"]::-webkit-search-cancel-button {
     padding-top: 11px;
     padding-bottom: 9px;
 }
+.btn_player{
+    background: #bdc7d3;
+    margin-left: 4%;
+}
 .btn_rate{
     width: 131px;
     padding-top: 9px;
@@ -1699,7 +1703,210 @@ a.social-in{
     height: auto;
 }
 /* ------------ /software ------------ */
+/* --------------- recomended --------------- */
+.recomended{
+    font-family: "helvetica-light" , sans-serif;
+}
+.recomended ul{
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 1px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #d7e4ed;
+}
+.recomended ul li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 18px;
+}
+.recomended ul li.recomended__name{
+    width: 50%;
+}
+.recomended ul li.recomended__item{
+    margin-bottom: 15px;
+}
+.recomended ul li.recomended__number{
+    width: 3%;
+    margin-right: 4%;
+    font-family: "helvetica-bold" , sans-serif;
+    color: #566e7b;
+    font-size: 18px;
 
+}
+.recomended__flag{
+    width: 25%;
+    margin-right: 17px;
+}
+.recomended__flag span:first-child{
+    display: inline-block;
+    vertical-align: middle;
+    width:33px;
+    height:33px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.recomended__flag span:last-child{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    font-size: 15px;
+    color: #a0b1c1;
+    text-align: center;
+    text-transform: uppercase;
+}
+.recomended__name span:first-child{
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 14px;
+    font-size:16px;
+    color: #007ab5;
+    letter-spacing: 0.9px;
+}
+.recomended__name .rating{
+    display: block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    width: 103px;
+    height: 14px;
+    margin: 0 0 0 -4px;
+    background-size: 21px 14px;
+}
+.recomended__name .rating > div {
+    height: 100%;
+    width: 14px;
+    background-size: 21px 14px;
+}
+.recomended ul li.recomended__item,
+.recomended ul li.recomended__play{
+    display: block;
+}
+.recomended ul li.recomended__play {
+    margin-top: 17px;
+}
+.recomended__play a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 47%;
+    padding: 10px 4px 10px 0;
+}
+.recomended__item span:first-child{
+    display: inline-block;
+    vertical-align: middle;
+    width: 36%;
+    margin-left: 6px;
+    color: #a7b7c5;
+}
+.recomended__item span:last-child{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    color: #566e7b;
+    font-size: 15px;
+}
+.recomended__title{
+    display: none;
+}
+/* --------------- /recomended --------------- */
+
+/* --------------- rate --------------- */
+.rate ul {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 1px;
+    margin-bottom: 21px;
+    border-bottom: 2px solid #d7e4ed;
+}
+.rate__title{
+    display: none;
+}
+.rate__number{
+    display: inline-block;
+    vertical-align: middle;
+    width: 3%;
+    margin-right: 3%;
+    font-family: "helvetica-bold" , sans-serif;
+    color: #566e7b;
+    font-size: 18px;
+}
+.rate__picture{
+    display: inline-block;
+    vertical-align: middle;
+    width: 115px;
+    height: 73px;
+    margin-right: 3%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rate__name{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin-bottom: 16px;
+}
+.rate__name span{
+    display: block;
+    vertical-align: middle;
+    margin-bottom: 23px;
+    font-size: 16px;
+    color: #007ab5;
+    line-height: 18px;
+    letter-spacing: 0.9px;
+}
+.rate__name .rating {
+    display: block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    width: 103px;
+    height: 14px;
+    margin: 0 0 0 -4px;
+    background-size: 21px 14px;
+}
+.rate__name .rating > div {
+    height: 100%;
+    width: 14px;
+    background-size: 21px 14px;
+}
+.rate__type,
+.rate__software{
+    margin-bottom: 15px;
+}
+.rate__type span:first-child,
+.rate__software span:first-child {
+    display: inline-block;
+    vertical-align: middle;
+    width: 124px;
+    margin-left: 7%;
+    font-size: 15px;
+    color: #a7b7c5;
+}
+.rate__type span:last-child,
+.rate__software span:last-child {
+    display: inline-block;
+    vertical-align: middle;
+    width: 47%;
+    color: #566e7b;
+    font-size: 15px;
+}
+.rate__type{
+
+}
+.rate__play{
+    margin-bottom: 18px;
+}
+.rate__play a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 13px 4px 13px 0;
+}
+/* --------------- /rate --------------- */
 
 @media (min-width: 768px){
 
@@ -1712,7 +1919,7 @@ a.social-in{
 
     /* --------------- site --------------- */
     .site__content-layout {
-        padding: 30px 22px 13px;
+        padding: 30px 0 13px 20px;
     }
     .site__header {
         height: 65px;
@@ -2006,6 +2213,179 @@ a.social-in{
         margin-bottom: 41px;
     }
     /* ------------ /page-404 ------------ */
+
+    /* ------------ recomended ------------ */
+    .recomended ul {
+        display: block;
+        max-width: 100%;
+        padding-bottom: 6px;
+        margin-bottom: 15px;
+    }
+    .recomended ul li.recomended__item, .recomended ul li.recomended__play {
+        display: inline-block;
+    }
+    .recomended__item span:first-child {
+        display: none;
+    }
+    .recomended__flag {
+        width: 7%;
+        margin-right: 5px;
+    }
+    .recomended ul li.recomended__name {
+        width: 18.9%;
+    }
+    .recomended ul li.recomended__item {
+        vertical-align: top;
+        width: 26.5%;
+        line-height: 21px;
+    }
+    .recomended__item span:last-child {
+        width: 100%;
+    }
+    .recomended__play a {
+        width: 100%;
+        margin: 0;
+        padding: 7px 4px 7px 0;
+    }
+    .recomended__play a:first-child{
+        margin-bottom: 6px;
+    }
+
+    .recomended ul li.recomended__number {
+        width: 3.3%;
+        margin-right: 0;
+    }
+    .recomended ul li.recomended_item1 {
+        vertical-align: top;
+        width: 15.7%;
+    }
+    .recomended ul li.recomended_item2 {
+        vertical-align: top;
+        width: 10.4%;
+    }
+    .recomended ul li {
+        margin-bottom: 0;
+    }
+    .recomended ul li.recomended__play {
+        vertical-align: middle;
+        width: 13.8%;
+        margin-top: 0;
+    }
+    .recomended__flag span:first-child {
+        margin-bottom: 5px;
+    }
+    .recomended__flag span:last-child {
+        display: block;
+        width: 32px;
+    }
+    .recomended__name span:first-child {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        margin-bottom: 23px;
+    }
+    .recomended ul.recomended__title li{
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        font-family: "helvetica-light", sans-serif;
+        font-size: 14px;
+        color: #a0b1c1;
+        line-height: 20px;
+    }
+    /* ------------ /recomended ------------ */
+
+    /* --------------- rate --------------- */
+    .rate ul.rate__title {
+        display: block;
+        margin-bottom: 10px;
+    }
+   .rate__title li{
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        font-family: "helvetica-light", sans-serif;
+        font-size: 14px;
+        color: #a0b1c1;
+        line-height: 20px;
+    }
+    .rate ul {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    .rate__play {
+        display: inline-block;
+        vertical-align: middle;
+        width: 13.8%;
+        margin: 0;
+    }
+    .rate__play a {
+        width: 100%;
+        margin: 0;
+        padding: 7px 4px 7px 0;
+    }
+    .rate__name {
+        vertical-align: middle;
+        width: 33%;
+        margin-bottom: 0;
+    }
+    .rate__name span {
+        display: inline-block;
+        vertical-align: middle;
+        width: 46%;
+        margin-bottom: 0;
+    }
+    .rate__name .rating {
+        display: inline-block;
+        vertical-align: middle;
+        top: -1px;
+        width: 102px;
+    }
+    .rate__type span:first-child,
+    .rate__software span:first-child {
+        display: none;
+    }
+    .rate__type span:last-child{
+        width: 100%;
+    }
+    .rate__type,
+    .rate__software {
+        display: inline-block;
+        vertical-align: middle;
+        width: 16%;
+         margin-bottom: 0;
+ }
+    .rate__type{
+        width: 9%;
+    }
+    .rate__software span:last-child {
+        width: 100%;
+    }
+    .rate__title .rate__picture{
+        height: inherit;
+    }
+    .rate__title li span{
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        font-family: "helvetica-light", sans-serif;
+        font-size: 14px;
+        color: #a0b1c1;
+        line-height: 20px;
+    }
+    .rate__title .rate__name span {
+        margin-bottom: 0;
+    }
+    .rate__number {
+        width: 2%;
+        margin-right: 1.8%;
+    }
+    .rate__picture {
+        width: 141px;
+        height: 80px;
+        margin-right: 2%;
+    }
+    /* --------------- /rate --------------- */
 
     /* ------------ logo ------------ */
     .logo {
@@ -2455,6 +2835,27 @@ a.social-in{
         background-position: 16px 13px;
     }
     /* ------------ /search ------------ */
+
+    /* ------------ recomended ------------ */
+    .recomended ul li.recomended_item2 {
+        width: 10.4%;
+    }
+    .recomended ul {
+        margin-bottom: 11px;
+    }
+    /* ------------ /recomended ------------ */
+
+    /* ------------ rate ------------ */
+    .rate__type{
+        width: 8%;
+    }
+    .rate__software {
+        width: 16.8%;
+    }
+    .rate__picture {
+        height: 78px;
+    }
+    /* ------------ /rate ------------ */
 
     /* ------------ logo ------------ */
     .logo {
