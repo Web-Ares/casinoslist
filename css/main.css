@@ -165,6 +165,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .site__aside {
     position: relative;
     width: 100%;
+    background: #fdfdfd;
     padding: 0 11px;
     text-align: left;
 }
@@ -190,14 +191,15 @@ input[type="search"]::-webkit-search-cancel-button {
     border-left: 2px solid #007ab5;
     padding: 15px 17px;
     margin-bottom: 12px;
+    text-transform: uppercase;
 }
 .site__aside ul{
 }
 .site__aside li{
     margin-bottom: 2px;
     padding-left: 19px;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fdfdfd;
+    border-bottom: 2px solid #fdfdfd;
 }
 .site__aside li:hover{
     border-color: #c9d3db;
@@ -229,10 +231,9 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #566e7b;
 }
 .site__aside li.show-expand:hover{
-    border-color:#fff;
+    border-color:#fdfdfd;
     background: #f6f6f6;
 }
-
 .site__aside li.show-expand a:before{
     position: absolute;
     top: 1px;
@@ -682,10 +683,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .menu.active .menu__btn {
     background: #fff;
-}
-a.show-all{
-    position: relative;
-    color:#566e7b;
 }
 .show-all:after{
     position: absolute;
@@ -1218,6 +1215,12 @@ a.social-in{
     .site__content-layout {
         padding: 30px 20px 13px;
     }
+    .site__header {
+        height: 65px;
+    }
+    .site__header-wrap {
+        height: 61px;
+    }
     /* --------------- /site --------------- */
 
     /* --------------- breadcrums --------------- */
@@ -1335,21 +1338,29 @@ a.social-in{
     /* --------------- /site --------------- */
 
     /* --------------- menu --------------- */
-    .menu__btn:before,
-    .menu__btn:after {
-        left: 15px;
-    }
     .menu__wrap {
-        width: 240px;
-        padding-top: 83px;
-        padding-left: 24px;
+        margin-top: 66px;
+    }
+    .menu__btn:before, .menu__btn:after {
+        left: 20px;
+        top: 22px;
+        background-size: 23px 15px;
+    }
+    .menu__btn {
+        width: 56px;
+        height: 66px;
+    }
+    .home {
+        top: 13px;
+        left: 77px;
+        width: 30px;
     }
     /* --------------- /menu --------------- */
 
     /* --------------- search --------------- */
     .search {
-        width: 180px;
-        margin-right: 14px;
+        width: 243px;
+        margin-right: 4px;
     }
     .search:before,
     .search__btn {
@@ -1366,16 +1377,17 @@ a.social-in{
         visibility: visible;
     }
     .search__frame input {
-        height: 39px;
-        font-size: 14px;
+        height: 43px;
+        font-size: 15px;
+        padding: 6px 30px 0 11px;
     }
     .search__frame button {
         top: 9px;
         right: 4px;
-        width: 32px;
-        height: 38px;
-        background-size: 17px 17px;
-        background-position: 3px 10px;
+        width: 34px;
+        height: 40px;
+        background-size: 25px 24px;
+        background-position: 12px 13px;
     }
     /* --------------- /search --------------- */
 
@@ -1474,6 +1486,17 @@ a.social-in{
     }
     /* ------------ /page-404 ------------ */
 
+    /* ------------ logo ------------ */
+    .logo {
+        position: absolute;
+        top: 29px;
+        left: 256px;
+    }
+    .logo img {
+        width: 167px;
+        height: 22px;
+    }
+    /* ------------ /logo ------------ */
 }
 
 @media (min-width: 1024px){
@@ -1504,19 +1527,40 @@ a.social-in{
         vertical-align: top;
         margin-left: 16px;
         margin-bottom: 84px;
-        padding-top: 42px;
+        padding: 49px 3px 0;
+    }
+    .site__aside a {
+        font-size: 15px;
+        color: #0091d7;
+        letter-spacing: 0.1px;
+        line-height: 30px;
+    }
+    .site__aside li {
+        padding-left: 19px;
     }
     .site__aside>div{
-        margin-bottom: 44px;
+        margin-bottom: 29px;
+    }
+    .site__aside>div:first-child{
+        margin-bottom:32px;
     }
     .site__aside div.search{
         margin-bottom: 20px;
     }
     .site__aside h2{
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        font-size: 15px;
+        padding: 13px 17px;
     }
     .site__aside li{
-        margin-bottom: 22px;
+
+    }
+    a.show-all{
+        display: inline-block;
+        position: relative;
+        color:#566e7b;
+        margin-top: 3px;
+        margin-left: 19px;
     }
     .site__aside .site__aside-online ul li{
         font-family: "helvetica-bold", sans-serif;
@@ -1559,6 +1603,18 @@ a.social-in{
         margin-bottom: 26px;
         letter-spacing: .6px;
     }
+    .site__aside ul li{
+        display: block;
+    }
+    .site__aside-search {
+        margin-top: -4px;
+    }
+    .site__aside-search button {
+        top: 6px;
+        right: 18px;
+        width: 20px;
+        height: 37px;
+    }
     .show-all,
     .site__aside-mobile,
     .site__aside-online{
@@ -1571,8 +1627,7 @@ a.social-in{
 
     /* --------------- menu --------------- */
     .menu{
-        left: auto;
-        right: 0;
+        left: 177px;
     }
     .menu__btn{
         display: none;
@@ -1580,7 +1635,8 @@ a.social-in{
     .menu__wrap{
         position: static;
         width: auto;
-        padding-top: 31px;
+        padding-top: 15px;
+        margin-top: 0;
         background: none;
         box-shadow: none;
         visibility: visible;
@@ -1588,14 +1644,16 @@ a.social-in{
     }
     .menu__wrap a{
         display: inline-block;
-        margin-left: 45px;
+        margin-left: 18px;
         letter-spacing: 0;
+        color: #fff;
+        border: none;
     }
     .menu__wrap a span{
         padding-bottom: 34px;
     }
     .menu__wrap a span:after{
-        top: 99%;
+        top: 92%;
         border-bottom-width: 2px;
     }
     .menu__mobile,
@@ -1607,11 +1665,14 @@ a.social-in{
     }
     .menu__wrap a:hover span:after,
     .menu__wrap a.active span:after{
-        box-shadow: 0 0 3px #7ad340;
-        border-bottom-color: #7ad340;
+        box-shadow: 0 0 3px #fff;
+        border-bottom-color: #fff;
     }
     .menu__wrap a span {
-         padding-bottom: 27px;
+        padding-bottom: 11px;
+    }
+    .home {
+        display: none;
     }
     /* --------------- /menu --------------- */
 
@@ -1695,5 +1756,30 @@ a.social-in{
         width: 206px;
     }
     /* ------------ /content ------------ */
+
+    /* ------------ search ------------ */
+    .search {
+        width: 202px;
+        margin-right: 28px;
+    }
+    .search__frame input {
+        height: 39px;
+        padding: 3px 27px 0 0;
+    }
+    .search__frame button {
+        background-size: 21px 20px;
+        background-position: 16px 13px;
+    }
+    /* ------------ /search ------------ */
+
+    /* ------------ logo ------------ */
+    .logo {
+        top: 19px;
+        left: 0;
+    }
+    .logo img {
+        width: 179px;
+    }
+    /* ------------ /logo ------------ */
 
 }
