@@ -1600,12 +1600,10 @@ a.social-in{
     /* ------------ /logo ------------ */
 
     /* ------------ single-game ------------ */
-    .single-game {}
     .single-game__warning {
         padding: 27px 10px 24px;
         margin-bottom: 30px;
     }
-    .single-game__warning span {}
     .single-game__description {
         position: relative;
         margin-bottom: 42px;
@@ -1630,7 +1628,6 @@ a.social-in{
         margin-bottom: 31px;
         font-size: 24px;
     }
-    .single-game__wrap img {}
     .single-game__controls {
         padding-top: 0;
         height: 84px;
@@ -1665,7 +1662,9 @@ a.social-in{
         border-top: none;
         font-size: 18px;
     }
-    .single-game__score .score {margin: -5px 0 0 24px;}
+    .single-game__score .score {
+        margin: -5px 0 0 24px;
+    }
     /* ------------ /single-game ------------ */
 
 }
@@ -1960,7 +1959,6 @@ a.social-in{
     /* ------------ /logo ------------ */
 
     /* ------------ single-game ------------ */
-    .single-game {}
     .single-game__warning {
         display: none;
     }
@@ -1968,12 +1966,9 @@ a.social-in{
         margin-bottom: 42px;
         padding-left: 260px;
     }
-    .single-game__description-pic {}
-    .single-game__description-pic:before {}
     .single-game__title {
         margin-bottom: 29px;
     }
-    .single-game__wrap img {}
     .single-game__controls {
         height: 86px;
     }
@@ -1987,8 +1982,6 @@ a.social-in{
     .single-game__resize {
         top: 23px;
     }
-    .single-game__score {}
-    .single-game__score .score { }
     /* ------------ /single-game ------------ */
 
 }
