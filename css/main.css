@@ -294,7 +294,7 @@ input[type="search"]::-webkit-search-cancel-button {
     position: relative;
     color: #007ab5;
     font-size: 14px;
-    margin: 0 9px 27px;
+    margin: 0 -1px 27px;
     font-family: "helvetica-light", sans-serif;
     letter-spacing: .3px;
 }
@@ -368,6 +368,11 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 15px;
     padding-top: 11px;
     padding-bottom: 9px;
+}
+.btn_rate{
+    width: 131px;
+    padding-top: 9px;
+    padding-bottom: 10px;
 }
 /* --------------- /btn --------------- */
 
@@ -462,7 +467,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .review-slider{
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 37px;
 }
 .review-slider__wrap{
     padding: 0 22px;
@@ -521,6 +526,7 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-bottom: 11px;
     border-bottom: 2px solid #d7e4ed;
     padding-bottom: 16px;
+    font-size: 20px;
 }
 .review-feedback__logo{
     display: inline-block;
@@ -588,7 +594,71 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 3px 9px 3px;
     margin-bottom: 20px;
 }
+.review-rate{
+    position: relative;
+}
+.review-rate .site__title{
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.review-rate .btn_rate{
+
+}
 /* --------------- /review__game --------------- */
+
+/* --------------- review-posts --------------- */
+.review-posts__public{
+
+}
+.review-posts__public-item{
+
+}
+.review-posts__public-item .rating{
+
+}
+.post__title {
+    display: block;
+    font-size: 15px;
+    color: #007ab5;
+    text-transform: uppercase;
+    font-family: "helvetica-bold" , sans-serif;
+    letter-spacing: .4px;
+    margin-bottom: 16px;
+}
+.post__link{
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    color: #566e7b;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+}
+.post__link:hover{
+    color: #007ab5;
+}
+.post__link:after{
+    position: absolute;
+    content: '';
+    background-image: url("../img/posts_arrows.png");
+    right: -39px;
+    top: 1px;
+    width: 25px;
+    height: 23px;
+    background-size: 14px;
+    background-repeat: no-repeat;
+}
+.post__date{
+    display: block;
+}
+.post__avtor{
+
+}
+.post__read{
+
+}
+/* --------------- /review-posts --------------- */
+
 
 /* --------------- menu --------------- */
 .menu{
@@ -1486,7 +1556,7 @@ a.social-in{
 
     /* --------------- breadcrums --------------- */
     .breadcrums{
-        margin-left: 21px;
+        margin-left: -2px;
         font-size: 15px;
         margin-bottom: 29px;
         letter-spacing: 0.1px;
@@ -1583,11 +1653,24 @@ a.social-in{
         margin-bottom: 25px;
     }
     .review-feedback .btn__feedback, .review-feedback .btn__feedback:nth-child(even){
-        margin-right: 4px;
         width: 142px;
+        margin-right: 0;
     }
     .review-feedback__btn{
-        margin-bottom: 30px;
+        margin-bottom: 25px;
+    }
+    .review-rate .site__title{
+        font-size: 24px;
+        padding-bottom: 27px;
+    }
+    .review-rate .btn_rate{
+        position: absolute;
+        right: -19px;
+        top: -6px;
+    }
+    .review-slider{
+        position: relative;
+        margin-bottom: 49px;
     }
     /* --------------- /review__game --------------- */
 
@@ -2025,12 +2108,23 @@ a.social-in{
         word-spacing: -0.2px;
     }
     .review-feedback .btn__feedback {
-        margin-right: 7px;
+        margin-right: 1px;
         padding-top: 7px;
-        padding-bottom: 8px;
+        padding-bottom: 6px;
     }
     .review-feedback .btn__feedback:last-child{
         margin-right: 0;
+    }
+    .review-rate .site__title{
+
+    }
+    .review-rate .btn_rate{
+        right: 0;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    .review-slider{
+        margin-bottom: 49px;
     }
     /* --------------- /review --------------- */
 
@@ -2041,6 +2135,16 @@ a.social-in{
     .btn_compressed{
         padding: 8px 43px 9px;
     }
+    .btn_submit{
+        right: -1px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        bottom: 4px;
+    }
+    .btn_rate{
+
+    }
+
     /* --------------- /btn --------------- */
 
     /* --------------- social --------------- */
