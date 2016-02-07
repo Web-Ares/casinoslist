@@ -218,10 +218,13 @@ input[type="search"]::-webkit-search-cancel-button {
     transition: background .3s ease;
 }
 .site__title{
-    font-size: 20px;
+    padding: 0 0px 23px;
+    margin-bottom: 37px;
+    border-bottom: 1px solid #dce8ef;
+    font-size: 30px;
     color: #007ab5;
     line-height: 23px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
     font-family: "helvetica-bold", sans-serif;
 }
@@ -643,7 +646,7 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-transition: border-bottom-color .3s ease;
 }
 .menu__wrap>a:hover{
-   border-color: #c9d3db;
+    border-color: #c9d3db;
 }
 .menu__btn {
     position: absolute;
@@ -1213,16 +1216,22 @@ a.social-in{
 
 }
 .contact-us__links {
-    margin-bottom: 10px;
+    padding: 17px 0px 0;
+    margin-bottom: 26px;
 }
 .contact-us__links li {
-    display: block;
+    vertical-align: top;
+    display: inline-block;
+    padding: 0 0 0 82px;
+    margin-right: 98px;
     margin-bottom: 30px;
 }
 .contact-us__links a {
     display: inline-block;
     position: relative;
     font-size: 18px;
+    font-family: 'helvetica-light', sans-serif;
+    letter-spacing: 0.4px;
     color: #566e7b;
 }
 .contact-us__links a:after {
@@ -1240,24 +1249,28 @@ a.social-in{
     width: 100%;
 }
 .contact-us__links a:before {
-    top: 0;
+    top: -14px;
     position: absolute;
-    left: -50px;
+    left: -78px;
     background: url(../img/contacts-icon_sprite.png) no-repeat;
     background-size: 110px 47px;
     content: '';
 }
-.contact-us__links a:before {
+.contact-us__links a.contact-us__links-site:before {
     width: 47px;
     height: 46px;
 }
-.contact-us__links a:before {
+.contact-us__links a.contact-us__links-mail:before {
+    top: -18px;
+    left: -89px;
     width: 49px;
     height: 48px;
+    background-position: 100% 0;
 }
 .contact-us__social {
     display: inline-block;
     width: 362px;
+    padding: 55px 0 0;
     border-top: 1px solid #a7b7c5;
     text-align: justify;
 }
@@ -1273,58 +1286,74 @@ a.social-in{
 .contact-us__social a {
     display: block;
     position: relative;
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     border: 1px solid #a7b7c5;
     text-indent: -10000px;
 }
 .contact-us__social a:after {
     position: absolute;
+    top: 50%;
+    left: 50%;
     background: url(../img/social-icon_sprite.png) no-repeat;
     background-size: 155px 31.5px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     content: '';
 }
 .contact-us__social a.contact-us__social-google:after {
     width: 29px;
     height: 25px;
+    width: 30px;
+    height: 29px;
+    top: 53%;
+    left: 60%;
     background-position: 0 0;
 }
-.contact-us__social a.contact-us__social-google:after {
+.contact-us__social a.contact-us__social-facebook:after {
     width: 13px;
     height: 29px;
-    background-position: 0 0;
+    background-position: -47px 0;
 }
-.contact-us__social a.contact-us__social-google:after {
+.contact-us__social a.contact-us__social-twitter:after {
     width: 24px;
     height: 19px;
-    background-position: 0 0;
+    background-position: -91px 0;
 }
-.contact-us__social a.contact-us__social-google:after {
-    width: 22px;
+.contact-us__social a.contact-us__social-pinterest:after {
+    width: 25px;
     height: 29px;
-    background-position: 0 100%;
+    top: 51%;
+    left: 50%;
+    background-position: -131px 0;
 }
 .contact-us__form {
     vertical-align: top;
     display: inline-block;
     position: relative;
+    margin: 0 0 0 16px;
     width: 330px;
 }
 .contact-us__form input,
 .contact-us__form textarea {
     width: 100%;
-    height: 42px;
+    height: 44px;
     margin-bottom: 10px;
-    padding: 0 10px;
+    padding: 0 22px;
     border: 1px solid #d7e4ed;
-    font-size: 16px;
+    font-size: 18px;
     color: #a7b7c5;
 }
 .contact-us__form textarea {
-    height: 128px;
+    height: 130px;
+    padding: 12px 0 0 23px;
+    margin-bottom: 19px;
     overflow: hidden;
 }
 .contact-us__form .btn {
+    position: relative;
+    left: 6px;
     width: 165px;
     height: 35px;
     padding: 0;
@@ -1657,8 +1686,6 @@ a.social-in{
         margin-left: 16px;
         margin-bottom: 84px;
         padding: 49px 3px 0;
-    }
-
     }
     a.show-all{
         display: inline-block;
