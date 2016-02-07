@@ -584,7 +584,7 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #657a86;
     font-size: 15px;
     font-family: "helvetica-light", sans-serif;
-    letter-spacing: 0.4px;
+    letter-spacing: .4px;
     line-height: 17px;
     margin-bottom: 24px;
 }
