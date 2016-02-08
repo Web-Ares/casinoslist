@@ -1737,6 +1737,7 @@ a.social-in{
     height: auto;
 }
 /* ------------ /software ------------ */
+
 /* --------------- recomended --------------- */
 .recomended{
     font-family: "helvetica-light" , sans-serif;
@@ -1746,7 +1747,7 @@ a.social-in{
     position: relative;
     padding-bottom: 1px;
     margin-bottom: 16px;
-    border-bottom: 2px solid #d7e4ed;
+    border-bottom: 1px solid #d7e4ed;
 }
 .recomended ul li{
     display: inline-block;
@@ -1843,6 +1844,7 @@ a.social-in{
 }
 .recomended__title{
     display: none;
+    border-bottom: none !important;
 }
 /* --------------- /recomended --------------- */
 
@@ -1854,10 +1856,11 @@ a.social-in{
     position: relative;
     padding-bottom: 1px;
     margin-bottom: 21px;
-    border-bottom: 2px solid #d7e4ed;
+    border-bottom: 1px solid #d7e4ed;
 }
 .rate__title{
     display: none;
+    border-bottom: none !important;
 }
 .rate__number{
     display: inline-block;
@@ -2072,6 +2075,61 @@ a.social-in{
     background-size: contain;
 }
 /* --------------- /latest-review --------------- */
+
+/* --------------- filter-games --------------- */
+.filter-games{
+    position: relative;
+    text-align: justify;
+    margin: 0 0 20px;
+}
+.filter-games form:after{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    content: '';
+}
+.filter-games>form>div{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 47%;
+}
+.filter-games>form>div:last-child{
+    width: 100%;
+    padding: 7px 0 0;
+}
+.filter-games label{
+    display: block;
+    color: #566e7b;
+    font-size: 15px;
+    line-height: 17px;
+    font-family: "helvetica-light", sans-serif;
+}
+.filter-games input{
+    width: 100%;
+    height: 41px;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #007ab5;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: "helvetica-light", sans-serif;
+}
+.filter-games button{
+    position: absolute;
+    top: 60%;
+    right: 5px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url("../img/serach.png") no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+}
+/* --------------- /filter-games --------------- */
+
 @media (min-width: 768px){
 
     /* --------------- menu --------------- */
@@ -2803,6 +2861,31 @@ a.social-in{
         letter-spacing: .8px;
     }
     /* ------------ /latest-review__menu ------------ */
+
+    /* --------------- filter-games --------------- */
+    .filter-games{
+        position: relative;
+        margin: 0 0 26px;
+    }
+    .filter-games>form>div{
+        display: inline-block;
+        vertical-align: top;
+        width: 29%;
+    }
+    .filter-games>form>div:last-child{
+        width: 31.7%;
+        padding: 0;
+    }
+    .filter-games label{
+        display: inline-block;
+        vertical-align: middle;
+        width: 31%;
+    }
+    .filter-games button{
+        top: 55%;
+        right: 1px;
+    }
+    /* --------------- /filter-games --------------- */
 }
 
 @media (min-width: 1024px){
