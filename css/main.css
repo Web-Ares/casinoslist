@@ -1048,7 +1048,6 @@ a.social-in{
     font-size: 15px;
     line-height: 15px;
     font-family: "helvetica-light", sans-serif;
-    padding: 0 22px;
 }
 .packages__head{
     display: none;
@@ -1061,8 +1060,11 @@ a.social-in{
     color: #007ab5;
 }
 .packages__content-code{
+    max-width: 100%;
+    overflow: hidden;
     font-family: "helvetica-bold", sans-serif;
     color: #b50000;
+    text-overflow: ellipsis;
 }
 .packages__content-items{
     padding: 8px 0;
@@ -1547,5 +1549,35 @@ a.social-in{
         width: 206px;
     }
     /* ------------ /content ------------ */
+
+    /* --------------- packages --------------- */
+    .packages__content-items{
+        padding: 37px 0 32px;
+    }
+    .packages__head>div:nth-child(1),
+    .packages__content-items>div:nth-child(1){
+        width: 15%;
+    }
+    .packages__head>div:nth-child(2),
+    .packages__content-items>div:nth-child(2){
+        width: 11.2%;
+    }
+    .packages__head>div:nth-child(3),
+    .packages__content-items>div:nth-child(3){
+        width: 12.9%;
+    }
+    .packages__head>div:nth-child(4),
+    .packages__content-items>div:nth-child(4){
+        width: 24.8%;
+    }
+    .packages__head>div:nth-child(5),
+    .packages__content-items>div:nth-child(5){
+        width: 12.8%;
+    }
+    .packages__head>div:nth-child(6),
+    .packages__content-items>div:nth-child(6){
+        width: 20%;
+    }
+    /* --------------- /packages --------------- */
 
 }
