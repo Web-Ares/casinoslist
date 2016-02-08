@@ -459,13 +459,13 @@ a.btn_no{
     height: 59px;
 }
 .review__game{
-    margin-bottom: 44px;
+    margin-bottom: 41px;
     font-family: "helvetica-light", sans-serif;
 }
 .review__game>div{
     position: relative;
 }
-.review__game>div:after{
+.review__game>div:before{
     content: '';
     position: absolute;
     height: 1px;
@@ -2213,7 +2213,7 @@ a.social-in{
 
     /* --------------- review__game --------------- */
     .review__game-logo{
-        width: 184px;
+        width: 176px;
         height: 97px;
     }
     .review__game {
@@ -2225,8 +2225,13 @@ a.social-in{
         top: 2px;
         margin-right: 25px;
     }
-    .review__country {
-        margin-right: 63px;
+    .review__game-item{
+        text-align: justify;
+    }
+    .review__game-item:after{
+        display: inline-block;
+        width: 100%;
+        content: '';
     }
     .review__country span {
         max-width: 119px;
@@ -2239,19 +2244,20 @@ a.social-in{
         vertical-align: top;
         width: 174px;
         margin-top: 30px;
+        margin-bottom: 0;
     }
     .review__game>div{
-        margin-bottom: 28px;
+        margin-bottom: 13px;
     }
-    .review__game>div:last-child{
-
+    .review__game>div:last-child:before{
+        bottom: -16px;
     }
     .review__rating span {
         font-size: 15px;
-        margin-right: 16px;
+        margin-right: 12px;
     }
-    .review__game>div:after {
-        bottom: -9px;
+    .review__game>div:before {
+        bottom: 7px;
         left: 4px;
         right: 4px;
     }
@@ -2292,21 +2298,21 @@ a.social-in{
     }
     .review-rate .site__title{
         font-size: 24px;
-        padding-bottom: 27px;
+        padding-bottom: 21px;
     }
     .review-rate .btn_rate{
         position: absolute;
-        right: -19px;
-        top: -6px;
+        right: -13px;
+        top: -1px;
     }
     .review-slider{
         position: relative;
-        margin-bottom: 49px;
+        margin-bottom: 42px;
     }
     .review__game-inner{
         display: inline-block;
         vertical-align: top;
-        width: calc(100% - 184px);
+        width: calc(100% - 228px);
     }
     /* --------------- /review__game --------------- */
 
@@ -3104,9 +3110,14 @@ a.social-in{
 
     /* --------------- review --------------- */
     .review__game-logo {
-        width: 186px;
+        width: 175px;
         height: 99px;
-        margin-right: 98px;
+        margin-right: 0;
+    }
+    .review__game-inner {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 246px);
     }
     .review__country img {
         top: 1px;
@@ -3157,7 +3168,8 @@ a.social-in{
         padding-bottom: 9px;
     }
     .review-slider{
-        margin-bottom: 49px;
+        margin-bottom: 45px;
+
     }
     /* --------------- /review --------------- */
 
