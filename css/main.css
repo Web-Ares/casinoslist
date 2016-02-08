@@ -438,7 +438,7 @@ a.btn_no{
     vertical-align: middle;
     top: -1px;
     width: 147px;
-    height: 18px;
+    height: 20px;
     margin: 0 auto;
     background: url("../img/rating-star.png") repeat-x top left;
     background-size: 29px 18px;
@@ -455,9 +455,8 @@ a.btn_no{
 .review__game-logo{
     display: inline-block;
     vertical-align: middle;
-    width: 116px;
-    height: 61px;
-    margin-right: 25px;
+    width: 111px;
+    height: 59px;
 }
 .review__game{
     margin-bottom: 44px;
@@ -472,8 +471,8 @@ a.btn_no{
     height: 1px;
     background: #d7e4ed;
     bottom: -19px;
-    left: 10px;
-    right: 10px;
+    left: 0;
+    right: 0;
 }
 .review__country{
     display: inline-block;
@@ -487,20 +486,21 @@ a.btn_no{
     border-radius: 40px;
     vertical-align: middle;
     top: -2px;
-    margin-right: 1px;
+    margin-right: 6px;
 }
 .review__country span{
     display: inline-block;
     vertical-align: middle;
-    max-width: 104px;
+    max-width: 94px;
+    text-align: left;
     color: #81919a;
 }
 .review__play{
-    padding: 0 9px 0 5px;
+    padding: 0;
     margin-bottom: 37px;
 }
 .review__rating{
-    margin-left: 4px;
+    letter-spacing: 0.2px;
 }
 .review__rating span{
     font-size: 14px;
@@ -544,6 +544,15 @@ a.btn_no{
 }
 .review-slider .slider__item:hover{
     color: #007ab5;
+}
+.review__game-inner{
+    margin-bottom: -16px;
+    text-align: justify;
+}
+.review__game-inner:after{
+    display: inline-block;
+    width: 100%;
+    content: '';
 }
 .button_prev, .button_next{
     position: absolute;
@@ -2206,7 +2215,6 @@ a.social-in{
     .review__game-logo{
         width: 184px;
         height: 97px;
-        margin-right: 97px;
     }
     .review__game {
         margin-bottom: 55px;
@@ -2225,14 +2233,12 @@ a.social-in{
         font-size: 18px;
         line-height: 22px;
     }
+
     .review__play {
         display: inline-block;
-        position: absolute;
-        padding: 0;
-        margin-bottom: 0;
+        vertical-align: top;
         width: 174px;
-        top: 29px;
-        right: -21px;
+        margin-top: 30px;
     }
     .review__game>div{
         margin-bottom: 28px;
@@ -2296,6 +2302,11 @@ a.social-in{
     .review-slider{
         position: relative;
         margin-bottom: 49px;
+    }
+    .review__game-inner{
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 184px);
     }
     /* --------------- /review__game --------------- */
 
