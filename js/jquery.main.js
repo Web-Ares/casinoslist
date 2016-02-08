@@ -42,7 +42,7 @@ $(function(){
         }
     });
 
-    $( ".popular-last" ).click(function() {
+    $( ".show-expand" ).click(function() {
         $( ".site__aside__popular ul li" ).css('display', 'block');
         $( ".popular-last").css('display', 'none');
         return false;
