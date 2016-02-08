@@ -735,8 +735,8 @@ a.btn_no{
 .post__avtor{
     font-family: "helvetica-light", sans-serif;
     letter-spacing: -0.3px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
+    margin-bottom: 18px;
+    padding-bottom: 13px;
     border-bottom: 1px solid #dce8ef;
 }
 .post__read{
@@ -2147,7 +2147,31 @@ a.social-in{
     background-size: cover;
     text-indent: -99999px;
 }
+
 /* --------------- /filter-games --------------- */
+
+/* --------------- filter-review --------------- */
+.filter-review {
+    margin: 0 0 16px;
+}
+.filter-review label{
+    display: inline-block;
+    margin-right: 10px;
+}
+.filter-review .ares-select{
+    width: calc(100% - 72px);
+}
+.filter-review  .ares-select {
+    height: 43px;
+    border-bottom: 2px solid #007ab5;
+}
+.filter-review .ares-select__popup li {
+    padding: 16px 18px 8px;
+    height: 45px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #d7e4ed;
+}
+/* --------------- /filter-review --------------- */
 
 @media (min-width: 768px){
 
@@ -2336,6 +2360,7 @@ a.social-in{
         line-height: 18px;
     }
     .post__avtor {
+        padding-bottom: 16px;
         margin-bottom: 18px;
     }
     .post__read {
@@ -2949,6 +2974,25 @@ a.social-in{
         right: 1px;
     }
     /* --------------- /filter-games --------------- */
+
+    /* --------------- filter-review --------------- */
+    .filter-review label{
+        width: 58px;
+        margin-right: 0px;
+    }
+    .filter-review>form>div:last-child{
+        width: 100%;
+    }
+    .filter-review .ares-select{
+        width: 177px;
+    }
+    .filter-review .ares-select__item{
+        padding: 14px 0px 0 7px;
+    }
+    .filter-review {
+        margin: 0 0 30px;
+    }
+    /* --------------- /filter-review --------------- */
 }
 
 @media (min-width: 1024px){
@@ -3170,6 +3214,10 @@ a.social-in{
     .review-slider{
         margin-bottom: 45px;
 
+    }
+    .filter-review .ares-select__item {
+        padding: 14px 0px 0 7px;
+        letter-spacing: 0.3px;
     }
     /* --------------- /review --------------- */
 

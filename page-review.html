@@ -10,6 +10,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/select.css" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
     <script>
@@ -231,21 +232,23 @@
                 <!--review-posts__public-->
                 <div class="review-posts__public">
 
-                    <select>
-                        <option value="0">игрок</option>
-                        <option value="1">игла</option>
-                        <option value="2">игра</option>
-                        <option value="3">игроман</option>
-                        <option value="4">игры</option>
-                        <option value="5">игровой</option>
-                        <option value="6">игроленд</option>
-                        <option value="7">игромир</option>
-                        <option value="2014">игромир 2014</option>
-                        <option value="2015">игромир 2015</option>
-                        <option value="10">игрушки</option>
-                        <option value="11">игрушечный</option>
-                        <option value="12">игрушечная</option>
-                    </select>
+                    <!-- filter-review -->
+                    <div class="filter-games filter-review">
+                        <form action="#">
+                            <div>
+                                <label for="most-popular">Sort By:</label>
+                                <select name="most-popular" id="most-popular">
+                                    <option value="0">Most Helpful </option>
+                                    <option value="1">Most Popularl</option>
+                                    <option value="2">Most Popularl</option>
+                                    <option value="3">Most Popularl</option>
+                                    <option value="4">Most Popularl</option>
+                                </select>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!-- /filter-review -->
 
                     <!--review-posts__public-item-->
                     <div class="review-posts__public-item">
