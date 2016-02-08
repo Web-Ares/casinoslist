@@ -655,6 +655,14 @@ a.btn_no{
 .review-rate .btn_rate{
 
 }
+.review-slider__title{
+    display: block;
+    margin-bottom: 10px;
+    font-family: "helvetica-light", sans-serif;
+    color:#a7b7c5;
+    font-size: 15px;
+
+}
 /* --------------- /review__game --------------- */
 
 /* --------------- review-posts --------------- */
@@ -2072,6 +2080,22 @@ a.social-in{
     background-size: contain;
 }
 /* --------------- /latest-review --------------- */
+
+/* --------------- /latest-review --------------- */
+.bonus-type{
+
+}
+.bonus-type__title{
+    display: inline-block;
+    vertical-align: middle;
+    width:90px;
+    margin-bottom: 10px;
+    font-family: "helvetica-light", sans-serif;
+    font-size: 15px;
+    color:#566e7b;
+    line-height: 20px;
+}
+/* --------------- /latest-review --------------- */
 @media (min-width: 768px){
 
     /* --------------- menu --------------- */
@@ -2803,6 +2827,12 @@ a.social-in{
         letter-spacing: .8px;
     }
     /* ------------ /latest-review__menu ------------ */
+
+    /* ------------ bonus-type ------------ */
+    .bonus-type__title {
+        width: 150px;
+    }
+    /* ------------ /bonus-type ------------ */
 }
 
 @media (min-width: 1024px){
