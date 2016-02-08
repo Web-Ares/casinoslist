@@ -69,18 +69,18 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    font-size: 15px;
+
     color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
 }
 :-moz-placeholder {
-    font-size: 15px;
+
     color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
 }
 .placeholder {
-    font-size: 15px;
+
     color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
@@ -2202,6 +2202,34 @@ a.social-in{
     }
     /* --------------- /review__game --------------- */
 
+    /* --------------- review-posts --------------- */
+    .review-posts__public {
+        display: inline-block;
+        color: #bbc3c7;
+        max-width: 465px;
+    }
+    .post__link{
+        margin-bottom: 27px;
+    }
+    .post__date{
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+    .review-posts__public-item p {
+        font-size: 15px;
+        font-family: "helvetica-light", sans-serif;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+    .post__avtor {
+        margin-bottom: 18px;
+    }
+    .post__read {
+        border-bottom: 1px solid #dce8ef;
+        padding-bottom: 24px;
+        margin-bottom: 39px;
+    }
+    /* --------------- /review-posts --------------- */
 
     /* --------------- site --------------- */
     .site__footer-layout {
@@ -2996,6 +3024,28 @@ a.social-in{
         margin-bottom: 49px;
     }
     /* --------------- /review --------------- */
+
+    /* --------------- review-posts --------------- */
+    .post__link {
+        margin-bottom: 28px;
+    }
+    .post__date {
+        letter-spacing: .4px;
+    }
+    .post__avtor {
+        letter-spacing: 0.1px;
+        padding-bottom: 16px;
+    }
+    .review-posts__public-item .rating {
+        margin-left: 6px;
+        background-size: 20px 13px;
+        width: 101px;
+        top: -1px;
+    }
+    .review-posts__public-item .rating div {
+        background-size: 20px 13px;
+    }
+    /* --------------- /review-posts --------------- */
 
     /* --------------- btn --------------- */
     .btn {
