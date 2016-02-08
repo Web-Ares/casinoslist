@@ -1,0 +1,109 @@
+.ares-select{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: #007ab5;
+    width: 100%;
+    height: 41px;
+    background: #fff;
+    border-bottom: 1px solid #007ab5;
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    font-family: "helvetica-light", sans-serif;
+}
+.ares-select.active {
+    border-radius: 6px 6px 0 0;
+}
+.ares-select:after{
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 11px;
+    height: 12px;
+    background: url("../img/select.png") no-repeat;
+    background-size: cover;
+    -webkit-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+.ares-select.active:after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.ares-select__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 11px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    padding: 13px 0px 0 10px;
+}
+.ares-select_mobile select {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 100%;
+    bottom: -1px;
+}
+.ares-select_custom select{
+    position: absolute;
+    left: -100000px;
+}
+.ares-select__popup {
+    position: absolute;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+    background: #fff;
+    z-index: 10;
+    border-top: none;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0.5px 1px 1px 0 rgba( 0, 0, 0, .3);
+}
+.ares-select__popup ul {
+    z-index: 1;
+}
+.ares-select__popup li{
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 8px 18px 8px;
+    font-family: "Lato", sans-serif;
+    height: 40px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+}
+.ares-select__popup li.active {
+    background: #fbfcfd;
+}
+.ares-select__popup .iScrollVerticalScrollbar {
+    position: absolute;
+    width: 7px;
+    top: 0;
+    bottom: 0;
+    background: #ccc;
+    right: 0;
+    z-index: 3;
+    -webkit-transform: translateZ(0);
+}
+.ares-select__popup .iScrollIndicator {
+    background: #aaa;
+}
+@media (min-width: 768px){
+    .ares-select{
+        width: 66%;
+    }
+}
