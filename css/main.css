@@ -1417,11 +1417,11 @@ a.social-in{
     display: none;
     color: #a7b7c5;
 }
-.packages__content .packages__head{
-
-}
 .packages__content-deposit{
     color: #007ab5;
+}
+.packages__content-deposit:hover{
+    text-decoration: underline;
 }
 .packages__content-code{
     max-width: 100%;
