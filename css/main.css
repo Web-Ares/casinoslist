@@ -210,7 +210,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .site__content-layout {
     margin: 0 auto;
-    padding: 18px 10px 12px;
+    padding: 33px 10px 12px;
 }
 .site__aside div{
 
@@ -256,8 +256,8 @@ input[type="search"]::-webkit-search-cancel-button {
     transition: background .3s ease;
 }
 .site__title{
-    padding: 0 0px 19px;
-    margin-bottom: 11px;
+    padding: 0 0px 15px;
+    margin-bottom: 20px;
     border-bottom: 1px solid #dce8ef;
     font-size: 20px;
     color: #007ab5;
@@ -1050,6 +1050,27 @@ a.social-in{
 }
 
 @-webkit-keyframes swing {
+    25% {
+        -webkit-transform: rotate3d(0, 0, 1, 12deg);
+        transform: rotate3d(0, 0, 1, 12deg);
+    }
+
+    50% {
+        -webkit-transform: rotate3d(0, 0, 1, -8deg);
+        transform: rotate3d(0, 0, 1, -8deg);
+    }
+
+    75% {
+        -webkit-transform: rotate3d(0, 0, 1, 4deg);
+        transform: rotate3d(0, 0, 1, 4deg);
+    }
+
+    100% {
+        -webkit-transform: rotate3d(0, 0, 2, 0deg);
+        transform: rotate3d(0, 0, 2, 0deg);
+    }
+}
+@keyframes swing {
     25% {
         -webkit-transform: rotate3d(0, 0, 1, 12deg);
         transform: rotate3d(0, 0, 1, 12deg);
@@ -2062,7 +2083,7 @@ a.social-in{
 
     /* --------------- site --------------- */
     .site__content-layout {
-        padding: 30px 0 13px 20px;
+        padding: 26px 20px 20px;
     }
     .site__header {
         height: 65px;
@@ -2071,8 +2092,8 @@ a.social-in{
         height: 61px;
     }
     .site__title{
-        padding: 0 0 23px;
-        margin-bottom: 37px;
+        padding: 0 0 16px;
+        margin-bottom: 23px;
         font-size: 30px;
         line-height: 34px;
     }
@@ -2807,7 +2828,7 @@ a.social-in{
     .site__content-layout{
         display: inline-block;
         vertical-align: top;
-        padding: 39px 10px 0;
+        padding: 56px 10px 0;
         width: 750px;
         text-align: left;
     }
@@ -3082,7 +3103,7 @@ a.social-in{
     /* ------------ logo ------------ */
     .logo {
         top: 19px;
-        left: 0;
+        left: 10px;
     }
     .logo img {
         width: 179px;
