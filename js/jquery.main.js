@@ -47,6 +47,10 @@ $(function(){
         $( ".popular-last").css('display', 'none');
         return false;
     });
+    
+    $.each( $( '#piechart' ), function(){
+        new Piechart ( $( this ) )
+    } );
 
 } );
 
@@ -106,8 +110,72 @@ var Slider = function (obj) {
     _init();
 };
 
-$(window).on({
-    load: function () {
-        
-    }
-});
+var Piechart = function ( obj ) {
+
+    var _self = this,
+        _obj = obj,
+        _window = $( window),
+        _dataArray = _obj.data( 'chart');
+
+    var _drawChart = function(){
+
+            _self.data = google.visualization.arrayToDataTable([
+
+                ['Task', 'PerCent' ],
+                [ _dataArray.slices[0].title ,  +_dataArray.slices[0].percentage ],
+                [ _dataArray.slices[1].title ,  +_dataArray.slices[1].percentage ],
+                [ _dataArray.slices[2].title ,  +_dataArray.slices[2].percentage ],
+                [ _dataArray.slices[3].title ,  +_dataArray.slices[3].percentage ],
+                [ _dataArray.slices[4].title ,  +_dataArray.slices[4].percentage ]
+
+            ]);
+
+            _self.options = {
+                legend: {
+
+                    position: 'right',
+                    textStyle: {
+                        color: _dataArray.textColor,
+                        fontName: _dataArray.fontName,
+                        fontSize: _dataArray.fontSize
+                    }
+
+                },
+                slices: {
+                    0: { color: _dataArray.slices[0].color },
+                    1: { color: _dataArray.slices[1].color },
+                    2: { color: _dataArray.slices[2].color },
+                    3: { color: _dataArray.slices[3].color },
+                    4: { color: _dataArray.slices[4].color }
+                },
+                pieStartAngle: 270
+            };
+
+            _self.chart = new google.visualization.PieChart( _obj[0] );
+
+            _self.chart.draw( _self.data, _self.options );
+        },
+        _events = function(){
+
+            _window.on({
+                resize: function () {
+
+                    _self.chart.draw( _self.data, _self.options );
+
+                }
+            })
+
+        },
+        _initChart = function(){
+
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(_drawChart);
+
+        },
+        _init = function () {
+            _initChart();
+            _events();
+        };
+
+    _init();
+};

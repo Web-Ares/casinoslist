@@ -667,8 +667,12 @@ a.btn_no{
     padding-bottom: 15px;
     margin-bottom: 20px;
 }
-.review-rate .btn_rate{
-
+.review__diagram-tittle {
+    margin-bottom: 2px;
+    color: #007ab5;
+    font-family: "helvetica-bold", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 .review-slider__title{
     display: block;
@@ -2362,13 +2366,33 @@ a.social-in{
         vertical-align: top;
         width: calc(100% - 228px);
     }
+    .review__diagram {
+        display: inline-block;
+        vertical-align: top;
+        width: 260px;
+    }
+    .review__diagram-tittle {
+        font-size: 18px;
+        font-family: "helvetica-light", sans-serif;
+        text-transform: none;
+        font-weight: normal;
+    }
+    .review-posts {
+        text-align: justify;
+    }
+    .review-posts:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+    }
     /* --------------- /review__game --------------- */
 
     /* --------------- review-posts --------------- */
     .review-posts__public {
         display: inline-block;
+        vertical-align: top;
         color: #bbc3c7;
-        max-width: 465px;
+        width: calc(100% - 265px);
     }
     .post__link{
         margin-bottom: 27px;
