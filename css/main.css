@@ -2367,9 +2367,11 @@ a.social-in{
         width: calc(100% - 228px);
     }
     .review__diagram {
-        display: inline-block;
-        vertical-align: top;
-        width: 260px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 265px;
     }
     .review__diagram-tittle {
         font-size: 18px;
@@ -2378,21 +2380,16 @@ a.social-in{
         font-weight: normal;
     }
     .review-posts {
-        text-align: justify;
-    }
-    .review-posts:after {
-        display: inline-block;
-        width: 100%;
-        content: '';
+        position: relative;
+        padding-left: 256px;
     }
     /* --------------- /review__game --------------- */
 
     /* --------------- review-posts --------------- */
     .review-posts__public {
-        display: inline-block;
-        vertical-align: top;
+        position: relative;
+        z-index: 2;
         color: #bbc3c7;
-        width: calc(100% - 265px);
     }
     .post__link{
         margin-bottom: 27px;
