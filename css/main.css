@@ -69,18 +69,18 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* --------------- placeholder --------------- */
 ::-webkit-input-placeholder {
-    font-size: 15px;
+
     color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
 }
 :-moz-placeholder {
-    font-size: 15px;
+
     color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
 }
 .placeholder {
-    font-size: 15px;
+
     color: #a7b7c5;
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
@@ -269,6 +269,12 @@ input[type="search"]::-webkit-search-cancel-button {
 .site__title_no-border {
     border-bottom: none;
 }
+.site__title_smaller{
+    margin: 0;
+    font-size: 15px;
+    line-height: 18px;
+    border-bottom: none;
+}
 .site__aside li.show-expand a{
     position: relative;
     font-size:18px;
@@ -432,7 +438,7 @@ a.btn_no{
     vertical-align: middle;
     top: -1px;
     width: 147px;
-    height: 18px;
+    height: 20px;
     margin: 0 auto;
     background: url("../img/rating-star.png") repeat-x top left;
     background-size: 29px 18px;
@@ -449,25 +455,24 @@ a.btn_no{
 .review__game-logo{
     display: inline-block;
     vertical-align: middle;
-    width: 116px;
-    height: 61px;
-    margin-right: 25px;
+    width: 111px;
+    height: 59px;
 }
 .review__game{
-    margin-bottom: 44px;
+    margin-bottom: 41px;
     font-family: "helvetica-light", sans-serif;
 }
 .review__game>div{
     position: relative;
 }
-.review__game>div:after{
+.review__game>div:before{
     content: '';
     position: absolute;
     height: 1px;
     background: #d7e4ed;
     bottom: -19px;
-    left: 10px;
-    right: 10px;
+    left: 0;
+    right: 0;
 }
 .review__country{
     display: inline-block;
@@ -481,20 +486,21 @@ a.btn_no{
     border-radius: 40px;
     vertical-align: middle;
     top: -2px;
-    margin-right: 1px;
+    margin-right: 6px;
 }
 .review__country span{
     display: inline-block;
     vertical-align: middle;
-    max-width: 104px;
+    max-width: 94px;
+    text-align: left;
     color: #81919a;
 }
 .review__play{
-    padding: 0 9px 0 5px;
+    padding: 0;
     margin-bottom: 37px;
 }
 .review__rating{
-    margin-left: 4px;
+    letter-spacing: 0.2px;
 }
 .review__rating span{
     font-size: 14px;
@@ -538,6 +544,15 @@ a.btn_no{
 }
 .review-slider .slider__item:hover{
     color: #007ab5;
+}
+.review__game-inner{
+    margin-bottom: -16px;
+    text-align: justify;
+}
+.review__game-inner:after{
+    display: inline-block;
+    width: 100%;
+    content: '';
 }
 .button_prev, .button_next{
     position: absolute;
@@ -728,8 +743,8 @@ a.btn_no{
 .post__avtor{
     font-family: "helvetica-light", sans-serif;
     letter-spacing: -0.3px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
+    margin-bottom: 18px;
+    padding-bottom: 13px;
     border-bottom: 1px solid #dce8ef;
 }
 .post__read{
@@ -1413,16 +1428,17 @@ a.social-in{
     font-size: 15px;
     line-height: 15px;
     font-family: "helvetica-light", sans-serif;
+    margin: 0 0 27px;
 }
 .packages__head{
     display: none;
     color: #a7b7c5;
 }
-.packages__content .packages__head{
-
-}
 .packages__content-deposit{
     color: #007ab5;
+}
+.packages__content-deposit:hover{
+    text-decoration: underline;
 }
 .packages__content-code{
     max-width: 100%;
@@ -1434,6 +1450,9 @@ a.social-in{
 .packages__content-items{
     padding: 8px 0;
     border-bottom: 1px solid #d7e4ed;
+}
+.packages__content-items:first-child{
+    border-top: 1px solid #d7e4ed;
 }
 .packages__content-items>div{
     padding: 8px 0;
@@ -1745,6 +1764,7 @@ a.social-in{
     height: auto;
 }
 /* ------------ /software ------------ */
+
 /* --------------- recomended --------------- */
 .recomended{
     font-family: "helvetica-light" , sans-serif;
@@ -1754,7 +1774,7 @@ a.social-in{
     position: relative;
     padding-bottom: 1px;
     margin-bottom: 16px;
-    border-bottom: 2px solid #d7e4ed;
+    border-bottom: 1px solid #d7e4ed;
 }
 .recomended ul li{
     display: inline-block;
@@ -1851,6 +1871,7 @@ a.social-in{
 }
 .recomended__title{
     display: none;
+    border-bottom: none !important;
 }
 /* --------------- /recomended --------------- */
 
@@ -1862,10 +1883,11 @@ a.social-in{
     position: relative;
     padding-bottom: 1px;
     margin-bottom: 21px;
-    border-bottom: 2px solid #d7e4ed;
+    border-bottom: 1px solid #d7e4ed;
 }
 .rate__title{
     display: none;
+    border-bottom: none !important;
 }
 .rate__number{
     display: inline-block;
@@ -2081,6 +2103,85 @@ a.social-in{
 }
 /* --------------- /latest-review --------------- */
 
+/* --------------- filter-games --------------- */
+.filter-games{
+    position: relative;
+    text-align: justify;
+    margin: 0 0 20px;
+}
+.filter-games form:after{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    content: '';
+}
+.filter-games>form>div{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 47%;
+}
+.filter-games>form>div:last-child{
+    width: 100%;
+    padding: 7px 0 0;
+}
+.filter-games label{
+    display: block;
+    color: #566e7b;
+    font-size: 15px;
+    line-height: 17px;
+    font-family: "helvetica-light", sans-serif;
+}
+.filter-games input{
+    width: 100%;
+    height: 41px;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #007ab5;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: "helvetica-light", sans-serif;
+}
+.filter-games button{
+    position: absolute;
+    top: 60%;
+    right: 5px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url("../img/serach.png") no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+}
+
+/* --------------- /filter-games --------------- */
+
+/* --------------- filter-review --------------- */
+.filter-review {
+    margin: 0 0 16px;
+}
+.filter-review label{
+    display: inline-block;
+    margin-right: 10px;
+}
+.filter-review .ares-select{
+    width: calc(100% - 72px);
+}
+.filter-review  .ares-select {
+    height: 43px;
+    border-bottom: 2px solid #007ab5;
+}
+.filter-review .ares-select__popup li {
+    padding: 16px 18px 8px;
+    height: 45px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #d7e4ed;
+}
+/* --------------- /filter-review --------------- */
+
+
 /* --------------- /latest-review --------------- */
 .bonus-type{
 
@@ -2125,6 +2226,11 @@ a.social-in{
         font-size: 24px;
         margin-bottom: 21px;
     }
+    .site__title_smaller{
+        margin: 0 0 15px;
+        font-size: 20px;
+        line-height: 24px
+    }
     .site__aside {
         padding: 0 20px;
     }
@@ -2155,9 +2261,8 @@ a.social-in{
 
     /* --------------- review__game --------------- */
     .review__game-logo{
-        width: 184px;
+        width: 176px;
         height: 97px;
-        margin-right: 97px;
     }
     .review__game {
         margin-bottom: 55px;
@@ -2168,35 +2273,39 @@ a.social-in{
         top: 2px;
         margin-right: 25px;
     }
-    .review__country {
-        margin-right: 63px;
+    .review__game-item{
+        text-align: justify;
+    }
+    .review__game-item:after{
+        display: inline-block;
+        width: 100%;
+        content: '';
     }
     .review__country span {
         max-width: 119px;
         font-size: 18px;
         line-height: 22px;
     }
+
     .review__play {
         display: inline-block;
-        position: absolute;
-        padding: 0;
-        margin-bottom: 0;
+        vertical-align: top;
         width: 174px;
-        top: 29px;
-        right: -21px;
+        margin-top: 30px;
+        margin-bottom: 0;
     }
     .review__game>div{
-        margin-bottom: 28px;
+        margin-bottom: 13px;
     }
-    .review__game>div:last-child{
-
+    .review__game>div:last-child:before{
+        bottom: -16px;
     }
     .review__rating span {
         font-size: 15px;
-        margin-right: 16px;
+        margin-right: 12px;
     }
-    .review__game>div:after {
-        bottom: -9px;
+    .review__game>div:before {
+        bottom: 7px;
         left: 4px;
         right: 4px;
     }
@@ -2237,19 +2346,53 @@ a.social-in{
     }
     .review-rate .site__title{
         font-size: 24px;
-        padding-bottom: 27px;
+        padding-bottom: 21px;
     }
     .review-rate .btn_rate{
         position: absolute;
-        right: -19px;
-        top: -6px;
+        right: -13px;
+        top: -1px;
     }
     .review-slider{
         position: relative;
-        margin-bottom: 49px;
+        margin-bottom: 42px;
+    }
+    .review__game-inner{
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 228px);
     }
     /* --------------- /review__game --------------- */
 
+    /* --------------- review-posts --------------- */
+    .review-posts__public {
+        display: inline-block;
+        color: #bbc3c7;
+        max-width: 465px;
+    }
+    .post__link{
+        margin-bottom: 27px;
+    }
+    .post__date{
+        font-size: 14px;
+        margin-bottom: 13px;
+    }
+    .review-posts__public-item p {
+        font-size: 15px;
+        font-family: "helvetica-light", sans-serif;
+        letter-spacing: 0.3px;
+        line-height: 18px;
+    }
+    .post__avtor {
+        padding-bottom: 16px;
+        margin-bottom: 18px;
+    }
+    .post__read {
+        border-bottom: 1px solid #dce8ef;
+        padding-bottom: 24px;
+        margin-bottom: 39px;
+    }
+    /* --------------- /review-posts --------------- */
 
     /* --------------- site --------------- */
     .site__footer-layout {
@@ -2320,6 +2463,9 @@ a.social-in{
     }
     .packages__content-items{
         padding: 37px 0 31px;
+    }
+    .packages__content-items:first-child{
+        border-top: none;
     }
     .packages__head>div,
     .packages__content-items>div{
@@ -2828,6 +2974,50 @@ a.social-in{
     }
     /* ------------ /latest-review__menu ------------ */
 
+    /* --------------- filter-games --------------- */
+    .filter-games{
+        position: relative;
+        margin: 0 0 26px;
+    }
+    .filter-games>form>div{
+        display: inline-block;
+        vertical-align: top;
+        width: 29%;
+    }
+    .filter-games>form>div:last-child{
+        width: 31.7%;
+        padding: 0;
+    }
+    .filter-games label{
+        display: inline-block;
+        vertical-align: middle;
+        width: 31%;
+    }
+    .filter-games button{
+        top: 55%;
+        right: 1px;
+    }
+    /* --------------- /filter-games --------------- */
+
+    /* --------------- filter-review --------------- */
+    .filter-review label{
+        width: 58px;
+        margin-right: 0px;
+    }
+    .filter-review>form>div:last-child{
+        width: 100%;
+    }
+    .filter-review .ares-select{
+        width: 177px;
+    }
+    .filter-review .ares-select__item{
+        padding: 14px 0px 0 7px;
+    }
+    .filter-review {
+        margin: 0 0 30px;
+    }
+    /* --------------- /filter-review --------------- */
+
     /* ------------ bonus-type ------------ */
     .bonus-type__title {
         width: 150px;
@@ -2994,9 +3184,14 @@ a.social-in{
 
     /* --------------- review --------------- */
     .review__game-logo {
-        width: 186px;
+        width: 175px;
         height: 99px;
-        margin-right: 98px;
+        margin-right: 0;
+    }
+    .review__game-inner {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 246px);
     }
     .review__country img {
         top: 1px;
@@ -3047,9 +3242,36 @@ a.social-in{
         padding-bottom: 9px;
     }
     .review-slider{
-        margin-bottom: 49px;
+        margin-bottom: 45px;
+
+    }
+    .filter-review .ares-select__item {
+        padding: 14px 0px 0 7px;
+        letter-spacing: 0.3px;
     }
     /* --------------- /review --------------- */
+
+    /* --------------- review-posts --------------- */
+    .post__link {
+        margin-bottom: 28px;
+    }
+    .post__date {
+        letter-spacing: .4px;
+    }
+    .post__avtor {
+        letter-spacing: 0.1px;
+        padding-bottom: 16px;
+    }
+    .review-posts__public-item .rating {
+        margin-left: 6px;
+        background-size: 20px 13px;
+        width: 101px;
+        top: -1px;
+    }
+    .review-posts__public-item .rating div {
+        background-size: 20px 13px;
+    }
+    /* --------------- /review-posts --------------- */
 
     /* --------------- btn --------------- */
     .btn {
