@@ -1,6 +1,6 @@
 $(function(){
 
-    $('.btn-up').on({
+       $('.btn-up').on({
         'click':function(){
             $('html, body').animate({scrollTop: 0}, 600);
         }
@@ -9,6 +9,17 @@ $(function(){
 
     $('.swiper-container').each(function () {
         Slider($(this));
+    });
+
+    $( ".bonus-type__fulter" ).css('display','none');
+
+    $( ".bonus-type__all" ).click(function() {
+        $( ".bonus-type__fulter" ).css('display','block');
+        return false
+    });
+    $( ".bonus-type__cancel" ).click(function() {
+        $( ".bonus-type__fulter" ).css('display','none');
+        return false
     });
 
     $(window).on({
@@ -98,6 +109,19 @@ var Slider = function (obj) {
         });
 
     }
+        if (_obj.hasClass('bonus-type__slider')){
+            var __slider = new Swiper(_obj, {
+                direction: 'vertical',
+                spaceBetween: 0,
+                loop: true,
+                centeredSlides: true,
+                mousewheelControl: true,
+                paginationClickable: true,
+                loopedSlides: 5,
+                slidesPerView:5
+
+            });
+        }
 
     //public properties
 
