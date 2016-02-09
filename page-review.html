@@ -13,30 +13,6 @@
     <link rel="stylesheet" href="css/select.css" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <script>
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-
-            var data = google.visualization.arrayToDataTable([
-                ['Task', ''],
-                ['5 stars',     75],
-                ['4 stars',      15],
-                ['3 stars',  1],
-                ['2 stars', 2],
-                ['1 stars',    7]
-            ]);
-
-            var options = {
-                title: 'Rating Distribution'
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-            chart.draw(data, options);
-        }
-    </script>
-
 </head>
 <body>
 
@@ -58,7 +34,6 @@
 
     <div class="site__content">
 
-
         <!-- site__content-layout -->
         <div class="site__content-layout">
 
@@ -68,7 +43,6 @@
                 <span>Crezy Vegas Casino</span>
             </div>
             <!-- breadcrums -->
-
 
             <div class="review__game">
 
@@ -225,9 +199,50 @@
             <!--review-posts-->
             <div class="review-posts">
                 
-                <!--review-posts__diagram-->
-                <div class="review-posts__diagram"></div>
-                <!--/review-posts__diagram-->
+                <!-- review__diagram -->
+                <div class="review__diagram">
+
+                    <!-- review__diagram-tittle -->
+                    <h2 class="review__diagram-tittle">Rating Distribution</h2>
+                    <!-- /review__diagram-tittle -->
+
+                    <div id="piechart" data-chart='{
+
+                            "textColor": "#566e7b",
+                            "fontName": "helvetica-light",
+                            "fontSize": "15px",
+                            "slices": [
+                                {
+                                    "percentage": "7",
+                                    "color": "#d00946",
+                                    "title": "1 Stars"
+                                },
+                                {
+                                    "percentage": "2",
+                                    "color": "#ed8000",
+                                    "title": "2 Stars"
+                                },
+                                {
+                                    "percentage": "1",
+                                    "color": "#edc900",
+                                    "title": "3 Stars"
+                                },
+                                {
+                                    "percentage": "15",
+                                    "color": "#00c3ed",
+                                    "title": "4 Stars"
+                                },
+                                {
+                                    "percentage": "75",
+                                    "color": "#007ab5",
+                                    "title": "5 Stars"
+                                }
+                            ]
+
+                    }'></div>
+
+                </div>
+                <!--/ review__diagram -->
                 
                 <!--review-posts__public-->
                 <div class="review-posts__public">
@@ -336,8 +351,6 @@
 
             </div>
             <!--/review-posts-->
-
-            <div id="piechart" style="width: 400px; height: 300px;"></div>
 
             <!--review-feedback-->
             <div class="review-feedback">
