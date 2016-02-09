@@ -779,6 +779,55 @@ a.btn_no{
 }
 /* --------------- /review-posts --------------- */
 
+/* --------------- paginator --------------- */
+.paginator{
+    display: block;
+    margin-bottom: 25px;
+    padding: 17px 0 7px;
+    font-size: 15px;
+    font-family: "helvetica-light", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.paginator a, .paginator span {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 6px 0 7px;
+}
+.paginator a{
+    color: #8d9ba3;
+}
+.paginator .paginator__prev, .paginator .paginator__next {
+    position: relative;
+    top: 6px;
+    width: 14px;
+    height: 30px;
+    margin: 0;
+    border-radius: 3px;
+    background-image: url("../img/slider_pagination.png");
+    background-size: 30px;
+    background-position: 0 8px;
+    background-repeat-y: no-repeat;
+}
+.paginator .paginator__next{
+
+}
+.paginator .paginator__prev{
+
+}
+.paginator span {
+    font-size: 16px;
+    font-family: 'helvetica-medium', sans-serif;
+    font-weight: 600;
+    color: #007ab5;
+    text-decoration: underline;
+}
+.paginator__all-pages{
+
+}
+/* --------------- /paginator --------------- */
+
 
 /* --------------- menu --------------- */
 .menu{
