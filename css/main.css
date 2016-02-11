@@ -1394,9 +1394,7 @@ a.social-in{
 /* ------------ /page-404 ------------ */
 
 /* ------------ single-game ------------ */
-.single-game {
-    border-bottom: 2px solid #dae6ee;
-}
+.single-game {margin-bottom: 32px;}
 .single-game__warning {
     padding: 12px 10px 7px;
     margin-bottom: 11px;
@@ -1454,6 +1452,8 @@ a.social-in{
 .single-game__controls {
     position: relative;
     padding-top: 67px;
+    margin-bottom: 17px;
+    border-bottom: 2px solid #dae6ee;
 }
 .single-game__resize,
 .single-game__refresh,
@@ -1913,7 +1913,7 @@ a.social-in{
 }
 .recomended__name a:hover{
     color: #566e7b;
-                    }
+}
 .recomended__name .rating{
     display: block;
     vertical-align: middle;
@@ -2378,6 +2378,35 @@ a.bonus-type__all{
     opacity: .6;
 }
 /* --------------- /bonus-type --------------- */
+
+/* ------------ tags ------------ */
+.tags {
+    position: relative;
+    padding-left: 60px;
+    font-family: "helvetica-light", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.tags dt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 50px;
+    color: #a7b7c5;
+}
+.tags dd {
+    color: #007ab5;
+}
+.tags a {
+    color: #007ab5;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.3s ease;
+    transition: border-bottom 0.3s ease;
+}
+.tags a:hover {
+    border-bottom: 1px solid #007ab5;
+}
+/* ------------ /tags ------------ */
 
 @media (min-width: 768px){
 
@@ -2972,6 +3001,9 @@ a.bonus-type__all{
     /* ------------ /logo ------------ */
 
     /* ------------ single-game ------------ */
+    .single-game {
+        margin-bottom: 51px;
+    }
     .single-game__warning {
         padding: 27px 10px 24px;
         margin-bottom: 30px;
@@ -3002,6 +3034,7 @@ a.bonus-type__all{
     }
     .single-game__controls {
         padding-top: 0;
+        margin-bottom: 39px;
         height: 84px;
         text-align: center;
     }
@@ -3285,6 +3318,14 @@ a.bonus-type__all{
         width: 150px;
     }
     /* ------------ /bonus-type ------------ */
+
+    /* ------------ tags ------------ */
+    .tags {
+        padding-left: 48px;
+        font-size: 15px;
+    }
+    /* ------------ /tags ------------ */
+
 }
 
 @media (min-width: 1024px){
@@ -3657,6 +3698,9 @@ a.bonus-type__all{
     /* ------------ /logo ------------ */
 
     /* ------------ single-game ------------ */
+    .single-game {
+        margin-bottom: 62px;
+    }
     .single-game__warning {
         display: none;
     }
@@ -3669,6 +3713,7 @@ a.bonus-type__all{
     }
     .single-game__controls {
         height: 86px;
+        margin-bottom: 28px;
     }
     .single-game__light {
         top: 19px;
