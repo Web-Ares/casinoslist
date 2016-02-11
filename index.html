@@ -22,81 +22,70 @@
         <!-- site__header -->
         <header class="site__header">
 
-            <!-- site__header-wrap -->
-            <div class="site__header-wrap">
+            <!-- logo -->
+            <h1 class="logo">
+                <img src="img/logo.png" alt="Casinos-list" class="logo__mobile"/>
+            </h1>
+            <!-- /logo -->
 
-                <!-- site__header-layout -->
-                <div class="site__header-layout">
+            <a class="home" href="#"></a>
 
-                    <!-- logo -->
-                    <h1 class="logo">
-                        <img src="img/logo.png" alt="Casinos-list" class="logo__mobile"/>
-                    </h1>
-                    <!-- /logo -->
+            <!-- menu -->
+            <nav class="menu">
 
-                    <a class="home" href="#"></a>
+                <!-- menu__btn -->
+                <button class="menu__btn"></button>
+                <!-- /menu__btn -->
 
-                    <!-- menu -->
-                    <nav class="menu">
+                <!-- menu__wrap -->
+                <div class="menu__wrap">
 
-                        <!-- menu__btn -->
-                        <button class="menu__btn"></button>
-                        <!-- /menu__btn -->
+                    <a href="#" class="active menu__home"><span>HOME</span></a>
+                    <a href="#"><span>Casinos</span></a>
+                    <a href="#"><span>Bonuses</span></a>
+                    <a href="#"><span>Live Dealer</span></a>
+                    <a href="#"><span>Mobile</span></a>
+                    <a href="#"><span>Games</span></a>
+                    <a href="#"><span>Jackpots</span></a>
 
-                        <!-- menu__wrap -->
-                        <div class="menu__wrap">
+                    <ul class="menu__online">
+                        <li><a href="#">New Online  Casinos</a></li>
+                        <li><a href="#">New Deposit Casinos</a></li>
+                        <li><a href="#">USA Online Casinos</a></li>
+                        <li><a href="#">UK Online Casinos</a></li>
+                        <li><a href="#">Ecorga Casinos</a></li>
+                        <li><a href="#">Online Casino Revievs</a></li>
+                    </ul>
 
-                            <a href="#" class="active mobile-style"><span>HOME</span></a>
-                            <a href="#" class=""><span>Casinos</span></a>
-                            <a href="#"><span>Bonuses</span></a>
-                            <a href="#"><span>Live Dealer</span></a>
-                            <a href="#"><span>Mobile</span></a>
-                            <a href="#"><span>Games</span></a>
-                            <a href="#"><span>Jackpots</span></a>
-
-                            <ul class="menu__online">
-                                <li><a href="#">New Online  Casinos</a></li>
-                                <li><a href="#">New Deposit Casinos</a></li>
-                                <li><a href="#">USA Online Casinos</a></li>
-                                <li><a href="#">UK Online Casinos</a></li>
-                                <li><a href="#">Ecorga Casinos</a></li>
-                                <li><a href="#">Online Casino Revievs</a></li>
-                            </ul>
-
-                            <div class="menu__mobile">
-                                <h2>MOBILE</h2>
-                                <ul>
-                                    <li> <a href="#"><span>Android Casinos</span></a></li>
-                                    <li> <a href="#"><span>Iphone Casinos</span></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- /menu__wrap -->
-                    </nav>
-                    <!-- /menu -->
-
-                    <!-- search -->
-                    <div class="search">
-
-                        <!-- search__btn -->
-                        <div class="search__btn"></div>
-                        <!-- /search__btn -->
-
-                        <!-- search__frame -->
-                        <div class="search__frame">
-                            <input type="search" name="search" placeholder="Search..."/>
-                            <button name="find" value="find"></button>
-                        </div>
-                        <!-- /search__frame -->
-
+                    <div class="menu__mobile">
+                        <h2>MOBILE</h2>
+                        <ul>
+                            <li><a href="#"><span>Android Casinos</span></a></li>
+                            <li><a href="#"><span>Iphone Casinos</span></a></li>
+                        </ul>
                     </div>
-                    <!-- /search -->
+
                 </div>
-                <!-- /site__header-layout -->
+                <!-- /menu__wrap -->
+            </nav>
+            <!-- /menu -->
+
+            <!-- search -->
+            <div class="search">
+
+                <!-- search__btn -->
+                <div class="search__btn"></div>
+                <!-- /search__btn -->
+
+                <!-- search__frame -->
+                <form class="search__frame">
+                    <input type="search" name="search" placeholder="Search..."/>
+                    <button type="submit" name="find" value="find"></button>
+                </form>
+                <!-- /search__frame -->
 
             </div>
-            <!-- /site__header-wrap -->
+            <!-- /search -->
 
         </header>
         <!-- /site__header -->
@@ -111,15 +100,19 @@
 
                 <h2 class="site__title">RECOMENDED CASINOS</h2>
 
+                    <!-- recomended__title -->
                     <ul class="recomended__title">
                         <li class="recomended__number">#</li>
                         <li class="recomended__flag">Country</li>
                         <li class="recomended__name">Casino</li>
-                        <li class="recomended__item recomended_item1">Software</li>
-                        <li class="recomended__item">Bonus</li>
-                        <li class="recomended__item recomended_item2">Wagering</li>
+                        <li class="recomended__software">Software</li>
+                        <li class="recomended__wagering">Bonus</li>
+                        <li class="recomended__bonus">Wagering</li>
                     </ul>
-                    <ul>
+                    <!-- /recomended__title -->
+
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             1
                         </li>
@@ -128,20 +121,20 @@
                             <span>USA</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -150,8 +143,10 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
+                    <!-- /recomended__row -->
 
-                    <ul>
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             2
                         </li>
@@ -160,20 +155,20 @@
                             <span>ISR</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -182,7 +177,10 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
-                    <ul>
+                    <!-- /recomended__row -->
+
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             3
                         </li>
@@ -191,20 +189,20 @@
                             <span>UK</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -213,7 +211,10 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
-                    <ul>
+                    <!-- /recomended__row -->
+
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             4
                         </li>
@@ -222,20 +223,20 @@
                             <span>RU</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -244,7 +245,10 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
-                    <ul>
+                    <!-- /recomended__row -->
+
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             5
                         </li>
@@ -253,20 +257,20 @@
                             <span>IE</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -275,6 +279,7 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
+                    <!-- /recomended__row -->
 
                 </div>
                 <!-- /recomended -->
@@ -282,11 +287,11 @@
                 <!-- rate -->
                 <div class="rate">
 
-                    <!-- rate -->
+                    <!-- site__title -->
                     <h2 class="site__title">top rated games</h2>
-                    <!-- rate -->
+                    <!-- /site__title -->
 
-                    <!-- rate -->
+                    <!-- rate__row -->
                     <ul class="rate__title">
 
                         <!-- rate__number -->
@@ -317,9 +322,10 @@
                         <!-- /rate__play -->
 
                     </ul>
-                    <!-- rate -->
+                    <!-- /rate__row -->
 
-                    <ul>
+                    <!-- rate__row -->
+                    <ul class="rate__row">
                         <!-- rate__number -->
                         <li class="rate__number">1</li>
                         <!-- /rate__number -->
@@ -330,7 +336,7 @@
 
                         <!-- rate__name -->
                         <li class="rate__name">
-                            <span>Creature from the Black Lagoon</span>
+                            <a href="#">Creature from the Black Lagoon</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
@@ -362,8 +368,10 @@
                         <!-- /rate__play -->
 
                     </ul>
+                    <!-- /rate__row -->
 
-                    <ul>
+                    <!-- rate__row -->
+                    <ul class="rate__row">
                         <!-- rate__number -->
                         <li class="rate__number">2</li>
                         <!-- /rate__number -->
@@ -374,7 +382,7 @@
 
                         <!-- rate__name -->
                         <li class="rate__name">
-                            <span>Creature from the Black Lagoon</span>
+                            <a href="#">Creature from the Black Lagoon</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
@@ -406,8 +414,10 @@
                         <!-- /rate__play -->
 
                     </ul>
+                    <!-- /rate__row -->
 
-                    <ul>
+                    <!-- rate__row -->
+                    <ul class="rate__row">
                         <!-- rate__number -->
                         <li class="rate__number">3</li>
                         <!-- /rate__number -->
@@ -418,7 +428,7 @@
 
                         <!-- rate__name -->
                         <li class="rate__name">
-                            <span>Creature from the Black Lagoon</span>
+                            <a href="#">Creature from the Black Lagoon</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
@@ -450,8 +460,10 @@
                         <!-- /rate__play -->
 
                     </ul>
+                    <!-- /rate__row -->
 
-                    <ul>
+                    <!-- rate__row -->
+                    <ul class="rate__row">
                         <!-- rate__number -->
                         <li class="rate__number">4</li>
                         <!-- /rate__number -->
@@ -462,7 +474,7 @@
 
                         <!-- rate__name -->
                         <li class="rate__name">
-                            <span>Creature from the Black Lagoon</span>
+                            <a href="#">Creature from the Black Lagoon</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
@@ -494,8 +506,10 @@
                         <!-- /rate__play -->
 
                     </ul>
+                    <!-- /rate__row -->
 
-                    <ul>
+                    <!-- rate__row -->
+                    <ul class="rate__row">
                         <!-- rate__number -->
                         <li class="rate__number">5</li>
                         <!-- /rate__number -->
@@ -506,7 +520,7 @@
 
                         <!-- rate__name -->
                         <li class="rate__name">
-                            <span>Creature from the Black Lagoon</span>
+                            <a href="#">Creature from the Black Lagoon</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
@@ -538,23 +552,29 @@
                         <!-- /rate__play -->
 
                     </ul>
+                    <!-- /rate__row -->
+
                 </div>
                 <!-- /rate -->
 
                 <!-- recomended -->
                 <div class="recomended">
 
-                    <h2 class="site__title">Top No Deposit Casinos</h2>
+                    <h2 class="site__title">Top No Deposit Casino</h2>
 
+                    <!-- recomended__title -->
                     <ul class="recomended__title">
                         <li class="recomended__number">#</li>
                         <li class="recomended__flag">Country</li>
                         <li class="recomended__name">Casino</li>
-                        <li class="recomended__item recomended_item1">Software</li>
-                        <li class="recomended__item">Bonus</li>
-                        <li class="recomended__item recomended_item2">Wagering</li>
+                        <li class="recomended__software">Software</li>
+                        <li class="recomended__wagering">Bonus</li>
+                        <li class="recomended__bonus">Wagering</li>
                     </ul>
-                    <ul>
+                    <!-- /recomended__title -->
+
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             1
                         </li>
@@ -563,20 +583,20 @@
                             <span>USA</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -585,8 +605,10 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
+                    <!-- /recomended__row -->
 
-                    <ul>
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             2
                         </li>
@@ -595,20 +617,20 @@
                             <span>ISR</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -617,7 +639,10 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
-                    <ul>
+                    <!-- /recomended__row -->
+
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             3
                         </li>
@@ -626,20 +651,20 @@
                             <span>UK</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -648,7 +673,10 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
-                    <ul>
+                    <!-- /recomended__row -->
+
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             4
                         </li>
@@ -657,20 +685,20 @@
                             <span>RU</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -679,7 +707,10 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
-                    <ul>
+                    <!-- /recomended__row -->
+
+                    <!-- recomended__row -->
+                    <ul class="recomended__row">
                         <li class="recomended__number">
                             5
                         </li>
@@ -688,20 +719,20 @@
                             <span>IE</span>
                         </li>
                         <li class="recomended__name">
-                            <span>Casino Adrenaline</span>
+                            <a href="#">Casino Adrenaline</a>
                             <div class="rating">
                                 <div style="width: 50%"></div>
                             </div>
                         </li>
-                        <li class="recomended__item recomended_item1">
+                        <li class="recomended__software">
                             <span>Software</span>
                             <span>Micro Gaming</span>
                         </li>
-                        <li class="recomended__item">
+                        <li class="recomended__wagering">
                             <span>Wagering</span>
                             <span>100% First deposin bonus $12 No Deposit Bonus</span>
                         </li>
-                        <li class="recomended__item recomended_item2">
+                        <li class="recomended__bonus">
                             <span>Bonus</span>
                             <span>10xB</span>
                         </li>
@@ -710,6 +741,8 @@
                             <a href="#" class="btn btn_player">Player review</a>
                         </li>
                     </ul>
+                    <!-- /recomended__row -->
+
 
                 </div>
                 <!-- /recomended -->
@@ -836,161 +869,111 @@
             <!-- site__aside -->
             <aside class="site__aside">
 
-                <!-- site__aside-online -->
-                <div class="site__aside-online">
-                    <ul>
-                        <li><a href="#"><span>New Online  Casinos</span></a></li>
-                        <li><a href="#"><span>New Deposit Casinos</span></a></li>
-                        <li><a href="#"><span>USA Online Casinos</span></a></li>
-                        <li><a href="#"><span>UK Online Casinos</span></a></li>
-                        <li><a href="#"><span>Ecorga Casinos</span></a></li>
-                        <li><a href="#"><span>Online Casino Revievs</span></a></li>
-                    </ul>
+                <!-- links links_bold -->
+                <div class="links links_bold">
+                    <a href="#">New Online  Casinos</a>
+                    <a href="#">New Deposit Casinos</a>
+                    <a href="#">USA Online Casinos</a>
+                    <a href="#">UK Online Casinos</a>
+                    <a href="#">Ecorga Casinos</a>
+                    <a href="#">Online Casino Revievs</a>
                 </div>
-                <!-- /site__aside-online -->
+                <!-- /links links_bold -->
 
-                <!-- site__aside-software -->
-                <div class="site__aside-software">
-                    <h2>CASINO SOFTWARE</h2>
-                    <ul>
-                        <li>
-                            <a href="#">Microgaming  Casimos</a>
-                        </li>
-                        <li>
-                            <a href="#">NetEnt Online Casinos</a>
-                        </li>
-                        <li>
-                            <a href="#">Playtech Casinos</a>
-                        </li>
-                        <li>
-                            <a href="#">RTG Casinos</a>
-                        </li>
-                        <li class="show-expand">
-                            <a href="#">Expand</a>
-                        </li>
-                    </ul>
-                    <a class="show-all" href="#">Show all</a>
+                <!-- links -->
+                <div class="links" data-colvisible="3">
+
+                    <!-- links -->
+                    <h2 class="links__title">CASINO SOFTWARE</h2>
+                    <!-- links -->
+
+                    <a class="links__item" href="#">Microgaming  Casimos</a>
+                    <a class="links__item" href="#">NetEnt Online Casinos</a>
+                    <a class="links__item" href="#">Playtech Casinos</a>
+                    <a class="links__item" href="#">RTG Casinos</a>
+
+                    <!-- links -->
+                    <a class="links-expand" href="#"><span>Expand</span></a>
+                    <!-- links -->
+
+                    <!-- links -->
+                    <a class="links-all" href="#"><span>Show all</span></a>
+                    <!-- links -->
+
                 </div>
-                <!-- site__aside-software -->
+                <!-- links -->
 
-                <!-- site__aside-mobile -->
-                <div class="site__aside-mobile">
-                    <h2>MOBILE</h2>
-                    <ul>
-                        <li> <a href="#"><span>Android Casinos</span></a></li>
-                        <li> <a href="#"><span>Iphone Casinos</span></a></li>
-                    </ul>
+                <!-- links links_mobile -->
+                <div class="links links_mobile">
+                    <h2 class="links__title">MOBILE</h2>
+                    <a class="links__item" href="#">Android Casinos</a>
+                    <a class="links__item" href="#">Iphone Casinos</a>
                 </div>
-                <!-- /site__aside-mobile -->
+                <!-- /links links_mobile -->
 
-                <!-- site__aside-methods -->
-                <div class="site__aside-methods">
-                    <h2>FUNDING METHODS</h2>
-                    <ul>
-                        <li>
-                            <a href="#">PayPal</a>
-                        </li>
-                        <li>
-                            <a href="#">NetEnt Online Casinos</a>
-                        </li>
-                        <li>
-                            <a href="#">Visa</a>
-                        </li>
-                        <li>
-                            <a href="#">MasterCard</a>
-                        </li>
-                        <li>
-                            <a href="#">Skrill</a>
-                        </li>
-                        <li>
-                            <a href="#">Neteller</a>
-                        </li>
-                        <li>
-                            <a href="#">Bitcoin</a>
-                        </li>
-                        <li class="show-expand">
-                            <a href="#">Expand</a>
-                        </li>
-                    </ul>
-                    <a class="show-all" href="#">Show all</a>
+                <!-- links -->
+                <div class="links" data-colvisible="5">
+                    <h2 class="links__title">FUNDING METHODS</h2>
+                    <a class="links__item" href="#">PayPal</a>
+                    <a class="links__item" href="#">Visa</a>
+                    <a class="links__item" href="#">MasterCard</a>
+                    <a class="links__item" href="#">Skrill</a>
+                    <a class="links__item" href="#">Neteller</a>
+                    <a class="links__item" href="#">Bitcoin</a>
+
+                    <!-- links -->
+                    <a class="links-expand" href="#"><span>Expand</span></a>
+                    <!-- links -->
+
+                    <!-- links -->
+                    <a class="links-all" href="#"><span>Show all</span></a>
+                    <!-- links -->
+
                 </div>
-                <!--/site__aside-methods -->
+                <!--/links -->
 
-                <!-- site__aside-software -->
-                <div class="site__aside-A-Z">
+                <!-- links -->
+                <div class="links" data-colvisible="9">
 
-                    <h2>A-Z Casinos</h2>
+                    <h2 class="links__title">A-Z Casinos</h2>
+
                     <!-- search -->
-                    <div class="site__aside-search">
-                            <input type="search" name="search" placeholder="Search Casino Game"/>
-                            <button name="find" value="find"></button>
-                    </div>
+                    <form class="site__aside-search">
+                        <input type="search" name="search" placeholder="Search Casino Game"/>
+                        <button type="submit" name="find" value="find"></button>
+                    </form>
                     <!-- /search -->
-                    <ul>
-                        <li>
-                            <a href="#">MicroGaming Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Skil On Net Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">GamesScale Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">1X2Gaming Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">GameOS Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">BetOnSoft Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Novomatic Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Artisticrat Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Play n GO Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Top Game Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Playtech Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Slotland Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">iSoftBet Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Betsoft Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">NetEnt Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">Rival Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">RTG Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">WMS Slots</a>
-                        </li>
-                        <li>
-                            <a href="#">IGT Slots</a>
-                        </li>
-                        <li class="show-expand">
-                            <a href="#">Expand</a>
-                        </li>
-                    </ul>
-                    <a class="show-all" href="#">Show all</a>
+
+                    <a class="links__item" href="#">MicroGaming Slots</a>
+                    <a class="links__item" href="#">Skil On Net Slots</a>
+                    <a class="links__item" href="#">GamesScale Slots</a>
+                    <a class="links__item" href="#">1X2Gaming Slots</a>
+                    <a class="links__item" href="#">GameOS Slots</a>
+                    <a class="links__item" href="#">BetOnSoft Slots</a>
+                    <a class="links__item" href="#">Novomatic Slots</a>
+                    <a class="links__item" href="#">Artisticrat Slots</a>
+                    <a class="links__item" href="#">Play n GO Slots</a>
+                    <a class="links__item" href="#">Top Game Slots</a>
+                    <a class="links__item" href="#">Playtech Slots</a>
+                    <a class="links__item" href="#">Slotland Slots</a>
+                    <a class="links__item" href="#">iSoftBet Slots</a>
+                    <a class="links__item" href="#">Betsoft Slots</a>
+                    <a class="links__item" href="#">NetEnt Slots</a>
+                    <a class="links__item" href="#">Rival Slots</a>
+                    <a class="links__item" href="#">RTG Slots</a>
+                    <a class="links__item" href="#">WMS Slots</a>
+                    <a class="links__item" href="#">IGT Slots</a>
+
+                    <!-- links -->
+                    <a class="links-expand" href="#"><span>Expand</span></a>
+                    <!-- links -->
+
+                    <!-- links -->
+                    <a class="links-all" href="#"><span>Show all</span></a>
+                    <!-- links -->
+
                 </div>
-                <!-- site__aside-software -->
+                <!-- /links -->
 
             </aside>
             <!-- /site__aside -->

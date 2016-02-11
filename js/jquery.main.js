@@ -1,14 +1,60 @@
 $(function(){
 
-    $('.btn-up').on({
+    $('.links').each(function(i,elem) {
+        var
+           curCol=this.getAttribute('data-colvisible');
+
+     //       alert(curCol);
+
+    });
+
+    $( ".popular-last" ).click(function() {
+        $( ".site__aside__popular ul li" ).css('display', 'block');
+        $( ".popular-last").css('display', 'none');
+        return false;
+    });
+
+       $('.btn-up').on({
         'click':function(){
             $('html, body').animate({scrollTop: 0}, 600);
+        }
+
+    });
+    var _width=$(window).width();
+
+    $( window ).resize(function() {
+        _width=$(window).width();
+        if ($(".search").hasClass('search_close')) {
+        $(".search__frame").css({
+            "width": _width
+        });
+        }
+    });
+
+    $('.search__btn').on({
+        'click':function(){
+            $(".search__frame").toggleClass('search_visible');
+            $(".search").toggleClass('search_close');
+            $(".search__frame").css({
+                "width": _width
+            });
         }
 
     });
 
     $('.swiper-container').each(function () {
         Slider($(this));
+    });
+
+    $( ".bonus-type__fulter" ).css('display','none');
+
+    $( ".bonus-type__all" ).click(function() {
+        $( ".bonus-type__fulter" ).css('display','block');
+        return false
+    });
+    $( ".bonus-type__cancel" ).click(function() {
+        $( ".bonus-type__fulter" ).css('display','none');
+        return false
     });
 
     $(window).on({
@@ -102,6 +148,19 @@ var Slider = function (obj) {
         });
 
     }
+        if (_obj.hasClass('bonus-type__slider')){
+            var __slider = new Swiper(_obj, {
+                direction: 'vertical',
+                spaceBetween: 0,
+                loop: true,
+                centeredSlides: true,
+                mousewheelControl: true,
+                paginationClickable: true,
+                loopedSlides: 5,
+                slidesPerView:5
+
+            });
+        }
 
     //public properties
 
