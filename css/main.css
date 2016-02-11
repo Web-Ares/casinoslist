@@ -660,7 +660,7 @@ a.btn_no{
 }
 .review-rate{
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 37px;
 }
 .review-rate .site__title{
     font-size: 20px;
@@ -688,9 +688,10 @@ a.btn_no{
 .review-posts__public{
     color: #bbc3c7;
 }
-.review-posts__public-item{
-
+.review-posts__public-item:last-child.post__avtor{
+    margin-bottom: 0;
 }
+
 .review-posts__public-item p{
     font-size: 13px;
     letter-spacing: 0.2px;
@@ -782,14 +783,17 @@ a.btn_no{
 /* --------------- paginator --------------- */
 .paginator{
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 36px;
     padding: 17px 0 7px;
     font-size: 15px;
     font-family: "helvetica-light", sans-serif;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    width: 301px;
+    margin-left: -10px;
 }
+
 .paginator a, .paginator span {
     display: inline-block;
     vertical-align: bottom;
@@ -797,6 +801,11 @@ a.btn_no{
 }
 .paginator a{
     color: #8d9ba3;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+}
+.paginator a:hover{
+    color: #007ab5;
 }
 .paginator .paginator__prev, .paginator .paginator__next {
     position: relative;
@@ -809,9 +818,15 @@ a.btn_no{
     background-size: 30px;
     background-position: 0 8px;
     background-repeat-y: no-repeat;
+    transition: opacity .3s ease;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease;
+}
+.paginator .paginator__prev, .paginator .paginator__next:hover{
+    opacity: .7;
 }
 .paginator .paginator__next{
-
+    background-position: 16px 8px;
 }
 .paginator .paginator__prev{
 
@@ -823,8 +838,9 @@ a.btn_no{
     color: #007ab5;
     text-decoration: underline;
 }
-.paginator__all-pages{
-
+.paginator .paginator__all-pages{
+    margin: 0 2px;
+    letter-spacing: 6px;
 }
 /* --------------- /paginator --------------- */
 
@@ -2391,9 +2407,9 @@ a.social-in{
         margin-bottom: 25px;
     }
     .review-feedback .btn__feedback, .review-feedback .btn__feedback:nth-child(even){
-        width: 142px;
+        width: 138px;
         margin-right: 0;
-    }
+}
     .review-feedback__btn{
         margin-bottom: 25px;
     }
@@ -2874,6 +2890,34 @@ a.social-in{
         margin: -5px 0 0 24px;
     }
     /* ------------ /single-game ------------ */
+
+    /* ------------ paginator ------------ */
+    .paginator{
+        font-size: 21px;
+        width: 500px;
+        margin-left: -23px;
+        margin-bottom: 78px;
+    }
+    .paginator a{
+        margin: 0 9px;
+    }
+    .paginator span{
+        font-size: 21px;
+    }
+
+    .paginator .paginator__next{
+        margin-left: 30px;
+        background-position: 16px 4px;
+    }
+    .paginator .paginator__prev{
+        margin-right: 38px;
+        background-position: 2px 4px;
+    }
+    .paginator .paginator__all-pages {
+        margin: 0 5px;
+        letter-spacing: 8px;
+    }
+    /* ------------ /paginator ------------ */
 
     /*----------------contact-us--------------------*/
     .contact-us__links {
@@ -3577,5 +3621,33 @@ a.social-in{
         width: 20%;
     }
     /* --------------- /packages --------------- */
+
+    /* --------------- paginator --------------- */
+    .paginator{
+        font-size: 18px;
+        margin-left: -17px;
+        margin-bottom: 77px;
+    }
+    .paginator span {
+        font-size: 19px;
+    }
+    .paginator a {
+        margin: 0 4px;
+    }
+    .paginator .paginator__all-pages {
+        margin: 0 1px;
+        letter-spacing: 7px;
+    }
+    .paginator .paginator__next {
+        margin-left: 98px;
+        background-position: 16px 4px;
+        background-size: 27px;
+    }
+    .paginator .paginator__prev {
+        margin-right: 93px;
+        background-position: 2px 4px;
+        background-size: 27px;
+    }
+    /* --------------- /paginator --------------- */
 
 }
