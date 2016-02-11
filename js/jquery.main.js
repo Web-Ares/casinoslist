@@ -1,8 +1,43 @@
 $(function(){
 
+    $('.links').each(function(i,elem) {
+        var
+           curCol=this.getAttribute('data-colvisible');
+
+     //       alert(curCol);
+
+    });
+
+    $( ".popular-last" ).click(function() {
+        $( ".site__aside__popular ul li" ).css('display', 'block');
+        $( ".popular-last").css('display', 'none');
+        return false;
+    });
+
        $('.btn-up').on({
         'click':function(){
             $('html, body').animate({scrollTop: 0}, 600);
+        }
+
+    });
+    var _width=$(window).width();
+
+    $( window ).resize(function() {
+        _width=$(window).width();
+        if ($(".search").hasClass('search_close')) {
+        $(".search__frame").css({
+            "width": _width
+        });
+        }
+    });
+
+    $('.search__btn').on({
+        'click':function(){
+            $(".search__frame").toggleClass('search_visible');
+            $(".search").toggleClass('search_close');
+            $(".search__frame").css({
+                "width": _width
+            });
         }
 
     });

@@ -136,6 +136,18 @@ input[type="search"]::-webkit-search-cancel-button {
     z-index: 1;
     font-family: 'helvetica-regular', sans-serif;
 }
+.site:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 51px;
+    background: #007ab5;
+    border-bottom: 3px solid #00699c;
+    box-shadow: 0 3px 0 #b9daf1;
+}
 .site:after {
     content: '';
     display: block;
@@ -151,17 +163,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .site__header {
     position: relative;
-    height: 57px;
-    background: #007ab5;
     z-index: 3;
-    border-bottom: 3px solid #b9daf1;
-}
-.site__header-wrap{
-    height: 54px;
-    border-bottom: 3px solid #00699c;
-}
-.site__header-layout{
-    position: relative;
+    height: 51px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -211,49 +214,6 @@ input[type="search"]::-webkit-search-cancel-button {
     margin: 0 auto;
     padding: 33px 10px 12px;
 }
-.site__aside div{
-
-}
-.site__aside a{
-    font-size: 17px;
-    color: #0091d7;
-    letter-spacing: -0.1px;
-    line-height: 37px;
-}
-.site__aside h2{
-    background: #f6f6f6;
-    color: #007ab5;
-    font-size: 18px;
-    font-family: "helvetica-bold" , sans-serif;
-    border-left: 3px solid #007ab5;
-    padding: 15px 17px;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-}
-.site__aside ul{
-}
-.site__aside li{
-    margin-bottom: 2px;
-    padding-left: 19px;
-    border-top: 2px solid #fdfdfd;
-    border-bottom: 2px solid #fdfdfd;
-}
-.site__aside li:hover{
-    border-color: #c9d3db;
-}
-.show-all,
-.site__aside-mobile,
-.site__aside-online{
-    display: none;
-}
-.site__aside li.show-expand{
-    display: block;
-    margin: 20px 0 0 0;
-    padding: 2px 31px 0 0;
-    text-align: center;
-    border-top: 4px solid #f6f6f6;
-    transition: background .3s ease;
-}
 .site__title{
     padding: 0 0px 15px;
     margin-bottom: 20px;
@@ -274,20 +234,63 @@ input[type="search"]::-webkit-search-cancel-button {
     line-height: 18px;
     border-bottom: none;
 }
-.site__aside li.show-expand a{
+/* --------------- /site --------------- */
+
+/* --------------- links --------------- */
+.links{
+    display: block;
+}
+.links__title{
+    background: #f6f6f6;
+    color: #007ab5;
+    font-size: 18px;
+    font-family: "helvetica-bold" , sans-serif;
+    border-left: 3px solid #007ab5;
+    padding: 15px 17px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.links a{
+    display: block;
+    font-size: 17px;
+    color: #0091d7;
+    letter-spacing: -0.1px;
+    line-height: 37px;
+    margin-bottom: 2px;
+    padding-left: 19px;
+    border-top: 2px solid #fdfdfd;
+    border-bottom: 2px solid #fdfdfd;
+}
+.links a:hover{
+    border-color: #c9d3db;
+}
+a.links-all,
+.links_mobile,
+.links_bold{
+    display: none;
+}
+a.links-expand{
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 2px 31px 0 0;
+    text-align: center;
+    border-top: 4px solid #f6f6f6;
+    transition: background .3s ease;
+}
+a.links-expand span{
     position: relative;
     font-size:18px;
     color: #566e7b;
     transition: color .3s ease;
 }
-.site__aside li.show-expand:hover{
+a.links-expand:hover{
     border-color:#fdfdfd;
     background: #f6f6f6;
 }
-.site__aside li.show-expand:hover a{
+a.links-expand:hover span{
     color: #0091d7;
 }
-.site__aside li.show-expand a:before{
+a.links-expand span:before{
     position: absolute;
     top: 1px;
     right: -25px;
@@ -297,19 +300,8 @@ input[type="search"]::-webkit-search-cancel-button {
     background: url("../img/expand.png") no-repeat center;
     background-size: contain;
 }
-.site__aside ul li{
-    display: none;
-}
-.site__aside .site__aside-software ul li:nth-child(n+1):nth-child(-n+4) {
-    display: block;
-}
-.site__aside .site__aside-methods ul li:nth-child(n+1):nth-child(-n+6) {
-    display: block;
-}
-.site__aside .site__aside-A-Z ul li:nth-child(n+1):nth-child(-n+9) {
-    display: block;
-}
-/* --------------- /site --------------- */
+
+/* --------------- /links --------------- */
 
 /* --------------- btn-up --------------- */
 .btn-up {
@@ -890,7 +882,7 @@ a.btn_no{
     background: url("../img/home.png") no-repeat center;
     background-size: contain;
 }
-a.mobile-style{
+a.menu__home{
     display: none;
 }
 .menu__online{
@@ -935,10 +927,10 @@ a.mobile-style{
 
 /* --------------- search --------------- */
 .search{
-    float: right;
-    width: 46px;
+    position: absolute;
+    right: 0;
+    width: 40px;
     height: 54px;
-    margin-right: -9px;
     cursor: pointer;
 }
 .search:before{
@@ -952,30 +944,34 @@ a.mobile-style{
     transition: opacity .3s ease;
     -webkit-transition: opacity .3s ease
 }
-.search:hover:before{
-    opacity: 0;
+.search_close:before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 58px;
+    background: url("../img/close.png") no-repeat center;
+    background-size: 14px 14px;
+    opacity: 1;
+    transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease
 }
 .search__btn{
     position: relative;
-    top: -40px;
-    left: 0;
+    top: -58px;
+    left: -13px;
     width: 46px;
     height: 54px;
-    background: url("../img/icons-search-btn1.png") no-repeat center;
-    background-size: contain;
     opacity: 0;
     transition: opacity .3s ease;
     -webkit-transition: opacity .3s ease;
 }
-.search:hover .search__btn{
-    opacity: 1;
-}
 .search__frame{
     position: absolute;
+    width: 320px;
     top: 100%;
-    left: 0;
     right: 0;
     padding: 13px 4px 8px 44px;
+    border-radius: 3px;
     background-color: #007ab5;
     cursor: default;
     opacity: 0;
@@ -983,7 +979,7 @@ a.mobile-style{
     transition: opacity.3s ease, visibility .3s ease;
     -webkit-transition: opacity.3s ease, visibility .3s ease;
 }
-.search:hover .search__frame{
+.search_visible{
     opacity: 1;
     visibility: visible;
 }
@@ -1773,24 +1769,33 @@ a.social-in{
     font-family: "helvetica-light" , sans-serif;
     margin-bottom: 33px;
 }
-.recomended ul{
+.recomended__title,
+.recomended__row{
     position: relative;
     padding-bottom: 1px;
     margin-bottom: 16px;
     border-bottom: 1px solid #d7e4ed;
 }
-.recomended ul li{
+.recomended__number,
+.recomended__flag,
+.recomended__name,
+.recomended__software,
+.recomended__wagering,
+.recomended__bonus,
+.recomended__play{
     display: inline-block;
     vertical-align: middle;
     margin-bottom: 18px;
 }
-.recomended ul li.recomended__name{
+.recomended__name{
     width: 50%;
 }
-.recomended ul li.recomended__item{
+.recomended__bonus,
+.recomended__wagering,
+.recomended__software{
     margin-bottom: 15px;
 }
-.recomended ul li.recomended__number{
+.recomended__number{
     width: 3%;
     margin-right: 4%;
     font-family: "helvetica-bold" , sans-serif;
@@ -1822,14 +1827,20 @@ a.social-in{
     text-align: center;
     text-transform: uppercase;
 }
-.recomended__name span:first-child{
+.recomended__name a{
     display: block;
     vertical-align: middle;
     margin-bottom: 14px;
     font-size:16px;
     color: #007ab5;
     letter-spacing: 0.9px;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -moz-transition: color .3s ease;
 }
+.recomended__name a:hover{
+    color: #566e7b;
+                    }
 .recomended__name .rating{
     display: block;
     vertical-align: middle;
@@ -1845,11 +1856,13 @@ a.social-in{
     width: 14px;
     background-size: 21px 14px;
 }
-.recomended ul li.recomended__item,
-.recomended ul li.recomended__play{
+.recomended__bonus,
+.recomended__wagering,
+.recomended__software,
+.recomended__play{
     display: block;
 }
-.recomended ul li.recomended__play {
+.recomended__play {
     margin-top: 17px;
 }
 .recomended__play a{
@@ -1858,14 +1871,18 @@ a.social-in{
     width: 47%;
     padding: 10px 4px 10px 0;
 }
-.recomended__item span:first-child{
+.recomended__software span:first-child,
+.recomended__wagering span:first-child,
+.recomended__bonus span:first-child{
     display: inline-block;
     vertical-align: middle;
     width: 36%;
     margin-left: 6px;
     color: #a7b7c5;
 }
-.recomended__item span:last-child{
+.recomended__software span:last-child,
+.recomended__wagering span:last-child,
+.recomended__bonus span:last-child{
     display: inline-block;
     vertical-align: middle;
     width: 60%;
@@ -1882,7 +1899,8 @@ a.social-in{
 .rate{
     margin-bottom: 32px;
 }
-.rate ul {
+.rate__title,
+.rate__row {
     position: relative;
     padding-bottom: 1px;
     margin-bottom: 21px;
@@ -1916,14 +1934,20 @@ a.social-in{
     width: 48%;
     margin-bottom: 16px;
 }
-.rate__name span{
+.rate__name a{
     display: block;
     vertical-align: middle;
     margin-bottom: 23px;
     font-size: 16px;
     color: #007ab5;
     line-height: 18px;
-    letter-spacing: 0.9px;
+    letter-spacing: .9px;
+    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+    -moz-transition: color .3s ease;
+}
+.rate__name a:hover{
+    color: #566e7b;
 }
 .rate__name .rating {
     display: block;
@@ -2293,10 +2317,14 @@ a.bonus-type__all{
 
     /* --------------- site --------------- */
     .site__content-layout {
-        padding: 26px 20px 20px;
+        padding: 26px 4px 14px 15px;
+    }
+    .site:before{
+        height: 60px;
     }
     .site__header {
-        height: 65px;
+        height: 60px;
+        margin-bottom: 6px;
     }
     .site__header-wrap {
         height: 61px;
@@ -2508,7 +2536,7 @@ a.bonus-type__all{
     /* --------------- search --------------- */
     .search {
         width: 243px;
-        margin-right: 4px;
+        right: 4px;
     }
     .search:before,
     .search__btn {
@@ -2534,7 +2562,7 @@ a.bonus-type__all{
         right: 4px;
         width: 34px;
         height: 40px;
-        background-size: 25px 24px;
+        background-size: 22px 22px;
         background-position: 12px 13px;
     }
     /* --------------- /search --------------- */
@@ -2638,31 +2666,48 @@ a.bonus-type__all{
     /* ------------ /page-404 ------------ */
 
     /* ------------ recomended ------------ */
-    .recomended ul {
+    .recomended__title,
+    .recomended__row {
         display: block;
         max-width: 100%;
-        padding-bottom: 6px;
-        margin-bottom: 15px;
+        padding-bottom: 7px;
+        margin-bottom: 17px;
     }
-    .recomended ul li.recomended__item, .recomended ul li.recomended__play {
+    .recomended__number,
+    .recomended__flag,
+    .recomended__name,
+    .recomended__software,
+    .recomended__wagering,
+    .recomended__bonus,
+    .recomended__play{
+        margin-bottom: 0;
+    }
+    .recomended__bonus,
+    .recomended__wagering,
+    .recomended__software,
+    .recomended__play {
         display: inline-block;
     }
-    .recomended__item span:first-child {
+    .recomended__software span:first-child,
+    .recomended__wagering span:first-child,
+    .recomended__bonus span:first-child {
         display: none;
     }
     .recomended__flag {
         width: 7%;
         margin-right: 5px;
     }
-    .recomended ul li.recomended__name {
+    .recomended__name {
         width: 18.9%;
     }
-    .recomended ul li.recomended__item {
+    .recomended__wagering {
         vertical-align: top;
         width: 26.5%;
         line-height: 21px;
     }
-    .recomended__item span:last-child {
+    .recomended__software span:last-child,
+    .recomended__wagering span:last-child,
+    .recomended__bonus span:last-child {
         width: 100%;
     }
     .recomended__play a {
@@ -2673,23 +2718,21 @@ a.bonus-type__all{
     .recomended__play a:first-child{
         margin-bottom: 6px;
     }
-
-    .recomended ul li.recomended__number {
+    .recomended__number {
         width: 3.3%;
         margin-right: 0;
     }
-    .recomended ul li.recomended_item1 {
+    .recomended__software {
         vertical-align: top;
         width: 15.7%;
+        line-height: 21px;
     }
-    .recomended ul li.recomended_item2 {
+    .recomended__bonus {
         vertical-align: top;
         width: 10.4%;
+        line-height: 21px;
     }
-    .recomended ul li {
-        margin-bottom: 0;
-    }
-    .recomended ul li.recomended__play {
+    .recomended__play {
         vertical-align: middle;
         width: 13.8%;
         margin-top: 0;
@@ -2701,12 +2744,18 @@ a.bonus-type__all{
         display: block;
         width: 32px;
     }
-    .recomended__name span:first-child {
+    .recomended__name a {
         font-size: 14px;
         letter-spacing: 0.7px;
         margin-bottom: 23px;
     }
-    .recomended ul.recomended__title li{
+    .recomended__title .recomended__number,
+    .recomended__title .recomended__flag,
+    .recomended__title .recomended__name,
+    .recomended__title .recomended__software,
+    .recomended__title .recomended__wagering,
+    .recomended__title .recomended__bonus,
+    .recomended__title .recomended__play{
         display: inline-block;
         vertical-align: middle;
         margin-bottom: 0;
@@ -2714,15 +2763,24 @@ a.bonus-type__all{
         font-size: 14px;
         color: #a0b1c1;
         line-height: 20px;
+    }
+    .recomended__title{
+        display: block;
+        margin-bottom: 14px;
     }
     /* ------------ /recomended ------------ */
 
     /* --------------- rate --------------- */
-    .rate ul.rate__title {
+    .rate__title {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 13px;
     }
-    .rate__title li{
+    .rate__title .rate__number,
+    .rate__title .rate__picture,
+    .rate__title .rate__name,
+    .rate__title .rate__software,
+    .rate__title .rate__type,
+    .rate__title .rate__play{
         display: inline-block;
         vertical-align: middle;
         margin-bottom: 0;
@@ -2731,7 +2789,7 @@ a.bonus-type__all{
         color: #a0b1c1;
         line-height: 20px;
     }
-    .rate ul {
+    .rate__row {
         display: block;
         max-width: 100%;
         margin-bottom: 0;
@@ -2752,7 +2810,8 @@ a.bonus-type__all{
         width: 33%;
         margin-bottom: 0;
     }
-    .rate__name span {
+    .rate__name span,
+    .rate__name a {
         display: inline-block;
         vertical-align: middle;
         width: 46%;
@@ -2787,7 +2846,7 @@ a.bonus-type__all{
     .rate__title .rate__picture{
         height: inherit;
     }
-    .rate__title li span{
+    .rate__title .rate__name a{
         display: inline-block;
         vertical-align: middle;
         margin-bottom: 0;
@@ -2795,9 +2854,6 @@ a.bonus-type__all{
         font-size: 14px;
         color: #a0b1c1;
         line-height: 20px;
-    }
-    .rate__title .rate__name span {
-        margin-bottom: 0;
     }
     .rate__number {
         width: 2%;
@@ -2807,6 +2863,9 @@ a.bonus-type__all{
         width: 141px;
         height: 80px;
         margin-right: 2%;
+    }
+    .rate {
+        margin-bottom: 43px;
     }
     /* --------------- /rate --------------- */
 
@@ -3125,6 +3184,9 @@ a.bonus-type__all{
         width: 1000px;
         text-align: justify;
     }
+    .site:before {
+        height: 59px;
+    }
     .site__content:after {
         display: inline-block;
         width: 100%;
@@ -3142,23 +3204,9 @@ a.bonus-type__all{
         vertical-align: top;
         margin-left: 0;
         margin-bottom: 84px;
-        padding: 49px 3px 0;
+        padding: 48px 3px 0;
         width: 244px;
         text-align: left;
-    }
-    a.show-all{
-        display: inline-block;
-        position: relative;
-        color:#566e7b;
-        margin-top: 3px;
-        margin-left: 19px;
-        transition: color .3s ease;
-    }
-    a.show-all:hover{
-        color: #0091d7;
-    }
-    .site__aside .site__aside-online ul li{
-        font-family: "helvetica-bold", sans-serif;
     }
     .site__content__layout {
         padding-top: 38px;
@@ -3198,9 +3246,6 @@ a.bonus-type__all{
         margin-bottom: 26px;
         letter-spacing: .6px;
     }
-    .site__aside ul li{
-        display: block;
-    }
     .site__aside-search {
         margin-top: -4px;
     }
@@ -3210,19 +3255,61 @@ a.bonus-type__all{
         width: 20px;
         height: 37px;
     }
-    .show-all,
-    .site__aside-mobile,
-    .site__aside-online{
+    /* --------------- /site --------------- */
+
+    /* --------------- links --------------- */
+    .links {
+        margin-bottom: 29px;
+    }
+    .links_bold{
+        margin-bottom: 36px;
+    }
+    a.links-all{
+        display:block;
+        position: relative;
+        color:#566e7b;
+        margin-top: 6px;
+        transition: color .3s ease;
+    }
+    a.links-all:hover{
+        color: #0091d7;
+        border-color: transparent;
+    }
+    a.links-all span{
+        position: relative;
+    }
+    a.links-all span:before {
+        position: absolute;
+        top: -1px;
+        right: -25px;
+        width: 15px;
+        height: 17px;
+        content: "";
+        background: url("../img/posts_arrows.png") no-repeat center;
+        background-size: contain;
+    }
+    .links-all,
+    .links_bold,
+    .links_mobile{
         display: block;
     }
-    .site__aside li.show-expand{
+    a.links-expand{
         display: none;
     }
-    /* --------------- /site --------------- */
+    .links a {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .links__title {
+        font-size: 15px;
+        padding: 13px 17px;
+        margin-bottom: 12px;
+    }
+    /* --------------- /links --------------- */
 
     /* --------------- menu --------------- */
     .menu{
-        left: 177px;
+        left: 185px;
     }
     .menu__btn{
         display: none;
@@ -3408,7 +3495,7 @@ a.bonus-type__all{
     /* ------------ search ------------ */
     .search {
         width: 202px;
-        margin-right: 28px;
+        right: 15px;
     }
     .search__frame input {
         height: 39px;
@@ -3416,16 +3503,16 @@ a.bonus-type__all{
     }
     .search__frame button {
         background-size: 21px 20px;
-        background-position: 16px 13px;
+        background-position: 11px 13px;
     }
     /* ------------ /search ------------ */
 
     /* ------------ recomended ------------ */
-    .recomended ul li.recomended_item2 {
+    .recomended__bonus{
         width: 10.4%;
     }
-    .recomended ul {
-        margin-bottom: 11px;
+    .recomended__row {
+        margin-bottom: 10px;
     }
     /* ------------ /recomended ------------ */
 
