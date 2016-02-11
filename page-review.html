@@ -25,25 +25,79 @@
     <!-- site__header -->
     <header class="site__header">
 
-        <!-- site__header-wrap -->
-        <div class="site__header-wrap">
+        <!-- logo -->
+        <h1 class="logo">
+            <img src="img/logo.png" alt="Casinos-list" class="logo__mobile"/>
+        </h1>
+        <!-- /logo -->
 
-            <!-- site__header-layout -->
-            <div class="site__header-layout">
+        <a class="home" href="#"></a>
 
-    </header><!-- /site__header -->
+        <!-- menu -->
+        <nav class="menu">
+
+            <!-- menu__btn -->
+            <button class="menu__btn"></button>
+            <!-- /menu__btn -->
+
+            <!-- menu__wrap -->
+            <div class="menu__wrap">
+
+                <a href="#" class="active menu__home"><span>HOME</span></a>
+                <a href="#"><span>Casinos</span></a>
+                <a href="#"><span>Bonuses</span></a>
+                <a href="#"><span>Live Dealer</span></a>
+                <a href="#"><span>Mobile</span></a>
+                <a href="#"><span>Games</span></a>
+                <a href="#"><span>Jackpots</span></a>
+
+                <ul class="menu__online">
+                    <li><a href="#">New Online  Casinos</a></li>
+                    <li><a href="#">New Deposit Casinos</a></li>
+                    <li><a href="#">USA Online Casinos</a></li>
+                    <li><a href="#">UK Online Casinos</a></li>
+                    <li><a href="#">Ecorga Casinos</a></li>
+                    <li><a href="#">Online Casino Revievs</a></li>
+                </ul>
+
+                <div class="menu__mobile">
+                    <h2>MOBILE</h2>
+                    <ul>
+                        <li><a href="#"><span>Android Casinos</span></a></li>
+                        <li><a href="#"><span>Iphone Casinos</span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- /menu__wrap -->
+        </nav>
+        <!-- /menu -->
+
+        <!-- search -->
+        <div class="search">
+
+            <!-- search__btn -->
+            <div class="search__btn"></div>
+            <!-- /search__btn -->
+
+            <!-- search__frame -->
+            <form class="search__frame">
+                <input type="search" name="search" placeholder="Search..."/>
+                <button type="submit" name="find" value="find"></button>
+            </form>
+            <!-- /search__frame -->
+
+        </div>
+        <!-- /search -->
+
+    </header>
+    <!-- /site__header -->
 
     <div class="site__content">
 
         <!-- site__content-layout -->
         <div class="site__content-layout">
 
-            <!-- breadcrums -->
-            <div class="breadcrums">
-                <a href="#">Home</a>
-                <span>Crezy Vegas Casino</span>
-            </div>
-            <!-- breadcrums -->
 
             <div class="review__game">
 
@@ -428,13 +482,28 @@
         <!-- site__aside -->
         <aside class="site__aside">
 
+            <!-- links links_bold -->
+            <div class="links links_bold">
+                <a class="links__item" href="#">New Online  Casinos</a>
+                <a class="links__item" href="#">New Deposit Casinos</a>
+                <a class="links__item" href="#">USA Online Casinos</a>
+                <a class="links__item" href="#">UK Online Casinos</a>
+                <a class="links__item" href="#">Ecorga Casinos</a>
+                <a class="links__item" href="#">Online Casino Revievs</a>
+            </div>
+            <!-- /links links_bold -->
 
+            <!-- links -->
+            <div class="links" data-colvisible-mobile="3" data-colvisible-desktop="3">
 
-        <!-- site__aside -->
-        <aside class="site__aside">
+                <!-- links -->
+                <h2 class="links__title">CASINO SOFTWARE</h2>
+                <!-- links -->
 
-        </aside>
-        <!-- /site__aside -->
+                <a class="links__item" href="#">Microgaming  Casimos</a>
+                <a class="links__item" href="#">NetEnt Online Casinos</a>
+                <a class="links__item" href="#">Playtech Casinos</a>
+                <a class="links__item" href="#">RTG Casinos</a>
 
                 <!-- links -->
                 <a class="links-expand" href="#"><span>Expand</span></a>
@@ -456,7 +525,7 @@
             <!-- /links links_mobile -->
 
             <!-- links -->
-            <div class="links" data-colvisible="5">
+            <div class="links" data-colvisible-mobile="4" data-colvisible-desktop="4">
                 <h2 class="links__title">FUNDING METHODS</h2>
                 <a class="links__item" href="#">PayPal</a>
                 <a class="links__item" href="#">Visa</a>
@@ -477,7 +546,7 @@
             <!--/links -->
 
             <!-- links -->
-            <div class="links" data-colvisible="9">
+            <div class="links" data-colvisible-mobile="9" data-colvisible-desktop="15">
 
                 <h2 class="links__title">A-Z Casinos</h2>
 
@@ -521,6 +590,8 @@
 
         </aside>
         <!-- /site__aside -->
+
+
     </div><!-- /site__content -->
 
     <!-- site__footer -->
