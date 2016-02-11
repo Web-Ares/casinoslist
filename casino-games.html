@@ -8,7 +8,9 @@
     <meta name="format-detection" content="address=no">
 
     <title>Title</title>
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/select.css" />
 
 </head>
 <body>
@@ -23,9 +25,9 @@
     <header class="site__header">
 
         <!-- logo -->
-        <h1 class="logo">
+        <a href="#" class="logo">
             <img src="img/logo.png" alt="Casinos-list" class="logo__mobile"/>
-        </h1>
+        </a>
         <!-- /logo -->
 
         <a class="home" href="#"></a>
@@ -90,6 +92,7 @@
     </header>
     <!-- /site__header -->
 
+    <!-- site__content -->
     <div class="site__content">
 
         <!-- site__content-layout -->
@@ -98,114 +101,237 @@
             <!-- breadcrums -->
             <div class="breadcrums">
                 <a href="#">Home</a>
-                <a href="#">Games</a>
-                <span>Creature From The Black Lagoon</span>
+                <span>Games</span>
             </div>
             <!-- breadcrums -->
 
-            <!-- single-game -->
-            <div class="single-game">
+            <!-- site__title -->
+            <h1 class="site__title site__title_no-border">ALL GAMES PAGE</h1>
+            <!-- /site__title -->
 
-                <!-- single-game__warning -->
-                <div class="single-game__warning">The game <span>CREATURE FROM THE BLACK LAGOON</span> not workon mobile due of the lack Flash support, plwease continue supporting version</div>
-                <!-- /single-game__warning -->
+            <!-- review-slider -->
+            <div class="review-slider">
 
-                <!-- single-game__description -->
-                <div class="single-game__description">
+                <span class="review-slider__title">Filter By Country:</span>
 
-                    <!-- single-game__title -->
-                    <h2 class="single-game__title">Creature from the Black Lagoon slot machine</h2>
-                    <!-- /single-game__title -->
+                <div class="swiper-container review-slider__wrap">
 
-                    <!-- single-game__description-pic -->
-                    <div class="single-game__description-pic" style="background-image: url('pic/single-game__pic1.jpg')"></div>
-                    <!-- /single-game__description-pic -->
+                    <!-- swiper-wrapper -->
+                    <div class="swiper-wrapper">
 
-                    Video slot Creature from the Black Lagoon is based on the eponymous monster-movie from 1954 and combines beautiful 3D graphics and animations with various innovative game features using Sticky Wilds, Spreading Wilds, Re-spins and Free Spins.
-                    
-                </div>
-                <!-- /single-game__description -->
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
 
-                <!-- single-game__wrap -->
-                <div class="single-game__wrap">
-                    <img src="pic/single-game__pic2.jpg" alt="picture">
-                </div>
-                <!-- /single-game__wrap -->
+                            <div class="slider__layout">
 
-                <!-- single-game__controls -->
-                <div class="single-game__controls">
-
-                    <!-- single-game__light -->
-                    <span class="single-game__light"></span>
-                    <!-- /single-game__light -->
-
-                    <!-- single-game__refresh -->
-                    <span class="single-game__refresh"></span>
-                    <!-- /single-game__refresh -->
-
-                    <!-- single-game__resize -->
-                    <span class="single-game__resize"></span>
-                    <!-- /single-game__resize -->
-
-                    <!-- single-game__score -->
-                    <div class="single-game__score">
-                        Rate Game:
-
-                        <div class="score">
-
-                            <input type="radio" id="score-5" name="score" value="5"/>
-                            <label for="score-5">5 stars</label>
-
-                            <input type="radio" id="score-4" name="score" value="4"/>
-                            <label for="score-4">4 stars</label>
-
-                            <input type="radio" id="score-3" name="score" value="3"/>
-                            <label for="score-3">3 stars</label>
-
-                            <input type="radio" id="score-2" name="score" value="2"/>
-                            <label for="score-2">2 stars</label>
-
-                            <input type="radio" id="score-1" name="score" value="1"/>
-                            <label for="score-1">1 stars</label>
+                                <!-- slider__item -->
+                                <a class="slider__item  item_active" href="#">All</a>
+                                <!-- /slider__item -->
+                            </div>
 
                         </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">United States</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">United Kingdom</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">France</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">Germany</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">Australia</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">Russia</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">United States</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">United Kingdom</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">France</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">Germany</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">Australia</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+
+                            <div class="slider__layout">
+
+                                <!-- slider__item -->
+                                <a class="slider__item" href="#">Russia</a>
+                                <!-- /slider__item -->
+                            </div>
+
+                        </div>
+                        <!-- /swiper-slide -->
+
 
                     </div>
-                    <!-- /single-game__score -->
+                    <!-- /swiper-wrapper -->
+
+                    <!-- swiper-button-prev -->
+                    <div class="swiper-button-prev button_prev"></div>
+                    <!-- /swiper-button-prev -->
+
+                    <!-- swiper-button-next -->
+                    <div class="swiper-button-next button_next"></div>
+                    <!-- /swiper-button-next -->
 
                 </div>
-                <!-- /single-game__controls -->
-
-                <!-- tags -->
-                <dl class="tags">
-                    <dt>Tags:</dt>
-                    <dd>
-                        <a href="#">Indie</a>,
-                        <a href="#">Adventure</a>,
-                        <a href="#">Strategy RPG</a>,
-                        <a href="#">Simulation</a>,
-                        <a href="#">Casual</a>,
-                        <a href="#">Free to Play</a>,
-                        <a href="#">Singleplayer</a>,
-                        <a href="#">Massivaly</a>,
-                        <a href="#">Multiplayer</a>,
-                        <a href="#">Racing</a>,
-                        <a href="#">Sports</a>,
-                        <a href="#">Great</a>,
-                        <a href="#">Slots</a>
-                    </dd>
-                </dl>
-                <!-- /tags -->
-
             </div>
-            <!-- /single-game -->
+            <!-- /review-slider -->
 
             <!-- rate -->
             <div class="rate">
 
-                <!-- site__title -->
-                <h2 class="site__title">Best rated games</h2>
-                <!-- /site__title -->
+                <!-- filter-games -->
+                <div class="filter-games">
+                    <form action="#">
+                        <div>
+                            <label for="most-popular">Sort By:</label>
+                            <select name="most-popular" id="most-popular">
+                                <option value="0">Most Popularl</option>
+                                <option value="1">Most Popularl</option>
+                                <option value="2">Most Popularl</option>
+                                <option value="3">Most Popularl</option>
+                                <option value="4">Most Popularl</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="most-popular">Filter By:</label>
+                            <select name="game-tape" id="game-tape">
+                                <option value="0">Game Tape</option>
+                                <option value="1">Game Tape</option>
+                                <option value="2">Game Tape</option>
+                                <option value="3">Game Tape</option>
+                                <option value="4">Game Tape</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" name="keyword" placeholder="Keyword">
+                            <button type="submit">search</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /filter-games -->
 
                 <!-- rate__row -->
                 <ul class="rate__title">
@@ -221,12 +347,7 @@
                     <!-- rate__name -->
                     <li class="rate__name">
                         <span>Game Name</span>
-                        <span>Game Rating
-                            <span class="recomended__filter">
-                                <a href="#"></a>
-                                <a href="#"></a>
-                            </span>
-                        </span>
+                        <span>Game Rating</span>
                     </li>
                     <!-- /rate__name -->
 
@@ -705,7 +826,6 @@
                 </ul>
                 <!-- /rate__row -->
 
-
                 <!-- rate__row -->
                 <ul class="rate__row">
                     <!-- rate__number -->
@@ -936,7 +1056,6 @@
                 </ul>
                 <!-- /rate__row -->
 
-
                 <!-- rate__row -->
                 <ul class="rate__row">
                     <!-- rate__number -->
@@ -1166,241 +1285,25 @@
 
                 </ul>
                 <!-- /rate__row -->
-
-
-                <!-- rate__row -->
-                <ul class="rate__row">
-                    <!-- rate__number -->
-                    <li class="rate__number">1</li>
-                    <!-- /rate__number -->
-
-                    <!-- rate__picture -->
-                    <li class="rate__picture" style="background-image: url(img/rate-pic01.png)"></li>
-                    <!-- /rate__picture -->
-
-                    <!-- rate__name -->
-                    <li class="rate__name">
-                        <a href="#">Creature from the Black Lagoon</a>
-                        <div class="rating">
-                            <div style="width: 50%"></div>
-                        </div>
-                    </li>
-                    <!-- /rate__name -->
-
-                    <!-- rate__software -->
-                    <li class="rate__software">
-                        <span>Software</span>
-                        <span>Micro Gaming</span>
-                    </li>
-                    <!-- /rate__software -->
-
-                    <!-- rate__type -->
-                    <li class="rate__type">
-                        <span>Type</span>
-                        <span>Slots</span>
-                    </li>
-                    <!-- /rate__type -->
-
-                    <!-- rate__play -->
-                    <li class="rate__play">
-
-                        <!-- btn -->
-                        <a href="#" class="btn">Play</a>
-                        <!-- /recomended -->
-
-                    </li>
-                    <!-- /rate__play -->
-
-                </ul>
-                <!-- /rate__row -->
-
-                <!-- rate__row -->
-                <ul class="rate__row">
-                    <!-- rate__number -->
-                    <li class="rate__number">2</li>
-                    <!-- /rate__number -->
-
-                    <!-- rate__picture -->
-                    <li class="rate__picture" style="background-image: url(img/rate-pic02.png)"></li>
-                    <!-- /rate__picture -->
-
-                    <!-- rate__name -->
-                    <li class="rate__name">
-                        <a href="#">Creature from the Black Lagoon</a>
-                        <div class="rating">
-                            <div style="width: 50%"></div>
-                        </div>
-                    </li>
-                    <!-- /rate__name -->
-
-                    <!-- rate__software -->
-                    <li class="rate__software">
-                        <span>Software</span>
-                        <span>Micro Gaming</span>
-                    </li>
-                    <!-- /rate__software -->
-
-                    <!-- rate__type -->
-                    <li class="rate__type">
-                        <span>Type</span>
-                        <span>Slots</span>
-                    </li>
-                    <!-- /rate__type -->
-
-                    <!-- rate__play -->
-                    <li class="rate__play">
-
-                        <!-- btn -->
-                        <a href="#" class="btn">Play</a>
-                        <!-- /recomended -->
-
-                    </li>
-                    <!-- /rate__play -->
-
-                </ul>
-                <!-- /rate__row -->
-
-                <!-- rate__row -->
-                <ul class="rate__row">
-                    <!-- rate__number -->
-                    <li class="rate__number">3</li>
-                    <!-- /rate__number -->
-
-                    <!-- rate__picture -->
-                    <li class="rate__picture" style="background-image: url(img/rate-pic03.png)"></li>
-                    <!-- /rate__picture -->
-
-                    <!-- rate__name -->
-                    <li class="rate__name">
-                        <a href="#">Creature from the Black Lagoon</a>
-                        <div class="rating">
-                            <div style="width: 50%"></div>
-                        </div>
-                    </li>
-                    <!-- /rate__name -->
-
-                    <!-- rate__software -->
-                    <li class="rate__software">
-                        <span>Software</span>
-                        <span>Micro Gaming</span>
-                    </li>
-                    <!-- /rate__software -->
-
-                    <!-- rate__type -->
-                    <li class="rate__type">
-                        <span>Type</span>
-                        <span>Slots</span>
-                    </li>
-                    <!-- /rate__type -->
-
-                    <!-- rate__play -->
-                    <li class="rate__play">
-
-                        <!-- btn -->
-                        <a href="#" class="btn">Play</a>
-                        <!-- /recomended -->
-
-                    </li>
-                    <!-- /rate__play -->
-
-                </ul>
-                <!-- /rate__row -->
-
-                <!-- rate__row -->
-                <ul class="rate__row">
-                    <!-- rate__number -->
-                    <li class="rate__number">4</li>
-                    <!-- /rate__number -->
-
-                    <!-- rate__picture -->
-                    <li class="rate__picture" style="background-image: url(img/rate-pic04.png)"></li>
-                    <!-- /rate__picture -->
-
-                    <!-- rate__name -->
-                    <li class="rate__name">
-                        <a href="#">Creature from the Black Lagoon</a>
-                        <div class="rating">
-                            <div style="width: 50%"></div>
-                        </div>
-                    </li>
-                    <!-- /rate__name -->
-
-                    <!-- rate__software -->
-                    <li class="rate__software">
-                        <span>Software</span>
-                        <span>Micro Gaming</span>
-                    </li>
-                    <!-- /rate__software -->
-
-                    <!-- rate__type -->
-                    <li class="rate__type">
-                        <span>Type</span>
-                        <span>Slots</span>
-                    </li>
-                    <!-- /rate__type -->
-
-                    <!-- rate__play -->
-                    <li class="rate__play">
-
-                        <!-- btn -->
-                        <a href="#" class="btn">Play</a>
-                        <!-- /recomended -->
-
-                    </li>
-                    <!-- /rate__play -->
-
-                </ul>
-                <!-- /rate__row -->
-
-                <!-- rate__row -->
-                <ul class="rate__row">
-                    <!-- rate__number -->
-                    <li class="rate__number">5</li>
-                    <!-- /rate__number -->
-
-                    <!-- rate__picture -->
-                    <li class="rate__picture" style="background-image: url(img/rate-pic05.png)"></li>
-                    <!-- /rate__picture -->
-
-                    <!-- rate__name -->
-                    <li class="rate__name">
-                        <a href="#">Creature from the Black Lagoon</a>
-                        <div class="rating">
-                            <div style="width: 50%"></div>
-                        </div>
-                    </li>
-                    <!-- /rate__name -->
-
-                    <!-- rate__software -->
-                    <li class="rate__software">
-                        <span>Software</span>
-                        <span>Micro Gaming</span>
-                    </li>
-                    <!-- /rate__software -->
-
-                    <!-- rate__type -->
-                    <li class="rate__type">
-                        <span>Type</span>
-                        <span>Slots</span>
-                    </li>
-                    <!-- /rate__type -->
-
-                    <!-- rate__play -->
-                    <li class="rate__play">
-
-                        <!-- btn -->
-                        <a href="#" class="btn">Play</a>
-                        <!-- /recomended -->
-
-                    </li>
-                    <!-- /rate__play -->
-
-                </ul>
-                <!-- /rate__row -->
-
 
             </div>
             <!-- /rate -->
+
+            <!-- paginator -->
+            <div class="paginator">
+                <a href="#" class="paginator__prev"></a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>5</span>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#" class="paginator__all-pages"> ...</a>
+                <a href="#">100</a>
+                <a href="#" class="paginator__next"></a>
+            </div>
+            <!-- /paginator -->
 
         </div>
         <!-- /site__content-layout -->
@@ -1410,17 +1313,17 @@
 
             <!-- links links_bold -->
             <div class="links links_bold">
-                <a class="links__item" href="#">New Online  Casinos</a>
-                <a class="links__item" href="#">New Deposit Casinos</a>
-                <a class="links__item" href="#">USA Online Casinos</a>
-                <a class="links__item" href="#">UK Online Casinos</a>
-                <a class="links__item" href="#">Ecorga Casinos</a>
-                <a class="links__item" href="#">Online Casino Revievs</a>
+                <a href="#">New Online  Casinos</a>
+                <a href="#">New Deposit Casinos</a>
+                <a href="#">USA Online Casinos</a>
+                <a href="#">UK Online Casinos</a>
+                <a href="#">Ecorga Casinos</a>
+                <a href="#">Online Casino Revievs</a>
             </div>
             <!-- /links links_bold -->
 
             <!-- links -->
-            <div class="links" data-colvisible-mobile="4" data-colvisible-desktop="4">
+            <div class="links" data-colvisible="3">
 
                 <!-- links -->
                 <h2 class="links__title">CASINO SOFTWARE</h2>
@@ -1451,7 +1354,7 @@
             <!-- /links links_mobile -->
 
             <!-- links -->
-            <div class="links" data-colvisible-mobile="5" data-colvisible-desktop="6">
+            <div class="links" data-colvisible="5">
                 <h2 class="links__title">FUNDING METHODS</h2>
                 <a class="links__item" href="#">PayPal</a>
                 <a class="links__item" href="#">Visa</a>
@@ -1472,7 +1375,7 @@
             <!--/links -->
 
             <!-- links -->
-            <div class="links" data-colvisible-mobile="9" data-colvisible-desktop="19">
+            <div class="links" data-colvisible="9">
 
                 <h2 class="links__title">A-Z Casinos</h2>
 
@@ -1517,7 +1420,8 @@
         </aside>
         <!-- /site__aside -->
 
-    </div><!-- /site__content -->
+    </div>
+    <!-- /site__content -->
 
     <!-- site__footer -->
     <footer class="site__footer">
@@ -1593,6 +1497,9 @@
 </div><!-- /site -->
 
 <script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.select.js"></script>
 <script src="js/jquery.main.js"></script>
 
 </body>
