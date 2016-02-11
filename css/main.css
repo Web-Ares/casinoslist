@@ -2619,7 +2619,7 @@ a.bonus-type__all{
     .search__frame {
         position: relative;
         top: 0;
-        right: 0;
+        right: 20px;
         width: 100%;
         padding: 8px 2px 0 0;
         background-color: transparent;
@@ -2832,6 +2832,7 @@ a.bonus-type__all{
     .recomended__title .recomended__play{
         display: inline-block;
         vertical-align: middle;
+        position: relative;
         margin-bottom: 0;
         font-family: "helvetica-light", sans-serif;
         font-size: 14px;
@@ -2841,6 +2842,24 @@ a.bonus-type__all{
     .recomended__title{
         display: block;
         margin-bottom: 14px;
+    }
+    .recomended__filter{
+        position: absolute;
+        margin-top: 3px;
+        margin-left: 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .recomended__filter a{
+        display: block !important;
+        width: 8px !important;
+        height: 10px;
+        background: url("../img/filter-down.png") no-repeat;
+        background-position: 0 0;
+        margin: 0;
+    }
+    .recomended__filter a:last-child{
+        background-position: 0 -10px;
     }
     /* ------------ /recomended ------------ */
 
@@ -2884,10 +2903,11 @@ a.bonus-type__all{
         width: 33%;
         margin-bottom: 0;
     }
-    .rate__name span,
+    .rate__name>span,
     .rate__name a {
         display: inline-block;
         vertical-align: middle;
+        position: relative;
         width: 46%;
         margin-bottom: 0;
     }
@@ -2896,6 +2916,12 @@ a.bonus-type__all{
         vertical-align: middle;
         top: -1px;
         width: 102px;
+    }
+    .rate__name .recomended__filter{
+        margin-top: 2px;
+        margin-left: 14px;
+        width: 20px;
+        height: 20px;
     }
     .rate__type span:first-child,
     .rate__software span:first-child {
@@ -3278,7 +3304,7 @@ a.bonus-type__all{
         vertical-align: top;
         margin-left: 0;
         margin-bottom: 84px;
-        padding: 48px 3px 0;
+        padding: 49px 3px 0;
         width: 244px;
         text-align: left;
     }
@@ -3333,7 +3359,7 @@ a.bonus-type__all{
 
     /* --------------- links --------------- */
     .links {
-        margin-bottom: 29px;
+        margin-bottom: 25px;
     }
     .links_bold{
         margin-bottom: 36px;
@@ -3366,6 +3392,7 @@ a.bonus-type__all{
     .links_bold,
     .links_mobile{
         display: block;
+        margin-bottom: 33px;
     }
     a.links-expand{
         display: none;
@@ -3571,6 +3598,11 @@ a.bonus-type__all{
         width: 202px;
         right: 15px;
     }
+    .search__frame {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
     .search__frame input {
         height: 39px;
         padding: 3px 27px 0 0;
@@ -3588,9 +3620,15 @@ a.bonus-type__all{
     .recomended__row {
         margin-bottom: 10px;
     }
+    .recomended {
+        margin-bottom: 56px;
+    }
     /* ------------ /recomended ------------ */
 
     /* ------------ rate ------------ */
+    .rate {
+        margin-bottom: 55px;
+    }
     .rate__type{
         width: 8%;
     }
@@ -3599,6 +3637,9 @@ a.bonus-type__all{
     }
     .rate__picture {
         height: 78px;
+    }
+    .rate__title, .rate__row {
+        padding-bottom: 2px;
     }
     /* ------------ /rate ------------ */
 
@@ -3725,6 +3766,15 @@ a.bonus-type__all{
     }
     .latest-review__helpful a {
         width: 60px;
+    }
+    .latest-review__read-all {
+        padding-right: 25px;
+        letter-spacing: 0.4px;
+        margin-top: 26px;
+        margin-bottom: 9px;
+    }
+    .latest-review {
+        margin-bottom: 8px;
     }
     /* ------------ /latest-review ------------ */
 

@@ -84,7 +84,7 @@ $(function(){
             if($(window).scrollTop() + $(window).height() > $('.site__footer').offset().top + 16) {
                 $('.btn-up').css({ bottom: $(window).scrollTop() + $(window).height() - $('.site__footer').offset().bottom + 55 });
             } else {
-                $('.btn-up').css({ bottom: '70px' });
+                $('.btn-up').css({ bottom: '120px' });
             }
         }
     });
