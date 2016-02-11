@@ -2370,7 +2370,7 @@ a.bonus-type__all{
 
     /* --------------- site --------------- */
     .site__content-layout {
-        padding: 26px 4px 14px 15px;
+        padding: 26px 20px 14px;
     }
     .site:before{
         height: 60px;
