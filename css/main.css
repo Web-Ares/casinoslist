@@ -207,6 +207,7 @@ input[type="search"]::-webkit-search-cancel-button {
     position: relative;
     width: 100%;
     background: #fdfdfd;
+    margin-bottom: 20px;
     padding: 0 11px;
     text-align: left;
 }
@@ -267,6 +268,9 @@ input[type="search"]::-webkit-search-cancel-button {
 a.links-all,
 .links_mobile,
 .links_bold{
+    display: none;
+}
+a.links__item-none{
     display: none;
 }
 a.links-expand{
