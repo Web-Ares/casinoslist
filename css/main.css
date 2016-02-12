@@ -574,7 +574,7 @@ a.btn_no{
     left: 0;
 }
 /*.review-slider .swiper-slide-active .slider__item{*/
-    /*color: #007ab5;*/
+/*color: #007ab5;*/
 /*}*/
 .review-slider .swiper-slide a.active{
     border: none;
@@ -791,14 +791,11 @@ a.btn_no{
     padding: 17px 0 7px;
     font-size: 15px;
     font-family: "helvetica-light", sans-serif;
-    text-align: center;
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    margin-left: -10px;
     text-align: center;
 }
-
 .paginator a, .paginator span {
     display: inline-block;
     vertical-align: bottom;
@@ -2585,7 +2582,7 @@ a.bonus-type__all:hover span{
     .review-feedback .btn__feedback, .review-feedback .btn__feedback:nth-child(even){
         width: 138px;
         margin-right: 0;
-}
+    }
     .review-feedback__btn{
         margin-bottom: 25px;
     }
@@ -3134,7 +3131,6 @@ a.bonus-type__all:hover span{
     /* ------------ paginator ------------ */
     .paginator{
         font-size: 21px;
-        margin-left: -23px;
         margin-bottom: 78px;
     }
     .paginator a{
@@ -3938,7 +3934,6 @@ a.bonus-type__all:hover span{
     /* --------------- paginator --------------- */
     .paginator{
         font-size: 18px;
-        margin-left: -17px;
         margin-bottom: 77px;
     }
     .paginator span {
@@ -3958,6 +3953,17 @@ a.bonus-type__all:hover span{
     .paginator .paginator__prev {
         background-position: 2px 4px;
         background-size: 27px;
+    }
+    .paginator_tight .paginator__next,
+    .paginator_tight .paginator__prev {
+        position: relative;
+        left: auto;
+        top: 7px;
+        right: auto;
+        margin-right: 35px;
+    }
+    .paginator_tight .paginator__next {
+        margin: 0 0 0 35px;
     }
     /* --------------- /paginator --------------- */
 
