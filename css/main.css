@@ -2314,7 +2314,7 @@ a.bonus-type__all:hover span{
 .bonus-type__all span{
     display: inline-block;
     position: relative;
-    width: 192px;
+    width: 189px;
     padding-left: 11px;
     font-size: 15px;
     color: #007ab5;
@@ -2392,16 +2392,16 @@ a.bonus-type__all:hover span{
     color: #333;
     text-align: center;
 }
-.swiper-slide{
+.bonus-type__slider .swiper-slide{
     opacity: .3;
 }
-.swiper-slide-active{
+.bonus-type__slider .swiper-slide-active{
     opacity: 1;
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
 }
-.swiper-slide-prev,
-.swiper-slide-next{
+.bonus-type__slider .swiper-slide-prev,
+.bonus-type__slider .swiper-slide-next{
     opacity: .6;
 }
 /* --------------- /bonus-type --------------- */
@@ -2878,7 +2878,7 @@ a.bonus-type__all:hover span{
     }
     .recomended__bonus {
         vertical-align: top;
-        width: 10.2%;
+        width: 10%;
         line-height: 21px;
     }
     .recomended__play {
@@ -3013,7 +3013,7 @@ a.bonus-type__all:hover span{
         margin-bottom: 0;
     }
     .rate__type{
-        width: 8.6%;
+        width: 8%;
     }
     .rate__software span:last-child {
         width: 100%;
@@ -3477,6 +3477,7 @@ a.bonus-type__all:hover span{
         margin-bottom: 25px;
     }
     .links_bold{
+        font-family: "helvetica-bold" , sans-serif;
         margin-bottom: 36px;
     }
     a.links-all{
@@ -3508,6 +3509,9 @@ a.bonus-type__all:hover span{
     .links_mobile{
         display: block;
         margin-bottom: 33px;
+    }
+    .links_bold{
+
     }
     a.links-expand{
         display: none;
