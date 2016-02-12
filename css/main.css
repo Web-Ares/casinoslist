@@ -786,6 +786,7 @@ a.btn_no{
 /* --------------- paginator --------------- */
 .paginator{
     display: block;
+    position: relative;
     margin-bottom: 36px;
     padding: 17px 0 7px;
     font-size: 15px;
@@ -793,8 +794,9 @@ a.btn_no{
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    width: 301px;
+    width: 100%;
     margin-left: -10px;
+    text-align: center;
 }
 
 .paginator a, .paginator span {
@@ -811,7 +813,7 @@ a.btn_no{
     color: #007ab5;
 }
 .paginator .paginator__prev, .paginator .paginator__next {
-    position: relative;
+    position: absolute;
     top: 6px;
     width: 14px;
     height: 30px;
@@ -829,10 +831,11 @@ a.btn_no{
     opacity: .7;
 }
 .paginator .paginator__next{
+    right: 0;
     background-position: 16px 8px;
 }
 .paginator .paginator__prev{
-
+    left: 0;
 }
 .paginator span {
     font-size: 16px;
@@ -3131,7 +3134,6 @@ a.bonus-type__all:hover span{
     /* ------------ paginator ------------ */
     .paginator{
         font-size: 21px;
-        width: 500px;
         margin-left: -23px;
         margin-bottom: 78px;
     }
@@ -3143,12 +3145,12 @@ a.bonus-type__all:hover span{
     }
 
     .paginator .paginator__next{
-        margin-left: 30px;
         background-position: 16px 4px;
+        top: 13px;
     }
     .paginator .paginator__prev{
-        margin-right: 38px;
         background-position: 2px 4px;
+        top: 13px;
     }
     .paginator .paginator__all-pages {
         margin: 0 5px;
@@ -3946,12 +3948,10 @@ a.bonus-type__all:hover span{
         letter-spacing: 7px;
     }
     .paginator .paginator__next {
-        margin-left: 98px;
         background-position: 16px 4px;
         background-size: 27px;
     }
     .paginator .paginator__prev {
-        margin-right: 93px;
         background-position: 2px 4px;
         background-size: 27px;
     }
