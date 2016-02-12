@@ -573,10 +573,10 @@ a.btn_no{
     background-position: 0px 11px;
     left: 0;
 }
-.review-slider .swiper-slide-active .slider__item{
-    color: #007ab5;
-}
-.review-slider .swiper-slide-active{
+/*.review-slider .swiper-slide-active .slider__item{*/
+    /*color: #007ab5;*/
+/*}*/
+.review-slider .swiper-slide a.active{
     border: none;
     border-bottom: 3px solid #007ab5;
 }

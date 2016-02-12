@@ -136,16 +136,14 @@ var Slider = function (obj) {
         var _swiperPromo = new Swiper(_obj, {
             nextButton: _next,
             prevButton: _prev,
-            slidesPerView: 5,
+            slidesPerView: 13,
             spaceBetween: 0,
             loop: false,
             breakpoints: {
 
-                1024: {
-                    slidesPerView: 5
-                },
+
                 768: {
-                    slidesPerView: 3
+                    slidesPerView: 2
                 }
             }
 
