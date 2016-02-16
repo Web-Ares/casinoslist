@@ -14,7 +14,7 @@ $(function(){
             $(this).find(".links__item:gt(" + curData + ")").addClass('links__item-none');
         }
     });
-       $( ".links-expand" ).click(function() {
+       $( ".links__expand" ).click(function() {
         var curItem = $(this).parent(),
             curData = curItem.data('colvisible-mobile')-1;
         $(this).parent().find(".links__item:gt("+curData+")").removeClass('links__item-none');
@@ -22,7 +22,7 @@ $(function(){
         return false;
     });
 
-    $( ".links-all" ).click(function() {
+    $( ".links__all" ).click(function() {
         var curItem = $(this).parent(),
             curData = curItem.data('colvisible-desktop')-1;
         $(this).parent().find(".links__item:gt("+curData+")").removeClass('links__item-none');
