@@ -265,7 +265,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .links a:hover{
     border-color: #c9d3db;
 }
-a.links-all,
+a.links__all,
 .links_mobile,
 .links_bold{
     display: none;
@@ -273,7 +273,7 @@ a.links-all,
 a.links__item-none{
     display: none;
 }
-a.links-expand{
+a.links__expand{
     display: block;
     margin: 20px 0 0 0;
     padding: 2px 31px 0 0;
@@ -281,20 +281,20 @@ a.links-expand{
     border-top: 4px solid #f6f6f6;
     transition: background .3s ease;
 }
-a.links-expand span{
+a.links__expand span{
     position: relative;
     font-size:18px;
     color: #566e7b;
     transition: color .3s ease;
 }
-a.links-expand:hover{
+a.links__expand:hover{
     border-color:#fdfdfd;
     background: #f6f6f6;
 }
-a.links-expand:hover span{
+a.links__expand:hover span{
     color: #0091d7;
 }
-a.links-expand span:before{
+a.links__expand span:before{
     position: absolute;
     top: 1px;
     right: -25px;
@@ -959,7 +959,7 @@ a.btn_no{
     background: url("../img/home.png") no-repeat center;
     background-size: contain;
 }
-a.menu__home{
+a.menu__item_home{
     display: none;
 }
 .menu__online{
@@ -2132,12 +2132,12 @@ a.social-in{
     background-repeat: no-repeat;
     background-size: contain;
 }
-.latest-review__logo-name div{
+.latest-review-name div{
     font-size:17px;
     color: #007ab5;
     margin-bottom: 8px;
 }
-.latest-review__logo-name{
+.latest-review-name{
     display: inline-block;
     vertical-align: top;
     width: 110px;
@@ -2176,7 +2176,7 @@ a.social-in{
     transition: border .3s ease, color .3s ease;
 }
 .latest-review__menu>a:hover span,
-.latest-review__menu a.menu-active span{
+.latest-review__menu a.latest-review__menu-active span{
     color: #007ab5;
     border-color: #007ab5;
 }
@@ -3271,7 +3271,7 @@ a.bonus-type__all:hover span{
         top: 20px;
         left: 0;
     }
-    .latest-review__logo-name div {
+    .latest-review-name div {
         position: absolute;
         top: 99px;
         left: 0;
@@ -3281,7 +3281,7 @@ a.bonus-type__all:hover span{
         font-size: 15px;
         line-height: 17px;
     }
-    .latest-review__logo-name {
+    .latest-review-name {
         width: 110px;
         margin-left: 0;
         padding-top: 7px;
@@ -3478,21 +3478,21 @@ a.bonus-type__all:hover span{
         font-family: "helvetica-bold" , sans-serif;
         margin-bottom: 36px;
     }
-    a.links-all{
+    a.links__all{
         display:block;
         position: relative;
         color:#566e7b;
         margin-top: 6px;
         transition: color .3s ease;
     }
-    a.links-all:hover{
+    a.links__all:hover{
         color: #0091d7;
         border-color: transparent;
     }
-    a.links-all span{
+    a.links__all span{
         position: relative;
     }
-    a.links-all span:before {
+    a.links__all span:before {
         position: absolute;
         top: -1px;
         right: -25px;
@@ -3502,7 +3502,7 @@ a.bonus-type__all:hover span{
         background: url("../img/posts_arrows.png") no-repeat center;
         background-size: contain;
     }
-    .links-all,
+    .links__all,
     .links_bold,
     .links_mobile{
         display: block;
@@ -3511,7 +3511,7 @@ a.bonus-type__all:hover span{
     .links_bold{
 
     }
-    a.links-expand{
+    a.links__expand{
         display: none;
     }
     .links a {
