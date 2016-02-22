@@ -170,19 +170,6 @@ var Slider = function (obj) {
         });
 
     }
-        if (_obj.hasClass('bonus-type__slider')){
-            var __slider = new Swiper(_obj, {
-                direction: 'vertical',
-                spaceBetween: 0,
-                loop: true,
-                centeredSlides: true,
-                mousewheelControl: true,
-                paginationClickable: true,
-                loopedSlides: 5,
-                slidesPerView:5
-
-            });
-        }
 
     //public properties
 
