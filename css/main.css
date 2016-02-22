@@ -253,6 +253,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .links a{
     display: block;
+    font-family: "helvetica-light" , sans-serif;
     font-size: 17px;
     color: #0091d7;
     letter-spacing: -0.1px;
@@ -269,6 +270,9 @@ a.links__all,
 .links_mobile,
 .links_bold{
     display: none;
+}
+.links_bold a{
+    font-family: "helvetica-bold", sans-serif;
 }
 a.links__item-none{
     display: none;
@@ -1974,6 +1978,7 @@ a.social-in{
 
 /* --------------- rate --------------- */
 .rate{
+    font-family: "helvetica-light" , sans-serif;
     margin-bottom: 32px;
 }
 .rate__title,
@@ -2259,7 +2264,13 @@ a.social-in{
     background-size: cover;
     text-indent: -99999px;
 }
-
+.bonus-type label{
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    margin-right: 20px;
+    text-align: left;
+}
 /* --------------- /filter-games --------------- */
 
 /* --------------- filter-review --------------- */
@@ -2287,50 +2298,8 @@ a.social-in{
 
 
 /* --------------- /latest-review --------------- */
-.bonus-type{
-
-}
-.bonus-type__title{
-    display: inline-block;
-    vertical-align: middle;
-    width: 90px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 4px;
-    font-family: "helvetica-light", sans-serif;
-    font-size: 15px;
-    color: #566e7b;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-}
-a.bonus-type__all{
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 2px;
-}
-a.bonus-type__all:hover span{
-    color: #566e7b;
-}
-.bonus-type__all span{
-    display: inline-block;
-    position: relative;
-    width: 189px;
-    padding-left: 11px;
-    font-size: 15px;
-    color: #007ab5;
-    padding-bottom: 13px;
-    border-bottom: 1px solid #007ab5;
-    transition: border .3s ease, color .3s ease;
-}
-.bonus-type__all span:before {
-    position: absolute;
-    top: -1px;
-    right: 0;
-    width: 13px;
-    height: 17px;
-    content: "";
-    background: url("../img/expand-on.png") no-repeat center;
-    background-size: contain;
+.bonus-type .ares-select {
+    width: 175px;
 }
 /* --------------- /latest-review --------------- */
 
@@ -3346,6 +3315,7 @@ a.bonus-type__all:hover span{
         top: 55%;
         right: 1px;
     }
+
     /* --------------- /filter-games --------------- */
 
     /* --------------- filter-review --------------- */
@@ -3368,8 +3338,20 @@ a.bonus-type__all:hover span{
     /* --------------- /filter-review --------------- */
 
     /* ------------ bonus-type ------------ */
+    .bonus-type>form>div:last-child{
+        width: 66%;
+    }
+    .bonus-type .ares-select {
+        width: 36%;
+    }
     .bonus-type__title {
         width: 150px;
+    }
+    .bonus-type{
+        text-align: right;
+    }
+    .bonus-type .ares-select__popup li {
+        text-align: left;
     }
     /* ------------ /bonus-type ------------ */
 
