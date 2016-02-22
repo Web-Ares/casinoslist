@@ -689,7 +689,7 @@ a.btn_no{
 
 /* --------------- review-posts --------------- */
 .review-posts__public{
-    color: #bbc3c7;
+    color: #566e7b;
 }
 .review-posts__public-item:last-child.post__avtor{
     margin-bottom: 0;
@@ -2630,7 +2630,7 @@ a.bonus-type__all:hover span{
     .review-posts__public {
         position: relative;
         z-index: 2;
-        color: #bbc3c7;
+        color: #566e7b;
     }
     .post__link{
         margin-bottom: 27px;
@@ -2642,7 +2642,7 @@ a.bonus-type__all:hover span{
     .review-posts__public-item p {
         font-size: 15px;
         font-family: "helvetica-light", sans-serif;
-        letter-spacing: 0.3px;
+        letter-spacing: .3px;
         line-height: 18px;
     }
     .post__avtor {

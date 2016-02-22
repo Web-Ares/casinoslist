@@ -123,23 +123,37 @@ var Slider = function (obj) {
     var _self = this,
         _next = obj.find($('.swiper-button-next')),
         _prev = obj.find($('.swiper-button-prev')),
-        _obj = obj;
+        _obj = obj,
+        _window = $(window),
+        _swiperPromo;
+
 
     //private methods
     var _addEvents = function () {
 
-        },
+        _window.on({
+
+            resize: function(){
+
+                _swiperPromo.onResize();
+
+            }
+
+        });
+
+    };
+
+
         _init = function () {
             _addEvents();
         };
     if (_obj.hasClass('review-slider__wrap')) {
-        var _swiperPromo = new Swiper(_obj, {
+         _swiperPromo = new Swiper(_obj, {
             nextButton: _next,
             prevButton: _prev,
             spaceBetween: 0,
             slidesPerView: 'auto',
-            loopedSlides: 40,
-            loop: true
+            loopedSlides: 40
 
         });
 
