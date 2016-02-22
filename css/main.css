@@ -3380,6 +3380,16 @@ a.bonus-type__all:hover span{
     }
     /* ------------ /tags ------------ */
 
+    /* ------------ swiper-container ------------ */
+    .swiper-container_no-buttons .swiper-button-prev,
+    .swiper-container_no-buttons .swiper-button-next {
+        display: none;
+    }
+    .swiper-container_no-buttons {
+        padding: 0;
+    }
+    /* ------------ /swiper-container ------------ */
+
 }
 
 @media (min-width: 1024px){
